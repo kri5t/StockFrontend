@@ -1,0 +1,39 @@
+/* This is a custom stylesheet */
+ul li {
+  list-style: none;
+  display: inline-block; }
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  background: #f3f5f8;
+  color: #163844;
+  margin-top: 99px; }
+
+.first, .second, .third, .fourth, .fifth, .sixth {
+  text-align: center; }
+  .first .row:first-of-type, .second .row:first-of-type, .third .row:first-of-type, .fourth .row:first-of-type, .fifth .row:first-of-type, .sixth .row:first-of-type {
+    padding-top: 30px; }
+  .first .row:last-of-type, .second .row:last-of-type, .third .row:last-of-type, .fourth .row:last-of-type, .fifth .row:last-of-type, .sixth .row:last-of-type {
+    padding-bottom: 30px; }
+  .first input, .second input, .third input, .fourth input, .fifth input, .sixth input {
+    height: 50px;
+    width: 30%;
+    padding: 4px 13px; }
+
+.navbar-default {
+  background: #163844;
+  color: #fff;
+  min-height: 100px; }
+  .navbar-default .container {
+    padding-top: 20px;
+    font-size: 20px; }
+  .navbar-default .navbar-header a {
+    font-size: 20px; }
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+  color: #fff; }
+  .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover {
+    color: rgba(210, 20, 20, 0.66); }
+
+/*# sourceMappingURL=styles.css.map */

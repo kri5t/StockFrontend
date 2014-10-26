@@ -1,0 +1,23 @@
+/* This is a custom stylesheet */
+
+//Tekstelementer
+ul li {list-style: none;display:inline-block;}
+
+//Main containers
+body {font-family: 'Josefin Sans', sans-serif;font-weight:300;background:rgba(243, 245, 248, 1);color:#163844;margin-top:99px;}
+.container {}
+
+.first, .second, .third, .fourth, .fifth, .sixth {
+  text-align:center;
+  .row:first-of-type {padding-top:30px;}
+  .row:last-of-type {padding-bottom:30px;}
+  input {height:50px;width:30%;padding: 4px 13px;}
+}
+
+//Navigationselementer
+.navbar-default {background:#163844;color:#fff;min-height:100px;
+.container{padding-top:20px;font-size:20px;}
+.navbar-header a {font-size:20px;}}
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {color:#fff;
+&:hover {color:rgba(210,20,20,0.66);}}
+
