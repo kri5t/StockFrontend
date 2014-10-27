@@ -1,4 +1,6 @@
-/* This is a custom stylesheet */
+p {
+  font-size: 1.2em; }
+
 ul li {
   list-style: none;
   display: inline-block; }
@@ -8,32 +10,79 @@ body {
   font-weight: 300;
   background: #f3f5f8;
   color: #163844;
-  margin-top: 99px; }
+  margin-top: 99px;
+  overflow-x: hidden; }
+
+.second, .fourth, .sixth {
+  color: #fff;
+  background: #163844; }
+  .second:before, .fourth:before, .sixth:before {
+    background: #163844; }
+  .second:after, .fourth:after, .sixth:after {
+    background: #163844; }
 
 .first, .second, .third, .fourth, .fifth, .sixth {
+  position: relative;
   text-align: center; }
   .first .row:first-of-type, .second .row:first-of-type, .third .row:first-of-type, .fourth .row:first-of-type, .fifth .row:first-of-type, .sixth .row:first-of-type {
-    padding-top: 30px; }
+    padding-top: 120px; }
   .first .row:last-of-type, .second .row:last-of-type, .third .row:last-of-type, .fourth .row:last-of-type, .fifth .row:last-of-type, .sixth .row:last-of-type {
-    padding-bottom: 30px; }
-  .first input, .second input, .third input, .fourth input, .fifth input, .sixth input {
-    height: 50px;
-    width: 30%;
-    padding: 4px 13px; }
+    padding-bottom: 120px; }
+  .first:before, .second:before, .third:before, .fourth:before, .fifth:before, .sixth:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 200%;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    right: 100%; }
+  .first:after, .second:after, .third:after, .fourth:after, .fifth:after, .sixth:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 200%;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    left: 100%; }
+
+.first .glyphicon {
+  font-size: 30px;
+  top: 12px;
+  left: -43px; }
+.first input {
+  height: 50px;
+  width: 60%;
+  padding: 4px 13px;
+  margin: 10px 0 0 36px; }
+.first .row:first-of-type {
+  padding-top: 190px; }
+.first .row:last-of-type {
+  padding-bottom: 190px; }
+
+.third .glyphicon {
+  font-size: 90px;
+  margin: 40px 0; }
 
 .navbar-default {
   background: #163844;
   color: #fff;
-  min-height: 100px; }
+  min-height: 100px;
+  border-color: #fff; }
   .navbar-default .container {
     padding-top: 20px;
     font-size: 20px; }
   .navbar-default .navbar-header a {
     font-size: 20px; }
+  .navbar-default .navbar-right .glyphicon {
+    font-size: 30px;
+    top: 9px;
+    left: 5px; }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
   color: #fff; }
   .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover {
-    color: rgba(210, 20, 20, 0.66); }
+    color: red; }
 
 /*# sourceMappingURL=styles.css.map */
