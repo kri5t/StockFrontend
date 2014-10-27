@@ -5,10 +5,15 @@ ul li {
   list-style: none;
   display: inline-block; }
 
+input[type="text"], textarea {
+  outline: none;
+  box-shadow: none !important;
+  font-size: 1.3em; }
+
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
-  background: #f3f5f8;
+  background: #f2f2f2;
   color: #163844;
   margin-top: 99px;
   overflow-x: hidden; }
@@ -55,7 +60,13 @@ body {
   height: 50px;
   width: 60%;
   padding: 4px 13px;
-  margin: 10px 0 0 36px; }
+  margin: 10px 0 0 36px;
+  transition: background-color 2s ease;
+  border: 1px solid #163844; }
+  .first input:focus {
+    background: #163844;
+    color: #fff;
+    border: 1px solid #fff; }
 .first .row:first-of-type {
   padding-top: 190px; }
 .first .row:last-of-type {
@@ -64,6 +75,14 @@ body {
 .third .glyphicon {
   font-size: 90px;
   margin: 40px 0; }
+
+.fourth .glyphicon {
+  font-size: 70px;
+  margin: 30px 0 15px 0; }
+
+.fifth .glyphicon {
+  font-size: 20px;
+  margin: 0 10px 16px 10px; }
 
 .navbar-default {
   background: #163844;
@@ -78,10 +97,24 @@ body {
   .navbar-default .navbar-right .glyphicon {
     font-size: 30px;
     top: 9px;
-    left: 5px; }
+    left: 5px;
+    -webkit-transition-duration: 1.8s;
+    -moz-transition-duration: 1.8s;
+    -o-transition-duration: 1.8s;
+    transition-duration: 1.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    overflow: hidden; }
+  .navbar-default .navbar-right a:hover .glyphicon {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg); }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
-  color: #fff; }
+  color: #fff;
+  transition: color 2s ease; }
   .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover {
     color: red; }
 
