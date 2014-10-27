@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24d88da8-c05a-46b6-99ce-780d25682dd6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap-sass-master/assets/stylesheets/_custom.scss" afterPath="$PROJECT_DIR$/bootstrap-sass-master/assets/stylesheets/_custom.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap-sass-master/assets/index.html" afterPath="$PROJECT_DIR$/bootstrap-sass-master/assets/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap-sass-master/assets/stylesheets/styles.css.map" afterPath="$PROJECT_DIR$/bootstrap-sass-master/assets/stylesheets/styles.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap-sass-master/assets/stylesheets/styles.css" afterPath="$PROJECT_DIR$/bootstrap-sass-master/assets/stylesheets/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StockFrontend.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,8 +52,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bootstrap-sass-master/assets/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5272525" vertical-offset="1141" max-vertical-offset="2924">
-              <caret line="95" column="34" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.189099" vertical-offset="0" max-vertical-offset="2924">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -821,8 +817,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap-sass-master/assets/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5272525" vertical-offset="1141" max-vertical-offset="2924">
-          <caret line="95" column="34" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.189099" vertical-offset="0" max-vertical-offset="2924">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding />
         </state>
       </provider>
