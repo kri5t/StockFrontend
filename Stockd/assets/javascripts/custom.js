@@ -17,3 +17,8 @@ $('a[href*=#]:not([href=#])').click(function() {
         }
     }
 });
+
+//modal load on windowload
+$(window).load(function(){
+    //$('#location-modal').modal('show');
+});

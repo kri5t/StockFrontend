@@ -1,5 +1,22 @@
-p {
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+a:focus,
+a:active {
+  outline: 0 !important;
+  -webkit-appearance: none; }
+
+h1, h2, h3, h4 {
+  font-weight: 300; }
+
+p, td {
   font-size: 1.2em; }
+
+a:hover {
+  text-decoration: none; }
 
 ul li {
   list-style: none;
@@ -10,16 +27,38 @@ input[type="text"], textarea {
   box-shadow: none !important;
   font-size: 1.3em; }
 
+.buy-signal {
+  color: #199900; }
+
+.hold-signal {
+  color: #DE8A00; }
+
+.sell-signal {
+  color: #D40D12; }
+
+.btn {
+  border-radius: 0; }
+
+.btn-primary {
+  background-color: #f1f4f9;
+  color: #163844;
+  font-size: 1.3em;
+  border: none; }
+  .btn-primary:hover {
+    background-color: #163844;
+    color: #f1f4f9;
+    border: none; }
+
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
-  background: #f2f2f2;
+  background: #f1f4f9;
   color: #163844;
   margin-top: 99px;
   overflow-x: hidden; }
 
 .second, .fourth, .sixth {
-  color: #fff;
+  color: #f1f4f9;
   background: #163844; }
   .second:before, .fourth:before, .sixth:before {
     background: #163844; }
@@ -54,7 +93,7 @@ body {
 
 .first .glyphicon {
   font-size: 30px;
-  top: 12px;
+  top: 9px;
   left: -43px; }
 .first input {
   height: 50px;
@@ -68,9 +107,15 @@ body {
     color: #fff;
     border: 1px solid #fff; }
 .first .row:first-of-type {
-  padding-top: 190px; }
+  padding-top: 170px; }
 .first .row:last-of-type {
-  padding-bottom: 190px; }
+  padding-bottom: 170px; }
+
+.second .table {
+  margin-top: 50px; }
+.second .cl-effect-1 a {
+  color: #f1f4f9;
+  font-size: 1.6em; }
 
 .third .glyphicon {
   font-size: 90px;
@@ -81,12 +126,12 @@ body {
   margin: 30px 0 15px 0; }
 
 .fifth .glyphicon {
-  font-size: 20px;
-  margin: 0 10px 16px 10px; }
+  font-size: 35px;
+  margin: 10px 10px 20px 10px; }
 
 .navbar-default {
   background: #163844;
-  color: #fff;
+  color: #f1f4f9;
   min-height: 100px;
   border-color: #fff; }
   .navbar-default .container {
@@ -108,14 +153,79 @@ body {
     transition-property: transform;
     overflow: hidden; }
   .navbar-default .navbar-right a:hover .glyphicon {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg); }
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg); }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
   color: #fff;
   transition: color 2s ease; }
   .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover {
-    color: red; }
+    color: #f1f4f9; }
+  .navbar-default .navbar-brand:focus, .navbar-default .navbar-nav > li > a:focus {
+    color: #f1f4f9;
+    box-shadow: none !important; }
+
+.modal-dialog {
+  margin-top: 180px;
+  width: 400px; }
+
+.modal-content {
+  border-radius: 0;
+  border: none;
+  background: #f1f4f9;
+  box-shadow: none;
+  text-align: center; }
+  .modal-content img {
+    width: 40px; }
+
+.modal-body {
+  padding: 25px; }
+
+.table > tbody > tr > td {
+  padding: 14px; }
+  .table > tbody > tr > td .glyphicon {
+    font-size: 28px;
+    margin-left: 12px; }
+
+.table > thead > tr > td {
+  padding: 14px;
+  font-size: 1.3em;
+  background: #f1f4f9;
+  color: #163844; }
+  .table > thead > tr > td .glyphicon {
+    font-size: 26px;
+    margin-left: 6px; }
+
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 1.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 1.3s, opacity 0.2s;
+  transition: transform 1.3s, opacity 0.2s; }
+
+.cl-effect-1 a::before {
+  margin-right: 10px;
+  content: '[';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px); }
+
+.cl-effect-1 a::after {
+  margin-left: 10px;
+  content: ']';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px); }
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px); }
 
 /*# sourceMappingURL=styles.css.map */
