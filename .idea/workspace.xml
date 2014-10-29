@@ -2,195 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24d88da8-c05a-46b6-99ce-780d25682dd6" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/.gitignore" afterPath="$PROJECT_DIR$/source/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/.travis.yml" afterPath="$PROJECT_DIR$/source/.travis.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/CHANGELOG.md" afterPath="$PROJECT_DIR$/source/CHANGELOG.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/source/CONTRIBUTING.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/Gemfile" afterPath="$PROJECT_DIR$/source/Gemfile" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/LICENSE" afterPath="$PROJECT_DIR$/source/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/README.md" afterPath="$PROJECT_DIR$/source/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/Rakefile" afterPath="$PROJECT_DIR$/source/Rakefile" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/fonts/bootstrap/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/source/assets/fonts/bootstrap/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/fonts/bootstrap/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/source/assets/fonts/bootstrap/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/source/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/fonts/bootstrap/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/source/assets/fonts/bootstrap/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/images/.keep" afterPath="$PROJECT_DIR$/source/assets/images/.keep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/img/fb_icon.svg" afterPath="$PROJECT_DIR$/source/assets/img/fb_icon.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/javascripts/bootstrap-sprockets.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/bootstrap-sprockets.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/javascripts/bootstrap.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/javascripts/bootstrap/affix.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/bootstrap/affix.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/javascripts/bootstrap/alert.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/bootstrap/alert.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/javascripts/bootstrap/button.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/bootstrap/button.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/javascripts/bootstrap/carousel.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/bootstrap/carousel.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/javascripts/bootstrap/collapse.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/bootstrap/collapse.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/javascripts/bootstrap/dropdown.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/bootstrap/dropdown.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/javascripts/bootstrap/modal.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/bootstrap/modal.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/javascripts/bootstrap/popover.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/bootstrap/popover.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/javascripts/bootstrap/scrollspy.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/bootstrap/scrollspy.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/javascripts/bootstrap/tab.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/bootstrap/tab.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/javascripts/bootstrap/tooltip.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/bootstrap/tooltip.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/javascripts/bootstrap/transition.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/bootstrap/transition.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/javascripts/custom.js" afterPath="$PROJECT_DIR$/source/assets/javascripts/custom.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/_bootstrap-compass.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/_bootstrap-compass.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/_bootstrap-mincer.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/_bootstrap-mincer.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/_bootstrap-sprockets.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/_bootstrap-sprockets.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/_bootstrap.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/_bootstrap.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/_custom.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/_custom.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/source/assets/stylesheets/application.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/application.css.map" afterPath="$PROJECT_DIR$/source/assets/stylesheets/application.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/application.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_alerts.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_alerts.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_badges.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_badges.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_breadcrumbs.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_breadcrumbs.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_button-groups.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_button-groups.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_buttons.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_buttons.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_carousel.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_carousel.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_close.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_close.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_code.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_code.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_component-animations.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_component-animations.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_dropdowns.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_dropdowns.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_forms.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_forms.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_glyphicons.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_glyphicons.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_grid.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_grid.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_input-groups.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_input-groups.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_jumbotron.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_jumbotron.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_labels.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_labels.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_list-group.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_list-group.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_media.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_media.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_mixins.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_mixins.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_modals.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_modals.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_navbar.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_navbar.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_navs.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_navs.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_normalize.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_normalize.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_pager.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_pager.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_pagination.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_pagination.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_panels.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_panels.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_popovers.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_popovers.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_print.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_print.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_progress-bars.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_progress-bars.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_responsive-embed.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_responsive-embed.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_responsive-utilities.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_responsive-utilities.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_scaffolding.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_scaffolding.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_tables.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_tables.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_theme.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_theme.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_thumbnails.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_thumbnails.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_tooltip.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_tooltip.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_type.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_type.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_utilities.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_utilities.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_variables.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_variables.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/_wells.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/_wells.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_alerts.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_alerts.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_background-variant.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_background-variant.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_border-radius.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_border-radius.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_buttons.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_buttons.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_center-block.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_center-block.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_clearfix.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_clearfix.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_forms.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_forms.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_gradients.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_gradients.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_grid-framework.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_grid-framework.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_grid.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_grid.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_hide-text.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_hide-text.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_image.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_image.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_labels.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_labels.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_list-group.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_list-group.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_nav-divider.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_nav-divider.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_nav-vertical-align.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_nav-vertical-align.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_opacity.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_opacity.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_pagination.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_pagination.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_panels.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_panels.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_progress-bar.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_progress-bar.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_reset-filter.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_reset-filter.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_resize.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_resize.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_size.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_size.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_tab-focus.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_tab-focus.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_table-row.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_table-row.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_text-overflow.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_text-overflow.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/custom.css.map" afterPath="$PROJECT_DIR$/source/assets/stylesheets/custom.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/styles.css" afterPath="$PROJECT_DIR$/source/assets/stylesheets/styles.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/styles.css.map" afterPath="$PROJECT_DIR$/source/assets/stylesheets/styles.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/assets/stylesheets/styles.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/styles.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/bootstrap-sass.gemspec" afterPath="$PROJECT_DIR$/source/bootstrap-sass.gemspec" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/bower.json" afterPath="$PROJECT_DIR$/source/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/composer.json" afterPath="$PROJECT_DIR$/source/composer.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/lib/bootstrap-sass.rb" afterPath="$PROJECT_DIR$/source/lib/bootstrap-sass.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/lib/bootstrap-sass/engine.rb" afterPath="$PROJECT_DIR$/source/lib/bootstrap-sass/engine.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/lib/bootstrap-sass/version.rb" afterPath="$PROJECT_DIR$/source/lib/bootstrap-sass/version.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/package.json" afterPath="$PROJECT_DIR$/source/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/sache.json" afterPath="$PROJECT_DIR$/source/sache.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/tasks/bower.rake" afterPath="$PROJECT_DIR$/source/tasks/bower.rake" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/tasks/converter.rb" afterPath="$PROJECT_DIR$/source/tasks/converter.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/tasks/converter/char_string_scanner.rb" afterPath="$PROJECT_DIR$/source/tasks/converter/char_string_scanner.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/tasks/converter/fonts_conversion.rb" afterPath="$PROJECT_DIR$/source/tasks/converter/fonts_conversion.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/tasks/converter/js_conversion.rb" afterPath="$PROJECT_DIR$/source/tasks/converter/js_conversion.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/tasks/converter/less_conversion.rb" afterPath="$PROJECT_DIR$/source/tasks/converter/less_conversion.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/tasks/converter/logger.rb" afterPath="$PROJECT_DIR$/source/tasks/converter/logger.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/tasks/converter/network.rb" afterPath="$PROJECT_DIR$/source/tasks/converter/network.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/templates/project/_bootstrap-variables.sass.erb" afterPath="$PROJECT_DIR$/source/templates/project/_bootstrap-variables.sass.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/templates/project/manifest.rb" afterPath="$PROJECT_DIR$/source/templates/project/manifest.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/templates/project/styles.sass" afterPath="$PROJECT_DIR$/source/templates/project/styles.sass" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/compass_test.rb" afterPath="$PROJECT_DIR$/source/test/compass_test.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/compilation_test.rb" afterPath="$PROJECT_DIR$/source/test/compilation_test.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_node_mincer/apple-touch-icon-144-precomposed.png" afterPath="$PROJECT_DIR$/source/test/dummy_node_mincer/apple-touch-icon-144-precomposed.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_node_mincer/application.css.ejs.scss" afterPath="$PROJECT_DIR$/source/test/dummy_node_mincer/application.css.ejs.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_node_mincer/manifest.js" afterPath="$PROJECT_DIR$/source/test/dummy_node_mincer/manifest.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/README.rdoc" afterPath="$PROJECT_DIR$/source/test/dummy_rails/README.rdoc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/Rakefile" afterPath="$PROJECT_DIR$/source/test/dummy_rails/Rakefile" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/app/assets/images/.keep" afterPath="$PROJECT_DIR$/source/test/dummy_rails/app/assets/images/.keep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/source/test/dummy_rails/app/assets/javascripts/application.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/app/assets/stylesheets/application.css.sass" afterPath="$PROJECT_DIR$/source/test/dummy_rails/app/assets/stylesheets/application.css.sass" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/source/test/dummy_rails/app/controllers/application_controller.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/app/controllers/pages_controller.rb" afterPath="$PROJECT_DIR$/source/test/dummy_rails/app/controllers/pages_controller.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/source/test/dummy_rails/app/helpers/application_helper.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/source/test/dummy_rails/app/views/layouts/application.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/app/views/pages/root.html.slim" afterPath="$PROJECT_DIR$/source/test/dummy_rails/app/views/pages/root.html.slim" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/bin/bundle" afterPath="$PROJECT_DIR$/source/test/dummy_rails/bin/bundle" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/bin/rails" afterPath="$PROJECT_DIR$/source/test/dummy_rails/bin/rails" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/bin/rake" afterPath="$PROJECT_DIR$/source/test/dummy_rails/bin/rake" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/config.ru" afterPath="$PROJECT_DIR$/source/test/dummy_rails/config.ru" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/config/application.rb" afterPath="$PROJECT_DIR$/source/test/dummy_rails/config/application.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/config/boot.rb" afterPath="$PROJECT_DIR$/source/test/dummy_rails/config/boot.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/config/environment.rb" afterPath="$PROJECT_DIR$/source/test/dummy_rails/config/environment.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/config/environments/development.rb" afterPath="$PROJECT_DIR$/source/test/dummy_rails/config/environments/development.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/config/environments/production.rb" afterPath="$PROJECT_DIR$/source/test/dummy_rails/config/environments/production.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/config/environments/test.rb" afterPath="$PROJECT_DIR$/source/test/dummy_rails/config/environments/test.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/config/initializers/backtrace_silencers.rb" afterPath="$PROJECT_DIR$/source/test/dummy_rails/config/initializers/backtrace_silencers.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/config/initializers/filter_parameter_logging.rb" afterPath="$PROJECT_DIR$/source/test/dummy_rails/config/initializers/filter_parameter_logging.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/config/initializers/inflections.rb" afterPath="$PROJECT_DIR$/source/test/dummy_rails/config/initializers/inflections.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/config/initializers/mime_types.rb" afterPath="$PROJECT_DIR$/source/test/dummy_rails/config/initializers/mime_types.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/config/initializers/secret_token.rb" afterPath="$PROJECT_DIR$/source/test/dummy_rails/config/initializers/secret_token.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/config/initializers/session_store.rb" afterPath="$PROJECT_DIR$/source/test/dummy_rails/config/initializers/session_store.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/config/initializers/wrap_parameters.rb" afterPath="$PROJECT_DIR$/source/test/dummy_rails/config/initializers/wrap_parameters.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/config/locales/en.yml" afterPath="$PROJECT_DIR$/source/test/dummy_rails/config/locales/en.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/config/locales/es.yml" afterPath="$PROJECT_DIR$/source/test/dummy_rails/config/locales/es.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/config/routes.rb" afterPath="$PROJECT_DIR$/source/test/dummy_rails/config/routes.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/db/test.sqlite3" afterPath="$PROJECT_DIR$/source/test/dummy_rails/db/test.sqlite3" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/lib/assets/.keep" afterPath="$PROJECT_DIR$/source/test/dummy_rails/lib/assets/.keep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/log/.keep" afterPath="$PROJECT_DIR$/source/test/dummy_rails/log/.keep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/public/404.html" afterPath="$PROJECT_DIR$/source/test/dummy_rails/public/404.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/public/422.html" afterPath="$PROJECT_DIR$/source/test/dummy_rails/public/422.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/public/500.html" afterPath="$PROJECT_DIR$/source/test/dummy_rails/public/500.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_rails/public/favicon.ico" afterPath="$PROJECT_DIR$/source/test/dummy_rails/public/favicon.ico" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_sass_only/Gemfile" afterPath="$PROJECT_DIR$/source/test/dummy_sass_only/Gemfile" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_sass_only/compile.rb" afterPath="$PROJECT_DIR$/source/test/dummy_sass_only/compile.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/dummy_sass_only/import_all.sass" afterPath="$PROJECT_DIR$/source/test/dummy_sass_only/import_all.sass" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/gemfiles/sass_3_2.gemfile" afterPath="$PROJECT_DIR$/source/test/gemfiles/sass_3_2.gemfile" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/gemfiles/sass_3_3.gemfile" afterPath="$PROJECT_DIR$/source/test/gemfiles/sass_3_3.gemfile" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/gemfiles/sass_3_4.gemfile" afterPath="$PROJECT_DIR$/source/test/gemfiles/sass_3_4.gemfile" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/gemfiles/sass_head.gemfile" afterPath="$PROJECT_DIR$/source/test/gemfiles/sass_head.gemfile" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/node_mincer_test.rb" afterPath="$PROJECT_DIR$/source/test/node_mincer_test.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/node_sass_test.rb" afterPath="$PROJECT_DIR$/source/test/node_sass_test.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/pages_test.rb" afterPath="$PROJECT_DIR$/source/test/pages_test.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/sass_test.rb" afterPath="$PROJECT_DIR$/source/test/sass_test.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/sprockets_rails_test.rb" afterPath="$PROJECT_DIR$/source/test/sprockets_rails_test.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/support/dummy_rails_integration.rb" afterPath="$PROJECT_DIR$/source/test/support/dummy_rails_integration.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/support/integration_test.rb" afterPath="$PROJECT_DIR$/source/test/support/integration_test.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/support/reporting.rb" afterPath="$PROJECT_DIR$/source/test/support/reporting.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/test_helper.rb" afterPath="$PROJECT_DIR$/source/test/test_helper.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Stockd/test/test_helper_rails.rb" afterPath="$PROJECT_DIR$/source/test/test_helper_rails.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/stylesheets/_custom.scss" afterPath="$PROJECT_DIR$/source/assets/stylesheets/_custom.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/post.html" afterPath="$PROJECT_DIR$/post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/stylesheets/styles.css.map" afterPath="$PROJECT_DIR$/source/assets/stylesheets/styles.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/stylesheets/styles.css" afterPath="$PROJECT_DIR$/source/assets/stylesheets/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StockFrontend.iws" />
@@ -215,21 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/application.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="78863" max-vertical-offset="80138">
-              <caret line="4708" column="0" selection-start-line="4708" selection-start-column="0" selection-end-line="4708" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3095" max-vertical-offset="4301">
-              <caret line="211" column="18" selection-start-line="211" selection-start-column="18" selection-end-line="211" selection-end-column="18" />
+            <state vertical-scroll-proportion="-10.576923" vertical-offset="3057" max-vertical-offset="4318">
+              <caret line="196" column="4" selection-start-line="196" selection-start-column="4" selection-end-line="223" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -238,8 +44,18 @@
       <file leaf-file-name="post.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="255">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state vertical-scroll-proportion="-7.5555553" vertical-offset="0" max-vertical-offset="4233">
+              <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.4940523" vertical-offset="2547" max-vertical-offset="3808">
+              <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -255,21 +71,19 @@
       <file leaf-file-name="application.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/application.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="935">
+            <state vertical-scroll-proportion="-25.5" vertical-offset="0" max-vertical-offset="935">
               <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_custom.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_custom.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/_custom.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39333862" vertical-offset="1629" max-vertical-offset="2890">
-              <caret line="128" column="1" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
-              <folding>
-                <element signature="e#4548#4706#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="-20.26923" vertical-offset="187" max-vertical-offset="3485">
+              <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -287,7 +101,7 @@
       <file leaf-file-name="_bootstrap.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/_bootstrap.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="952">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -297,7 +111,7 @@
       <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="119">
+            <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="119">
               <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
               <folding />
             </state>
@@ -307,8 +121,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3451" max-vertical-offset="4726">
-              <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4794" max-vertical-offset="6001">
+              <caret line="347" column="0" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -324,7 +138,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1759" />
+    <option name="width" value="1911" />
     <option name="height" value="1418" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -527,7 +341,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1759" height="1418" extended-state="0" />
+    <frame x="0" y="22" width="1911" height="1418" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -535,7 +349,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16398159" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15079366" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906628" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -571,16 +385,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/application.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="204">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/_bootstrap-sprockets.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
@@ -851,6 +655,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="938">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -887,22 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/_bootstrap.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/application.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="935">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/assets/img/profil.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -910,16 +699,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3451" max-vertical-offset="4726">
-          <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="119">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4794" max-vertical-offset="6001">
+          <caret line="347" column="0" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -932,29 +713,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/_bootstrap.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3095" max-vertical-offset="4301">
-          <caret line="211" column="18" selection-start-line="211" selection-start-column="18" selection-end-line="211" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/post.html">
+    <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/application.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="255">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state vertical-scroll-proportion="-25.5" vertical-offset="0" max-vertical-offset="935">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="119">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.576923" vertical-offset="3057" max-vertical-offset="4318">
+          <caret line="196" column="4" selection-start-line="196" selection-start-column="4" selection-end-line="223" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/assets/stylesheets/_custom.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39333862" vertical-offset="1629" max-vertical-offset="2890">
-          <caret line="128" column="1" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
-          <folding>
-            <element signature="e#4548#4706#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-20.26923" vertical-offset="187" max-vertical-offset="3485">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5555553" vertical-offset="0" max-vertical-offset="4233">
+          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4940523" vertical-offset="2547" max-vertical-offset="3808">
+          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

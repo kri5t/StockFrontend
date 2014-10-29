@@ -1,9 +1,11 @@
 //Variables
-$primary-color: #f1f4f9;
-$secondary-color: #163844;
-$background-color: #163844;
-$glyph-color: #FFF;
-$link-color: #E6E2AF;
+$primary-color: #f1f4f9;// #f1f4f9;
+$secondary-color:#163844 ;//#2d3135;
+$background-color: #163844;//#163844;
+$dark-grey: #2d3135;
+$light-grey: #DDDDDD;
+$signal-hover: #E6E2AF;
+$link-color: #00B819; //#E6E2AF;
 $font: 'Lato', sans-serif;
 
 $buy-color: #199900;
@@ -28,9 +30,9 @@ $sell-color: #D40D12;
 
 //Tekstelementer
 textarea:active,
-input:active,
+// input:active,
 textarea:focus,
-input:focus,
+// input:focus,
 button:focus,
 button:active,
 a:focus,
@@ -38,6 +40,7 @@ a:active,
 {outline:0 !important;-webkit-appearance:none;}
 
 h1,h2,h3,h4 {font-weight:300;}
+h1 {font-size:2.4em;}
 
 p, td {font-size:1.2em;}
 a {color:$primary-color;}
@@ -72,13 +75,16 @@ input[type="text"], textarea {outline: none;box-shadow:none !important;font-size
 }
 
 //Buttons
-.btn {border-radius:0;}
+.btn {border-radius:0;font-weight:300;}
 .btn-primary {background-color:$primary-color;color:$secondary-color;font-size:1.3em;border:none;
   &:hover {background-color:$secondary-color;color:$link-color;border:none;}}
 
+.btn-default {border:1px solid $primary-color;background:$secondary-color;color:$primary-color;
+&:hover {@include colortransition;@include bgtransition;background:$primary-color;color:$secondary-color;}}
+
 //Main containers
 body {font-family: $font;font-weight:300;background:$primary-color;color:$secondary-color;margin-top:99px;overflow-x:hidden;}
-.container {}
+.container {padding:0 40px;}
 
 .second, .fourth, .sixth {
   color:$primary-color;
@@ -108,28 +114,31 @@ body {font-family: $font;font-weight:300;background:$primary-color;color:$second
 .second {
   .table {margin-top:3px;}
   .disclaimer {text-align:left;margin-top:45px;}
-  .brackets-effect a {color:$primary-color;font-size:1.6em;@include colortransition;
+  .brackets-effect a {color:$primary-color;@include colortransition;
     &:hover {color:$link-color;}}
-  .table tbody tr td {padding:14px 0 10px 0;border-top:1px solid $primary-color;
+  .table thead tr td {padding:14px;font-size:1.3em;background:$primary-color;color:$secondary-color;
+    .glyphicon {font-size:26px;margin-left:6px;top: 7px;}
+    .glyphicon-transfer {@include rotate;margin-left:0;}
+    a {color:$secondary-color;}}
+  .table tbody tr td {padding:14px 0 10px 0;border-top:none;border-bottom:1px solid $primary-color;
     img {border-radius:50%;width:40px;}
     &:nth-last-child(1) {padding:6px 0 6px 0;}
-    .glyphicon {font-size:28px;margin-left:12px;}}
-  .table thead tr td {padding:14px;font-size:1.3em;background:$primary-color;color:$secondary-color;
-    .glyphicon {font-size:26px;margin-left:6px;}
-  .glyphicon-transfer {@include rotate;margin-left:0;}}
+    .glyphicon {font-size:28px;margin-left:12px;}
+    a:hover {color:$signal-hover;}}
 }
 
 .third {
-  .glyphicon {font-size:80px;margin: 10px 0 20px 0;}
+  .glyphicon {font-size:80px;margin: 10px 0 20px 0;min-width: 100px;}
 }
 
 .fourth {
-  img {border-radius:50%;width:100px;margin:30px 0 10px 0;}
-  .col-sm-4 p:last-child {margin:10px 80px;padding-top:10px;border-top:1px solid $link-color;}
+  img {border-radius:50%;width:100px;margin:40px 0 22px 0;}
+  .col-sm-4 p:nth-child(3) {margin:10px 80px;padding-top:10px;border-top:1px solid $link-color;}
+  .col-sm-4 p:nth-child(4) {font-size:1em;font-style:italic;}
 }
 
 .fifth {
-  .glyphicon {font-size:35px;margin:30px 10px 20px 10px;}
+  .glyphicon {font-size:30px;margin:40px 10px 20px 10px;}
   a {color:$secondary-color;font-size:0.8em;
   &:hover {color:$secondary-color;}}
 }
@@ -144,14 +153,22 @@ body {font-family: $font;font-weight:300;background:$primary-color;color:$second
   }
 }
 
-.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {color:#fff;@include colortransition;font-size:0.9em;
+.navbar-default .navbar-brand, .navbar-default .navbar-nav li a {color:#fff;@include colortransition;font-size:0.9em;padding-right:0;
   &:hover {color:$link-color;}
   &:focus {color:$primary-color;box-shadow:none !important;}
 }
+.navbar-default .navbar-nav li a img {border-radius:50%;width:50px;}
 .navbar-default .navbar-brand {color:$link-color;}
+
+.dropdown-menu {border-radius:0;background:$primary-color;min-width:145px;top: 30px;
+li a {padding:3px 7px;font-weight:300;}}
 
 //Images
 .glyphicon {}
+.btn .caret {margin-left:3px;}
+
+//Tables
+.market-resume {font-size:0.8em;width:250px;margin:0 auto 0 auto;text-align:left;border:1px solid $light-grey;}
 
 //Modals
 .modal-dialog {margin-top:180px;width:400px;}
@@ -162,6 +179,21 @@ body {font-family: $font;font-weight:300;background:$primary-color;color:$second
 img {width:30px;margin-bottom:10px;}}
 .modal-body {padding:25px;}
 
+//Post.html specifics
+#post {
+  .navbar-default .navbar-nav li a {padding:0;}
 
+  .first {
+    .row:first-of-type {padding-top:10px;}
+    .row:last-of-type {padding-bottom:70px;}
+    .disclaimer {margin:20px 0 0 0;}
+  }
 
+  .radio {display: inline-block;padding-right: 36px;margin:4px 0;
+  label {font-weight:300;}}
+  ul li {display:block;color:$secondary-color;padding:4px;}
+}
+
+.filter-options {text-align:left;margin-top:40px;padding:7px 0;
+  p {border-bottom:1px solid $primary-color;padding-bottom:7px;}}
 
