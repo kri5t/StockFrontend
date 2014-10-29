@@ -1,4 +1,4 @@
-//Variables
+// ====== // ===== // Variables // ====== // ===== //
 $primary-color: #f1f4f9;// #f1f4f9;
 $secondary-color:#163844 ;//#2d3135;
 $background-color: #163844;//#163844;
@@ -12,14 +12,14 @@ $buy-color: #199900;
 $hold-color: #DE8A00;
 $sell-color: #D40D12;
 
-//Mixins
+// ====== // ===== //  Mixins // ====== // ===== //
 //Transitions
-// @mixin rotate {-webkit-transition-duration: 1.8s;-moz-transition-duration: 1.8s;-o-transition-duration: 1.8s;transition-duration: 1.8s;-webkit-transition-property: -webkit-transform;-moz-transition-property: -moz-transform;-o-transition-property: -o-transform;transition-property: transform;overflow:hidden;  }
-@mixin rotate {-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);}
+@mixin rotatetransition {-webkit-transition-duration: 1.2s;-moz-transition-duration: 1.2s;-o-transition-duration: 1.2s;transition-duration: 1.2s;-webkit-transition-property: -webkit-transform;-moz-transition-property: -moz-transform;-o-transition-property: -o-transform;transition-property: transform;overflow:hidden;  }
+@mixin rotate90 {-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);}
 @mixin colortransition {transition: color 2.5s ease;}
 @mixin bgtransition {transition: background-color 2s ease;}
 
-//Link effects
+// ====== // ===== // Link effects // ====== // ===== //
 @mixin bracket-transform {display: inline-block;opacity: 0;-webkit-transition: -webkit-transform 1.3s, opacity 0.2s;-moz-transition: -moz-transform 1.3s, opacity 0.2s;transition: transform 1.3s, opacity 0.2s;}
 @mixin bracket-left {content: '[';-webkit-transform: translateX(20px);-moz-transform: translateX(20px);transform: translateX(20px);}
 @mixin bracket-right {content: ']';-webkit-transform: translateX(-20px);-moz-transform: translateX(-20px);transform: translateX(-20px);}
@@ -28,7 +28,7 @@ $sell-color: #D40D12;
 @mixin fullleft {display: block;content: "";position: absolute;width: 200%;top: 0;bottom: 0;margin: 0;right: 100%;}
 @mixin fullright {display: block;content: "";position: absolute;width: 200%;top: 0;bottom: 0;margin: 0;left: 100%;}
 
-//Tekstelementer
+// ====== // ===== // Tekstelementer // ====== // ===== //
 textarea:active,
 // input:active,
 textarea:focus,
@@ -42,7 +42,7 @@ a:active,
 h1,h2,h3,h4 {font-weight:300;}
 h1 {font-size:2.4em;}
 
-p, td {font-size:1.2em;}
+p, td {font-size:1.1em;}
 a {color:$primary-color;}
 a:hover {text-decoration:none;color:$link-color;@include colortransition;}
 ul li {list-style: none;display:inline-block;}
@@ -54,7 +54,7 @@ input[type="text"], textarea {outline: none;box-shadow:none !important;font-size
 
 .disclaimer {font-style:italic;font-size:0.9em;}
 
-//Hover effects
+// ====== // ===== // Hover effects // ====== // ===== //
 .brackets-effect a::before {
   @include bracket-transform;
   @include bracket-left;
@@ -74,7 +74,7 @@ input[type="text"], textarea {outline: none;box-shadow:none !important;font-size
   @include bracket-opacity;
 }
 
-//Buttons
+// ====== // ===== // Buttons // ====== // ===== //
 .btn {border-radius:0;font-weight:300;}
 .btn-primary {background-color:$primary-color;color:$secondary-color;font-size:1.3em;border:none;
   &:hover {background-color:$secondary-color;color:$link-color;border:none;}}
@@ -82,8 +82,10 @@ input[type="text"], textarea {outline: none;box-shadow:none !important;font-size
 .btn-default {border:1px solid $primary-color;background:$secondary-color;color:$primary-color;
 &:hover {@include colortransition;@include bgtransition;background:$primary-color;color:$secondary-color;}}
 
-//Main containers
-body {font-family: $font;font-weight:300;background:$primary-color;color:$secondary-color;margin-top:99px;overflow-x:hidden;}
+.login {margin-top:14px;font-size:0.9em;}
+
+// ====== // ===== // Main containers // ====== // ===== //
+body {font-family: $font;font-weight:300;background:$primary-color;color:$secondary-color;margin-top:70px;overflow-x:hidden;}
 .container {padding:0 40px;}
 
 .second, .fourth, .sixth {
@@ -107,18 +109,18 @@ body {font-family: $font;font-weight:300;background:$primary-color;color:$second
   input {height:50px;width:60%;padding: 4px 13px;margin:10px 0 0 36px;@include bgtransition;border:1px solid $secondary-color;
   &:focus{background:$secondary-color;color:#fff;border:1px solid #fff;}}
   .stock-search {}
-  .row:first-of-type {padding-top:110px;}
+  .row:first-of-type {padding-top:122px;}
   .row:last-of-type {padding-bottom:170px;}
 }
 
 .second {
-  .table {margin-top:3px;}
+  .table {}
   .disclaimer {text-align:left;margin-top:45px;}
   .brackets-effect a {color:$primary-color;@include colortransition;
     &:hover {color:$link-color;}}
-  .table thead tr td {padding:14px;font-size:1.3em;background:$primary-color;color:$secondary-color;
-    .glyphicon {font-size:26px;margin-left:6px;top: 7px;}
-    .glyphicon-transfer {@include rotate;margin-left:0;}
+  .table thead tr td {padding: 7px 0 12px 0;font-size:1.1em;background:$primary-color;color:$secondary-color;font-weight:400;
+    .glyphicon {font-size:24px;margin-left:6px;top: 5px;}
+    .glyphicon-transfer {@include rotate90;margin-left:0;}
     a {color:$secondary-color;}}
   .table tbody tr td {padding:14px 0 10px 0;border-top:none;border-bottom:1px solid $primary-color;
     img {border-radius:50%;width:40px;}
@@ -143,14 +145,14 @@ body {font-family: $font;font-weight:300;background:$primary-color;color:$second
   &:hover {color:$secondary-color;}}
 }
 
-//Navigation elements
+// ====== // ===== // Navigation elements // ====== // ===== //
 .navbar {margin:0;}
 .navbar-default {background:$background-color;color:$primary-color;min-height:70px;border-color:#fff;
   .container{padding-top:7px;font-size:20px;}
   .navbar-header a {font-size:0.8em;}
-  .navbar-right .glyphicon {
-    font-size:30px;top:9px;left: 5px;
-  }
+  .navbar-right .glyphicon {font-size:34px;top:7px;right:22px;
+  &:hover {color:$primary-color;}}
+  .navbar-nav li a {padding:0;}
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav li a {color:#fff;@include colortransition;font-size:0.9em;padding-right:0;
@@ -163,14 +165,20 @@ body {font-family: $font;font-weight:300;background:$primary-color;color:$second
 .dropdown-menu {border-radius:0;background:$primary-color;min-width:145px;top: 30px;
 li a {padding:3px 7px;font-weight:300;}}
 
-//Images
+.nav-tabs > li > a {border-radius:0;border:none;font-size:1.2em;margin-right:0;
+&:hover {background:transparent;}}
+.tab-content > .active {}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {color:$secondary-color;background:$primary-color;border:none;}
+#tab1, #tab2, #tab3 {min-height:562px;}
+// ====== // ===== // Images // ====== // ===== //
 .glyphicon {}
 .btn .caret {margin-left:3px;}
+.profile-large {border-radius:50%;width:150px;}
 
-//Tables
+// ====== // ===== // Tables // ====== // ===== //
 .market-resume {font-size:0.8em;width:250px;margin:0 auto 0 auto;text-align:left;border:1px solid $light-grey;}
 
-//Modals
+// ====== // ===== // Modals // ====== // ===== //
 .modal-dialog {margin-top:180px;width:400px;}
 .modal-header {a {color:$secondary-color;font-weight:400;}}
 .modal-title {padding-bottom:10px;
@@ -179,21 +187,38 @@ li a {padding:3px 7px;font-weight:300;}}
 img {width:30px;margin-bottom:10px;}}
 .modal-body {padding:25px;}
 
-//Post.html specifics
+// ====== // ===== // post.html // ====== // ===== //
 #post {
-  .navbar-default .navbar-nav li a {padding:0;}
-
   .first {
-    .row:first-of-type {padding-top:10px;}
+    .row:first-of-type {padding-top:32px;}
     .row:last-of-type {padding-bottom:70px;}
     .disclaimer {margin:20px 0 0 0;}
   }
 
+  .second {
   .radio {display: inline-block;padding-right: 36px;margin:4px 0;
   label {font-weight:300;}}
-  ul li {display:block;color:$secondary-color;padding:4px;}
+  ul li {display:block;color:$secondary-color;padding:4px;}}
 }
 
 .filter-options {text-align:left;margin-top:40px;padding:7px 0;
   p {border-bottom:1px solid $primary-color;padding-bottom:7px;}}
 
+// ====== // ===== // profile.html // ====== // ===== //
+
+#profile {
+  .filter-options {margin:0;}
+  .second {
+    .table {margin-top:0;
+    thead tr td {padding: 5px 0 10px 0;}}
+    .radio {display: inline-block;padding-right: 36px;margin:4px 0;
+      label {font-weight:300;}}
+    ul li {display:block;color:$secondary-color;}
+    .col-sm-3 h3 {border-bottom:1px solid $link-color;padding-bottom:20px;margin:20px 0;}
+  }
+  #tab3 tbody tr td:nth-last-child(1) {padding:14px 0 10px 10px;text-align:left;width:65%;}
+  .first {
+    .row:first-of-type {padding-top:50px;}
+    .row:last-of-type {padding-bottom:60px;}
+  }
+}

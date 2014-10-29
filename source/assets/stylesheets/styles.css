@@ -14,7 +14,7 @@ h1 {
   font-size: 2.4em; }
 
 p, td {
-  font-size: 1.2em; }
+  font-size: 1.1em; }
 
 a {
   color: #f1f4f9; }
@@ -103,12 +103,16 @@ input[type="text"], textarea {
     background: #f1f4f9;
     color: #163844; }
 
+.login {
+  margin-top: 14px;
+  font-size: 0.9em; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   background: #f1f4f9;
   color: #163844;
-  margin-top: 99px;
+  margin-top: 70px;
   overflow-x: hidden; }
 
 .container {
@@ -164,12 +168,10 @@ body {
     color: #fff;
     border: 1px solid #fff; }
 .first .row:first-of-type {
-  padding-top: 110px; }
+  padding-top: 122px; }
 .first .row:last-of-type {
   padding-bottom: 170px; }
 
-.second .table {
-  margin-top: 3px; }
 .second .disclaimer {
   text-align: left;
   margin-top: 45px; }
@@ -179,14 +181,15 @@ body {
   .second .brackets-effect a:hover {
     color: #00B819; }
 .second .table thead tr td {
-  padding: 14px;
-  font-size: 1.3em;
+  padding: 7px 0 12px 0;
+  font-size: 1.1em;
   background: #f1f4f9;
-  color: #163844; }
+  color: #163844;
+  font-weight: 400; }
   .second .table thead tr td .glyphicon {
-    font-size: 26px;
+    font-size: 24px;
     margin-left: 6px;
-    top: 7px; }
+    top: 5px; }
   .second .table thead tr td .glyphicon-transfer {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -249,9 +252,13 @@ body {
   .navbar-default .navbar-header a {
     font-size: 0.8em; }
   .navbar-default .navbar-right .glyphicon {
-    font-size: 30px;
-    top: 9px;
-    left: 5px; }
+    font-size: 34px;
+    top: 7px;
+    right: 22px; }
+    .navbar-default .navbar-right .glyphicon:hover {
+      color: #f1f4f9; }
+  .navbar-default .navbar-nav li a {
+    padding: 0; }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav li a {
   color: #fff;
@@ -280,8 +287,28 @@ body {
     padding: 3px 7px;
     font-weight: 300; }
 
+.nav-tabs > li > a {
+  border-radius: 0;
+  border: none;
+  font-size: 1.2em;
+  margin-right: 0; }
+  .nav-tabs > li > a:hover {
+    background: transparent; }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #163844;
+  background: #f1f4f9;
+  border: none; }
+
+#tab1, #tab2, #tab3 {
+  min-height: 562px; }
+
 .btn .caret {
   margin-left: 3px; }
+
+.profile-large {
+  border-radius: 50%;
+  width: 150px; }
 
 .market-resume {
   font-size: 0.8em;
@@ -317,21 +344,19 @@ body {
 .modal-body {
   padding: 25px; }
 
-#post .navbar-default .navbar-nav li a {
-  padding: 0; }
 #post .first .row:first-of-type {
-  padding-top: 10px; }
+  padding-top: 32px; }
 #post .first .row:last-of-type {
   padding-bottom: 70px; }
 #post .first .disclaimer {
   margin: 20px 0 0 0; }
-#post .radio {
+#post .second .radio {
   display: inline-block;
   padding-right: 36px;
   margin: 4px 0; }
-  #post .radio label {
+  #post .second .radio label {
     font-weight: 300; }
-#post ul li {
+#post .second ul li {
   display: block;
   color: #163844;
   padding: 4px; }
@@ -343,5 +368,33 @@ body {
   .filter-options p {
     border-bottom: 1px solid #f1f4f9;
     padding-bottom: 7px; }
+
+#profile .filter-options {
+  margin: 0; }
+#profile .second .table {
+  margin-top: 0; }
+  #profile .second .table thead tr td {
+    padding: 5px 0 10px 0; }
+#profile .second .radio {
+  display: inline-block;
+  padding-right: 36px;
+  margin: 4px 0; }
+  #profile .second .radio label {
+    font-weight: 300; }
+#profile .second ul li {
+  display: block;
+  color: #163844; }
+#profile .second .col-sm-3 h3 {
+  border-bottom: 1px solid #00B819;
+  padding-bottom: 20px;
+  margin: 20px 0; }
+#profile #tab3 tbody tr td:nth-last-child(1) {
+  padding: 14px 0 10px 10px;
+  text-align: left;
+  width: 65%; }
+#profile .first .row:first-of-type {
+  padding-top: 50px; }
+#profile .first .row:last-of-type {
+  padding-bottom: 60px; }
 
 /*# sourceMappingURL=styles.css.map */
