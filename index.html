@@ -11,8 +11,8 @@
     <title>Stockd</title>
 
     <!-- Styles -->
-    <link href="stylesheets/application.css" rel="stylesheet">
-    <link href="stylesheets/styles.css" rel="stylesheet">
+    <link href="source/assets/stylesheets/application.css" rel="stylesheet">
+    <link href="source/assets/stylesheets/styles.css" rel="stylesheet">
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
@@ -27,8 +27,8 @@
             <a class="navbar-brand" href="#">Alpha v. 1.0.0</a>
         </div>
         <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a data-toggle="modal" data-target="#login" href="#">Log-ind <span class="glyphicon glyphicon-cog"></span></a></li>
+            <ul class="nav navbar-nav navbar-right brackets-effect">
+                <li><a data-toggle="modal" data-target="#login" href="#">Log ind</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -69,74 +69,76 @@
 
         <div class="row">
             <div class="col-sm-12">
+
+                <p class="disclaimer">*Ved tryk på henholdsvis aktien, signalet eller brugeren får du vist mere information om pågældende.</p>
                 <table class="table">
                     <thead>
                         <tr>
-                            <td>Aktie</td>
-                            <td>Signal</td>
+                            <td>Aktie <span class="glyphicon glyphicon glyphicon-signal"></span></td>
+                            <td>Signal <span class="glyphicon glyphicon-transfer"></span></td>
                             <td>Tidspunkt <span class="glyphicon glyphicon glyphicon-time"></span></td>
-                            <td>Bruger</td>
+                            <td>Bruger <span class="glyphicon glyphicon glyphicon-user"></span></td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>IBM</td>
-                            <td class="buy-signal">Køb</td>
+                            <td><a href="#">IBM</a></td>
+                            <td><a class="buy-signal" href="#">Køb</a></td>
                             <td>xx:xx:xx</td>
-                            <td><span class="glyphicon glyphicon-user"></span></td>
+                            <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                         </tr>
                         <tr>
-                            <td>Apple</td>
-                            <td class="sell-signal">Sælg</td>
+                            <td><a href="#">Apple</a></td>
+                            <td><a class="sell-signal" href="#">Sælg</a></td>
                             <td>xx:xx:xx</td>
-                            <td><span class="glyphicon glyphicon-user"></span></td>
+                            <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                         </tr>
                         <tr>
-                            <td>Mærsk</td>
-                            <td class="hold-signal">Hold</td>
+                            <td><a href="#">Mærsk</a></td>
+                            <td><a class="hold-signal" href="#">Hold</a></td>
                             <td>xx:xx:xx</td>
-                            <td><span class="glyphicon glyphicon-user"></span></td>
+                            <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                         </tr>
                         <tr>
-                            <td>IBM</td>
-                            <td class="buy-signal">Køb</td>
+                            <td><a href="#">Microsoft</a></td>
+                            <td><a class="buy-signal" href="#">Køb</a></td>
                             <td>xx:xx:xx</td>
-                            <td><span class="glyphicon glyphicon-user"></span></td>
+                            <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                         </tr>
                         <tr>
-                            <td>Apple</td>
-                            <td class="sell-signal">Sælg</td>
+                            <td><a href="#">Facebook</a></td>
+                            <td><a class="sell-signal" href="#">Sælg</a></td>
                             <td>xx:xx:xx</td>
-                            <td><span class="glyphicon glyphicon-user"></span></td>
+                            <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                         </tr>
                         <tr>
-                            <td>Mærsk</td>
-                            <td class="hold-signal">Hold</td>
+                            <td><a href="#">Tusker</a></td>
+                            <td><a class="hold-signal" href="#">Hold</a></td>
                             <td>xx:xx:xx</td>
-                            <td><span class="glyphicon glyphicon-user"></span></td>
+                            <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                         </tr>
                         <tr>
-                            <td>IBM</td>
-                            <td class="buy-signal">Køb</td>
+                            <td><a href="#">Carlsberg</a></td>
+                            <td><a class="buy-signal" href="#">Køb</a></td>
                             <td>xx:xx:xx</td>
-                            <td><span class="glyphicon glyphicon-user"></span></td>
+                            <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                         </tr>
                         <tr>
-                            <td>Apple</td>
-                            <td class="sell-signal">Sælg</td>
+                            <td><a href="#">Sony</a></td>
+                            <td><a class="sell-signal" href="#">Sælg</a></td>
                             <td>xx:xx:xx</td>
-                            <td><span class="glyphicon glyphicon-user"></span></td>
+                            <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                         </tr>
                         <tr>
-                            <td>Mærsk</td>
-                            <td class="hold-signal">Hold</td>
+                            <td><a href="#">Steelseries</a></td>
+                            <td><a class="hold-signal" href="#">Hold</a></td>
                             <td>xx:xx:xx</td>
-                            <td><span class="glyphicon glyphicon-user"></span></td>
+                            <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                         </tr>
                     </tbody>
                 </table>
 
-                    <nav class="cl-effect-1">
+                    <nav class="brackets-effect">
                         <a href="#">Vis flere</a>
                     </nav>
 
@@ -148,19 +150,19 @@
     <div class="third area">
         <!--<div class="row">
             <div class="col-sm-12 ">
-                <h1>Stockd er...</h1>
+                <h1>source er...</h1>
             </div>
         </div>-->
 
         <div class="row">
             <div class="col-sm-6">
                 <h1>Vision</h1>
-                <span class="glyphicon glyphicon-leaf"></span>
+                <span class="glyphicon glyphicon-eye-open"></span>
                 <p>Helvetica bespoke scenester narwhal raw denim drinking vinegar. PBR&B brunch organic, jean shorts Truffaut Etsy keffiyeh swag meh drinking vinegar Wes Anderson bicycle rights crucifix. Jean shorts fingerstache chillwave, 3 wolf moon locavore Pitchfork tousled 90's deep v banjo typewriter retro.</p>
             </div>
             <div class="col-sm-6">
                 <h1>Mission</h1>
-                <span class="glyphicon glyphicon-eye-open"></span>
+                <span class="glyphicon glyphicon-road"></span>
                 <p>Echo Park salvia fanny pack lomo sriracha 3 wolf moon. Umami iPhone squid, Pinterest PBR tilde twee cray mustache health goth slow-carb Godard lomo. 3 wolf moon iPhone art party Marfa, keytar occupy authentic Pitchfork aesthetic small batch tattooed McSweeney's.</p>
             </div>
         </div>
@@ -169,51 +171,52 @@
 
     <!-- Fourth area -->
     <div class="fourth area">
-        <!-- <div class="row">
+         <div class="row">
             <div class="col-sm-12 ">
-
-                <h1>Vi er...</h1>
-
+                <h1>Sådan her ser vi ud</h1>
             </div>
-        </div>-->
+        </div>
 
         <div class="row">
             <div class="col-sm-4">
-                <span class="glyphicon glyphicon-user"></span>
+                <img src="source/assets/img/profil.jpg" />
                 <p>Kristian Barrett</p>
-                <h3>Lead Developer</h3>
+                <p>Lead Developer</p>
             </div>
             <div class="col-sm-4">
-                <span class="glyphicon glyphicon-user"></span>
+                <img src="source/assets/img/profil.jpg" />
                 <p>Brian Bak Laursen</p>
-                <h3>Founder</h3>
+                <p>Founder</p>
             </div>
             <div class="col-sm-4">
-                <span class="glyphicon glyphicon-user"></span>
+                <img src="source/assets/img/profil.jpg" />
                 <p>Allan Søgaard Larsen</p>
-                <h3>Lead Designer</h3>
+                <p>Lead Designer</p>
+
             </div>
         </div>
     </div>
 
     <!-- Fifth area -->
     <div class="fifth area">
-
         <div class="row">
+            <div class="col-sm-12 ">
+                <h1>Vil du vide mere?</h1>
+            </div>
+        </div>
+
+        <div class="row brackets-effect">
             <div class="col-sm-2 col-sm-offset-3">
-                <h3>adresse</h3>
                 <span class="glyphicon glyphicon-map-marker"></span>
-                <p>Nørreport 20, Århus C</p>
+                <p><a href="https://www.google.dk/maps/place/N%C3%B8rreport+20,+Arkitektskolen+Aarhus,+8000+Aarhus+C/@56.1612494,10.2124633,17z/data=!3m1!4b1!4m2!3m1!1s0x464c3f9633aec421:0xf4e33a084526cb0e">Nørreport 20, Århus C</a></p>
             </div>
             <div class="col-sm-2">
-                <h3>telefon</h3>
                 <span class="glyphicon glyphicon-phone"></span>
-                <p>+0045 60 16 10 86</p>
+                <p><a href="#">+0045 60 16 10 86</a></p>
             </div>
             <div class="col-sm-2">
-                <h3>e-mail</h3>
                 <span class="glyphicon glyphicon-send"></span>
-                <p>domæne@domæne.dk</p>
+                <p><a href="mailto:alns@alns.eu">domæne@domæne.dk</a></p>
             </div>
         </div>
 
@@ -225,13 +228,11 @@
 <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header brackets-effect">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h3 class="modal-title" id="myModalLabel">Logind med Facebook</h3>
-                <div class="modal-body">
-                    <a href="#"><img src="img/fb_icon.svg" /></a>
-                </div>
-                <p>*Vi slår aldrig noget op på din væg og bruger kun denne type logind til at hente dit nuværende profilbillede, samt dit navn.</p>
+               <img src="source/assets/img/fb_icon.svg" />
+                <p class="modal-title" id="myModalLabel"><a href="postlog.html">Log ind med Facebook</a></p>
+                <p class="disclaimer">*Stockd respekterer dit privatliv og vil aldrig slå noget op på din væg.</p>
             </div>
         </div>
     </div>
@@ -239,8 +240,8 @@
 
 <!-- JavaScript ================================================== -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="javascripts/bootstrap.js"></script>
-<script src="javascripts/custom.js"></script>
+<script src="source/assets/javascripts/bootstrap.js"></script>
+<script src="source/assets/javascripts/custom.js"></script>
 
 </body>
 </html>
