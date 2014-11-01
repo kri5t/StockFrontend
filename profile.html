@@ -12,7 +12,8 @@
 
     <!-- Styles -->
     <link href="source/assets/stylesheets/application.css" rel="stylesheet">
-    <link href="source/assets/stylesheets/styles.css" rel="stylesheet">
+    <link href="source/assets/stylesheets/custom.css" rel="stylesheet">
+    <link href="source/assets/stylesheets/hacks.css" rel="stylesheet">
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
@@ -24,11 +25,11 @@
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">Alpha v. 1.0.0</a>
+            <a class="navbar-brand" href="post.html">Alpha v. 1.0.0</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="login">Profiloversigt</li>
+                <li class="login"><a href="post.html"><span class="glyphicon glyphicon-arrow-left"></span> Tilbage</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -53,7 +54,6 @@
                 <ul class="nav nav-tabs">
                     <li class="active"><a data-toggle="tab" href="#tab1">Dine aktier</a></li>
                     <li><a data-toggle="tab" href="#tab2">Venners aktier</a></li>
-                    <li class="pull-right"><a data-toggle="tab" href="#tab3">Dine signaler</a></li>
                 </ul>
 
                 <!-- First tabbed content -->
@@ -69,65 +69,65 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td><a href="#">IBM</a></td>
-                                <td><a class="buy-signal" href="#">Køb</a></td>
-                                <td>xx:xx:xx</td>
+                            <tr class="buy-signal" onclick="window.document.location='#';">
+                                <td>IBM</td>
+                                <td>Køb</td>
+                                <td>21:20 - 1. nov</td>
+                                <td><a href="profile.html"><img src="source/assets/img/profil.jpg" /></a></td>
+                            </tr>
+                            <tr class="sell-signal" onclick="window.document.location='#';">
+                                <td>Apple</td>
+                                <td>Sælg</td>
+                                <td>21:00 - 1. nov</td>
                                 <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                             </tr>
-                            <tr>
-                                <td><a href="#">Apple</a></td>
-                                <td><a class="sell-signal" href="#">Sælg</a></td>
-                                <td>xx:xx:xx</td>
+                            <tr class="hold-signal" onclick="window.document.location='#';">
+                                <td>Mærsk</td>
+                                <td>Hold</td>
+                                <td>20:42 - 1. nov</td>
                                 <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                             </tr>
-                            <tr>
-                                <td><a href="#">Mærsk</a></td>
-                                <td><a class="hold-signal" href="#">Hold</a></td>
-                                <td>xx:xx:xx</td>
+                            <tr class="buy-signal" onclick="window.document.location='#';">
+                                <td>Microsoft</td>
+                                <td>Køb</td>
+                                <td>20:30 - 31. okt</td>
                                 <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                             </tr>
-                            <tr>
-                                <td><a href="#">Microsoft</a></td>
-                                <td><a class="buy-signal" href="#">Køb</a></td>
-                                <td>xx:xx:xx</td>
+                            <tr class="buy-signal" onclick="window.document.location='#';">
+                                <td>Facebook</td>
+                                <td>Køb</td>
+                                <td>18:23 - 31. okt</td>
                                 <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                             </tr>
-                            <tr>
-                                <td><a href="#">Facebook</a></td>
-                                <td><a class="sell-signal" href="#">Sælg</a></td>
-                                <td>xx:xx:xx</td>
+                            <tr class="sell-signal" onclick="window.document.location='#';">
+                                <td>Tusker</td>
+                                <td>Sælg</td>
+                                <td>18:12 - 31. okt</td>
                                 <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                             </tr>
-                            <tr>
-                                <td><a href="#">Tusker</a></td>
-                                <td><a class="hold-signal" href="#">Hold</a></td>
-                                <td>xx:xx:xx</td>
+                            <tr class="hold-signal" onclick="window.document.location='#';">
+                                <td>Carlsberg</td>
+                                <td>Hold</td>
+                                <td>14:19 - 30. okt</td>
                                 <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                             </tr>
-                            <tr>
-                                <td><a href="#">Carlsberg</a></td>
-                                <td><a class="buy-signal" href="#">Køb</a></td>
-                                <td>xx:xx:xx</td>
+                            <tr class="hold-signal" onclick="window.document.location='#';">
+                                <td>Sony</td>
+                                <td>Hold</td>
+                                <td>13:59 - 30. okt</td>
                                 <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                             </tr>
-                            <tr>
-                                <td><a href="#">Sony</a></td>
-                                <td><a class="sell-signal" href="#">Sælg</a></td>
-                                <td>xx:xx:xx</td>
-                                <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Steelseries</a></td>
-                                <td><a class="hold-signal" href="#">Hold</a></td>
-                                <td>xx:xx:xx</td>
+                            <tr class="sell-signal" onclick="window.document.location='#';">
+                                <td>Steelseries</td>
+                                <td>Sælg</td>
+                                <td>12:34 - 30. okt</td>
                                 <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                             </tr>
                             </tbody>
                         </table>
 
-                        <div class="brackets-effect">
-                            <p><a href="#">Vis flere</a></p>
+                        <div class="show-more">
+                            <button class="btn btn-default dropdown-toggle" type="button">Vis flere <span class="glyphicon glyphicon-repeat"></span></button>
                         </div>
 
                     </div>
@@ -144,115 +144,65 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td><a href="#">IBM</a></td>
-                                <td><a class="buy-signal" href="#">Køb</a></td>
-                                <td>xx:xx:xx</td>
+                            <tr class="buy-signal" onclick="window.document.location='#';">
+                                <td>IBM</td>
+                                <td>Køb</td>
+                                <td>21:20 - 1. nov</td>
+                                <td><a href="profile.html"><img src="source/assets/img/profil.jpg" /></a></td>
+                            </tr>
+                            <tr class="sell-signal" onclick="window.document.location='#';">
+                                <td>Apple</td>
+                                <td>Sælg</td>
+                                <td>21:00 - 1. nov</td>
                                 <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                             </tr>
-                            <tr>
-                                <td><a href="#">Apple</a></td>
-                                <td><a class="sell-signal" href="#">Sælg</a></td>
-                                <td>xx:xx:xx</td>
+                            <tr class="hold-signal" onclick="window.document.location='#';">
+                                <td>Mærsk</td>
+                                <td>Hold</td>
+                                <td>20:42 - 1. nov</td>
                                 <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                             </tr>
-                            <tr>
-                                <td><a href="#">Mærsk</a></td>
-                                <td><a class="hold-signal" href="#">Hold</a></td>
-                                <td>xx:xx:xx</td>
+                            <tr class="buy-signal" onclick="window.document.location='#';">
+                                <td>Microsoft</td>
+                                <td>Køb</td>
+                                <td>20:30 - 31. okt</td>
                                 <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                             </tr>
-                            <tr>
-                                <td><a href="#">Microsoft</a></td>
-                                <td><a class="buy-signal" href="#">Køb</a></td>
-                                <td>xx:xx:xx</td>
+                            <tr class="buy-signal" onclick="window.document.location='#';">
+                                <td>Facebook</td>
+                                <td>Køb</td>
+                                <td>18:23 - 31. okt</td>
                                 <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                             </tr>
-                            <tr>
-                                <td><a href="#">Facebook</a></td>
-                                <td><a class="sell-signal" href="#">Sælg</a></td>
-                                <td>xx:xx:xx</td>
+                            <tr class="sell-signal" onclick="window.document.location='#';">
+                                <td>Tusker</td>
+                                <td>Sælg</td>
+                                <td>18:12 - 31. okt</td>
                                 <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                             </tr>
-                            <tr>
-                                <td><a href="#">Tusker</a></td>
-                                <td><a class="hold-signal" href="#">Hold</a></td>
-                                <td>xx:xx:xx</td>
+                            <tr class="hold-signal" onclick="window.document.location='#';">
+                                <td>Carlsberg</td>
+                                <td>Hold</td>
+                                <td>14:19 - 30. okt</td>
                                 <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                             </tr>
-                            <tr>
-                                <td><a href="#">Carlsberg</a></td>
-                                <td><a class="buy-signal" href="#">Køb</a></td>
-                                <td>xx:xx:xx</td>
+                            <tr class="hold-signal" onclick="window.document.location='#';">
+                                <td>Sony</td>
+                                <td>Hold</td>
+                                <td>13:59 - 30. okt</td>
                                 <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                             </tr>
-                            <tr>
-                                <td><a href="#">Sony</a></td>
-                                <td><a class="sell-signal" href="#">Sælg</a></td>
-                                <td>xx:xx:xx</td>
-                                <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">IBM</a></td>
-                                <td><a class="buy-signal" href="#">Køb</a></td>
-                                <td>xx:xx:xx</td>
+                            <tr class="sell-signal" onclick="window.document.location='#';">
+                                <td>Steelseries</td>
+                                <td>Sælg</td>
+                                <td>12:34 - 30. okt</td>
                                 <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                             </tr>
                             </tbody>
                         </table>
 
-                        <div class="brackets-effect">
-                            <p><a href="#">Vis flere</a></p>
-                        </div>
-
-                    </div>
-
-                    <!-- Third tabbed content -->
-                    <div id="tab3" class="tab-pane fade">
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <td><a href="#">Aktie <span class="glyphicon glyphicon glyphicon-signal"></span></a></td>
-                                <td><a href="#">Signal <span class="glyphicon glyphicon-transfer"></span></a></td>
-                                <td><a href="#">Beskrivelse <span class="glyphicon glyphicon-pencil"></span></a></td>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td><a href="#">IBM</a></td>
-                                <td><a class="buy-signal" href="#">Køb</a></td>
-                                <td><a href="#">Lidt lorem ipsum halløj [...]</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Apple</a></td>
-                                <td><a class="sell-signal" href="#">Sælg</a></td>
-                                <td><a href="#">Lidt lorem ipsum halløj [...]</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Mærsk</a></td>
-                                <td><a class="hold-signal" href="#">Hold</a></td>
-                                <td><a href="#">Lidt lorem ipsum halløj [...]</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Microsoft</a></td>
-                                <td><a class="buy-signal" href="#">Køb</a></td>
-                                <td><a href="#">Lidt lorem ipsum halløj Lidt lorem ipsum halløj [...]</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Facebook</a></td>
-                                <td><a class="sell-signal" href="#">Sælg</a></td>
-                                <td><a href="#">Lidt lorem ipsum halløj [...]</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Tusker</a></td>
-                                <td><a class="hold-signal" href="#">Hold</a></td>
-                                <td><a href="#">Lidt lorem ipsum halløj Lidt lorem ipsum halløj Lidt lorem ipsum halløj [...]</a></td>
-                            </tr>
-                            </tbody>
-                        </table>
-
-                        <div class="brackets-effect">
-                            <p><a data-toggle="modal" data-target="#new-signal" href="#">Skriv ny signal</a></p>
+                        <div class="show-more">
+                            <button class="btn btn-default dropdown-toggle" type="button">Vis flere <span class="glyphicon glyphicon-repeat"></span></button>
                         </div>
 
                     </div>
@@ -261,6 +211,62 @@
 
             </div>
         </div>
+
+        <hr>
+
+        <div class="row own-signals">
+
+            <h1>Dine signaler</h1>
+
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <td><a href="#">Aktie <span class="glyphicon glyphicon glyphicon-signal"></span></a></td>
+                    <td><a href="#">Signal <span class="glyphicon glyphicon-transfer"></span></a></td>
+                    <td><a href="#">Begrundelse <span class="glyphicon glyphicon-info-sign"></span></a></td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="buy-signal" onclick="window.document.location='#';">
+                    <td>IBM</td>
+                    <td>Køb</td>
+                    <td>Lidt lorem ipsum halløj [...]</td>
+                </tr>
+                <tr class="sell-signal" onclick="window.document.location='#';">
+                    <td>Apple</td>
+                    <td>Sælg</td>
+                    <td>Lidt lorem ipsum halløj [...]</td>
+                </tr>
+                <tr class="hold-signal" onclick="window.document.location='#';">
+                    <td>Mærsk</td>
+                    <td>Hold</td>
+                    <td>Lidt lorem ipsum halløj [...]</td>
+                </tr>
+                <tr class="buy-signal" onclick="window.document.location='#';">
+                    <td>Microsoft</td>
+                    <td>Køb</td>
+                    <td>Lidt lorem ipsum halløj Lidt lorem ipsum halløj [...]</td>
+                </tr>
+                <tr class="sell-signal" onclick="window.document.location='#';">
+                    <td>Facebook</td>
+                    <td>Sælg</td>
+                    <td>Lidt lorem ipsum halløj [...]</td>
+                </tr>
+                <tr class="hold-signal" onclick="window.document.location='#';">
+                    <td>Tusker</td>
+                    <td>Hold</td>
+                    <td>Lidt lorem ipsum halløj Lidt lorem ipsum halløj Lidt lorem ipsum halløj [...]</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div class="show-more">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="modal" data-target="#new-signal">Opret signal <span class="glyphicon glyphicon-pencil"></span></button>
+            </div>
+
+        </div>
+
     </div>
 
     <!-- First area -->
@@ -312,11 +318,38 @@
 </div>
 
 <!-- Login Modal -->
-<div class="modal fade" id="new-signal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="new-signal" tabindex="-1" role="dialog" aria-labelledby="new-signal" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-               <h1>some form goes here...</h1>
+               <h3>Opret ny signal</h3>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label>Aktie</label>
+                        <input type="text" class="form-control" placeholder="Aktie">
+                        <label>Signal</label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="koeb" value="option3">
+                                Køb
+                            </label>
+                            <label>
+                                <input type="radio" name="optionsRadios" id="saelg" value="option3">
+                                Sælg
+                            </label>
+                            <label>
+                                <input type="radio" name="optionsRadios" id="hold" value="option3">
+                                Hold
+                            </label>
+                        </div>
+                        <label>Beskrivelse</label>
+                        <textarea placeholder="Reference"></textarea>
+                        <label>Reference</label>
+                        <input type="text" class="form-control" placeholder="Reference">
+                    </div>
+                </form>
             </div>
         </div>
     </div>

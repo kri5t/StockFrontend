@@ -37,7 +37,7 @@ input[type="text"], textarea {
   color: #199900; }
 
 .hold-signal {
-  color: #DE8A00; }
+  color: #f1f4f9; }
 
 .sell-signal {
   color: #D40D12; }
@@ -45,6 +45,13 @@ input[type="text"], textarea {
 .disclaimer {
   font-style: italic;
   font-size: 0.9em; }
+
+hr {
+  color: #f1f4f9;
+  margin-top: 50px; }
+
+.form-control {
+  border-radius: 0; }
 
 .brackets-effect a::before {
   display: inline-block;
@@ -99,13 +106,16 @@ input[type="text"], textarea {
   color: #f1f4f9; }
   .btn-default:hover {
     transition: color 2.5s ease;
-    transition: background-color 2s ease;
+    transition: background-color 1s ease;
     background: #f1f4f9;
     color: #163844; }
 
 .login {
   margin-top: 14px;
   font-size: 0.9em; }
+
+.show-more .btn {
+  font-size: 1.3em; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -161,7 +171,7 @@ body {
   width: 60%;
   padding: 4px 13px;
   margin: 10px 0 0 36px;
-  transition: background-color 2s ease;
+  transition: background-color 1s ease;
   border: 1px solid #163844; }
   .first input:focus {
     background: #163844;
@@ -172,6 +182,8 @@ body {
 .first .row:last-of-type {
   padding-bottom: 170px; }
 
+.second h1 {
+  margin-bottom: 30px; }
 .second .disclaimer {
   text-align: left;
   margin-top: 45px; }
@@ -197,20 +209,25 @@ body {
     margin-left: 0; }
   .second .table thead tr td a {
     color: #163844; }
-.second .table tbody tr td {
-  padding: 14px 0 10px 0;
-  border-top: none;
-  border-bottom: 1px solid #f1f4f9; }
-  .second .table tbody tr td img {
-    border-radius: 50%;
-    width: 40px; }
-  .second .table tbody tr td:nth-last-child(1) {
-    padding: 6px 0 6px 0; }
-  .second .table tbody tr td .glyphicon {
-    font-size: 28px;
-    margin-left: 12px; }
-  .second .table tbody tr td a:hover {
-    color: #E6E2AF; }
+.second .table tbody tr {
+  font-weight: 400; }
+  .second .table tbody tr td {
+    padding: 14px 0 10px 0;
+    border-top: none;
+    border-bottom: 1px solid rgba(241, 244, 249, 0.6); }
+    .second .table tbody tr td img {
+      border-radius: 50%;
+      width: 40px; }
+    .second .table tbody tr td:nth-last-child(1) {
+      padding: 6px 0 6px 0; }
+    .second .table tbody tr td .glyphicon {
+      font-size: 28px;
+      margin-left: 12px; }
+.second .table tbody tr:hover {
+  background: rgba(241, 244, 249, 0.6);
+  cursor: pointer;
+  transition: background-color 1s ease;
+  color: #163844; }
 
 .third .glyphicon {
   font-size: 80px;
@@ -344,6 +361,9 @@ body {
 .modal-body {
   padding: 25px; }
 
+#new-signal .navbar-form .form-control {
+  display: block; }
+
 #post .first .row:first-of-type {
   padding-top: 32px; }
 #post .first .row:last-of-type {
@@ -363,12 +383,25 @@ body {
 
 .filter-options {
   text-align: left;
-  margin-top: 40px;
+  margin-top: 0;
   padding: 7px 0; }
   .filter-options p {
     border-bottom: 1px solid #f1f4f9;
     padding-bottom: 7px; }
 
+#profile .navbar-default .navbar-right .glyphicon {
+  right: 0;
+  font-size: 1.3em;
+  margin-right: 3px;
+  top: 5px; }
+#profile .navbar-default .navbar-right a {
+  margin-right: 14px; }
+#profile .first .disclaimer {
+  margin: 20px 0 0 0; }
+#profile .first .row:first-of-type {
+  padding-top: 50px; }
+#profile .first .row:last-of-type {
+  padding-bottom: 60px; }
 #profile .filter-options {
   margin: 0; }
 #profile .second .table {
@@ -388,13 +421,28 @@ body {
   border-bottom: 1px solid #00B819;
   padding-bottom: 20px;
   margin: 20px 0; }
-#profile #tab3 tbody tr td:nth-last-child(1) {
-  padding: 14px 0 10px 10px;
-  text-align: left;
-  width: 65%; }
-#profile .first .row:first-of-type {
-  padding-top: 50px; }
-#profile .first .row:last-of-type {
-  padding-bottom: 60px; }
+#profile .own-signals {
+  margin-top: 20px; }
+  #profile .own-signals tbody tr td:nth-last-child(1) {
+    padding: 14px 0 10px 10px;
+    text-align: left;
+    width: 65%; }
 
-/*# sourceMappingURL=styles.css.map */
+#new-signal .radio {
+  margin: -5px 0 0 21px; }
+#new-signal .radio label, #new-signal .checkbox label {
+  display: block;
+  text-align: left;
+  padding: 4px 0; }
+#new-signal textarea {
+  width: 100%;
+  min-height: 70px; }
+#new-signal .modal-dialog {
+  min-width: 60%; }
+#new-signal .modal-body {
+  text-align: left; }
+  #new-signal .modal-body label {
+    padding-left: 2px;
+    margin-top: 10px; }
+
+/*# sourceMappingURL=custom.css.map */
