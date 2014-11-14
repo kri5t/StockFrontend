@@ -29,7 +29,7 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="login"><a href="post.html"><span class="glyphicon glyphicon-arrow-left"></span> Tilbage</a></li>
+                <li class="login"><a data-toggle="modal" data-target="#preferences"><span class="glyphicon glyphicon-cog"></span> Indstillinger</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -212,8 +212,6 @@
             </div>
         </div>
 
-        <hr>
-
         <div class="row own-signals">
 
             <h1>Dine signaler</h1>
@@ -322,34 +320,60 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-               <h3>Opret ny signal</h3>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
                 <form>
                     <div class="form-group">
-                        <label>Aktie</label>
-                        <input type="text" class="form-control" placeholder="Aktie">
-                        <label>Signal</label>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="koeb" value="option3">
-                                Køb
-                            </label>
-                            <label>
-                                <input type="radio" name="optionsRadios" id="saelg" value="option3">
-                                Sælg
-                            </label>
-                            <label>
-                                <input type="radio" name="optionsRadios" id="hold" value="option3">
-                                Hold
-                            </label>
+                        <div class="rate-area">
+                            <label class="hidden">Aktie</label>
+                            <input type="text" class="form-control" placeholder="Aktie">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="koeb" value="option3">
+                                    Køb
+                                </label>
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="saelg" value="option3">
+                                    Sælg
+                                </label>
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="hold" value="option3">
+                                    Hold
+                                </label>
+                            </div>
                         </div>
-                        <label>Beskrivelse</label>
-                        <textarea placeholder="Reference"></textarea>
-                        <label>Reference</label>
-                        <input type="text" class="form-control" placeholder="Reference">
+                        <div class="rate-area">
+                            <label class="hidden">Reference (http://)</label>
+                            <input type="text" class="form-control" placeholder="Reference">
+                        </div>
+                        <div class="rate-area">
+                            <label class="hidden">Beskrivelse</label>
+                            <textarea placeholder="Beskrivelse af din vurdering..."></textarea>
+                        </div>
                     </div>
                 </form>
+
+                <div class="show-more text-center">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-dismiss="modal">Opret signal <span class="glyphicon glyphicon-pencil"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Preferences Modal -->
+<div class="modal fade" id="preferences" tabindex="-1" role="dialog" aria-labelledby="new-signal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <h2>Coming soon'ish ;-)</h2>
+                <!-- <div class="show-more text-center">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-dismiss="modal">Gem </button>
+                </div> -->
             </div>
         </div>
     </div>
