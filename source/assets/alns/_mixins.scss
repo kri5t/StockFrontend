@@ -10,3 +10,6 @@
 //Full width colours
 @mixin fullleft {display: block;content: "";position: absolute;width: 200%;top: 0;bottom: 0;margin: 0;right: 100%;}
 @mixin fullright {display: block;content: "";position: absolute;width: 200%;top: 0;bottom: 0;margin: 0;left: 100%;}
+
+//Elements
+@mixin tableheads {margin: 7px 0 5px 0;display: block;font-weight: 300;font-size: 1.15em;}

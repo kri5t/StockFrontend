@@ -18,11 +18,12 @@ a:hover {text-decoration:none;color:$third;@include colortransition;}
 ul li {list-style: none;display:inline-block;}
 input[type="text"], textarea {outline: none;box-shadow:none !important;font-size:1.3em;  }
 
-.buy-signal {color: $buy;}
-.hold-signal {color:$primary;}
-.sell-signal {color: $sell;}
-
+.buy {color: $buy;}
+.hold {color:$primary;}
+.sell {color: $sell;}
 .disclaimer {font-style:italic;font-size:0.9em;}
+.overall-signal {font-size:0.7em;font-weight:300;padding: 9px;background: $buy;color:$third;border-bottom:1px solid $buy;}
+.signal-text {margin-top:-14px;}
 
 // ====== // ===== // Forms n' stuff // ====== // ===== //
 hr {color:$primary;border-top:1px solid $primary;margin-top:50px;}

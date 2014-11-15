@@ -24,7 +24,7 @@
 
 // ====== // ===== // Tabable content // ====== // ===== //
 .nav-tabs {border-bottom:1px solid $lightGrey;
-  > li > a {border-radius:0;font-size:1.2em;margin-right:10px;background:$lightGrey;
+  > li > a {border-radius:0;font-size:1.3em;margin-right:10px;background:$lightGrey;font-weight:500;
     &:hover {color:$fourth;}}}
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {color:$secondary;background:$primary;border:1px solid $primary;}

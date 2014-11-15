@@ -42,6 +42,7 @@
         <div class="row">
             <div class="col-sm-12 ">
                 <h1>iShares Nasdaq (IBB)</h1>
+                <h3 class="signal-text">Signalstyrke: <span class="overall-signal">Køb</span></h3>
             </div>
         </div>
 
@@ -50,7 +51,7 @@
             <div class="col-sm-12 profile-tabs stock-tabs">
 
                 <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#tab1">Aktie</a></li>
+                    <li class="active"><a data-toggle="tab" href="#tab1">Udvikling</a></li>
                     <li><a data-toggle="tab" href="#tab2">Nyheder</a></li>
                 </ul>
 
@@ -71,39 +72,84 @@
                                 </tr>
                                 <tr>
                                     <td>Ændring i dag</td>
-                                    <td class="buy-signal">+1.4%</td>
+                                    <td class="buy">+1.4%</td>
                                 </tr>
                                 <tr>
                                     <td>Dagens højpunkt</td>
                                     <td>294.11</td>
                                 </tr>
                                 <tr>
-                                    <td>Dagens Lavpunkt</td>
+                                    <td>Dagens lavpunkt</td>
                                     <td>290.11</td>
                                 </tr>
                                 <tr>
-                                    <td>Year high</td>
-                                    <td class="buy-signal">302.98</td>
+                                    <td>Årlig maksimum</td>
+                                    <td class="buy">302.98</td>
                                 </tr>
                                 <tr>
-                                    <td>Year low</td>
-                                    <td class="sell-signal">207.15</td>
+                                    <td>Årlig minimum</td>
+                                    <td class="sell">207.15</td>
                                 </tr>
                                 </tbody>
                             </table>
 
-                            <div class="table stock-graph text-left">
+                        <div class="stock-graph">
 
-                            </div>
+                            <h1>Graf</h1>
+                            <h2>Graf</h2>
+                            <h3>Graf</h3>
+
+                            <h1>Giraf!?</h1>
+
+                        </div>
 
                     </div>
 
                     <!-- Second tabbed content -->
                     <div id="tab2" class="tab-pane fade">
 
-                        <div class="show-more">
-                            <button class="btn btn-default dropdown-toggle" type="button">Vis flere <span class="glyphicon glyphicon-repeat"></span></button>
-                        </div>
+                            <table class="table stock-news">
+                                <thead>
+                                <tr>
+                                    <td><a href="#">Dato <span class="glyphicon glyphicon glyphicon-signal"></span></a></td>
+                                    <td><a href="#">Kilde <span class="glyphicon glyphicon-info-sign"></span></a></td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr onclick="window.document.location='#';">
+                                    <td>21.11.14</td>
+                                    <td>Lidt lorem ipsum halløj [...]</td>
+                                </tr>
+                                <tr onclick="window.document.location='#';">
+                                    <td>19.11.14</td>
+                                    <td>Lidt lorem ipsum halløj [...]</td>
+                                </tr>
+                                <tr onclick="window.document.location='#';">
+                                    <td>16.11.14</td>
+                                    <td>Lidt lorem ipsum halløj [...]</td>
+                                </tr>
+                                <tr onclick="window.document.location='#';">
+                                    <td>12.11.14</td>
+                                    <td>Lidt lorem ipsum halløj Lidt lorem ipsum halløj [...]</td>
+                                </tr>
+                                <tr onclick="window.document.location='#';">
+                                    <td>11.11.14</td>
+                                    <td>Lidt lorem ipsum halløj [...]</td>
+                                </tr>
+                                <tr onclick="window.document.location='#';">
+                                    <td>01.11.14</td>
+                                    <td>Lidt lorem ipsum halløj Lidt lorem ipsum halløj Lidt lorem ipsum halløj [...]</td>
+                                </tr>
+                                <tr onclick="window.document.location='#';">
+                                    <td>15.10.14</td>
+                                    <td>Lidt lorem ipsum halløj Lidt lorem ipsum halløj Lidt lorem ipsum halløj [...]</td>
+                                </tr>
+                                <tr onclick="window.document.location='#';">
+                                    <td>14.10.14</td>
+                                    <td>Lidt lorem ipsum halløj Lidt lorem ipsum halløj Lidt lorem ipsum halløj [...]</td>
+                                </tr>
+                                </tbody>
+                            </table>
 
                     </div>
 
@@ -114,9 +160,11 @@
         <div class="row">
             <div class="col-sm-12">
 
-                <h1>Samlet signalstyrke: <span class="buy-signal">Køb</span></h1>
+                <div class="show-more">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="modal" data-target="#new-signal">Opret signal <span class="glyphicon glyphicon-pencil"></span></button>
+                </div>
 
-                <table class="table">
+                <table class="table stock-signals">
                     <thead>
                     <tr>
                         <td><a href="#">Signal <span class="glyphicon glyphicon-transfer"></span></a></td>
@@ -125,36 +173,33 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="buy-signal" onclick="window.document.location='#';">
+                    <tr class="buy" onclick="window.document.location='#';">
                         <td>Køb</td>
                         <td>21:20 - 12. nov</td>
                         <td><a href="profile.html"><img src="source/assets/img/profil.jpg" /></a></td>
                     </tr>
-                    <tr class="buy-signal" onclick="window.document.location='#';">
-                        <td>Sælg</td>
+                    <tr class="buy" onclick="window.document.location='#';">
+                        <td>Køb</td>
                         <td>21:00 - 11. nov</td>
                         <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                     </tr>
-                    <tr class="hold-signal" onclick="window.document.location='#';">
+                    <tr class="hold" onclick="window.document.location='#';">
                         <td>Hold</td>
                         <td>20:42 - 10. nov</td>
                         <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                     </tr>
-                    <tr class="buy-signal" onclick="window.document.location='#';">
-                        <td>Køb</td>
+                    <tr class="sell" onclick="window.document.location='#';">
+                        <td>Sælg</td>
                         <td>20:30 - 31. okt</td>
                         <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
                     </tr>
                     </tbody>
                 </table>
-
                 <div class="show-more">
                     <button class="btn btn-default dropdown-toggle" type="button">Vis flere <span class="glyphicon glyphicon-repeat"></span></button>
                 </div>
-
             </div>
         </div>
-
 
     </div>
 
@@ -183,17 +228,17 @@
                 <p class="disclaimer">*Markedsresume</p>
                 <table class="table market-resume">
                     <tbody>
-                    <tr class="buy-signal">
+                    <tr class="buy">
                         <td>OMXC PI</td>
                         <td>602,20</td>
                         <td>1%</td>
                     </tr>
-                    <tr class="buy-signal">
+                    <tr class="buy">
                         <td>OMXC Mid Cap</td>
                         <td>315,10</td>
                         <td>0.9%</td>
                     </tr>
-                    <tr class="sell-signal">
+                    <tr class="sell">
                         <td>OMXC Mid Cap</td>
                         <td>599,15</td>
                         <td>-1.5%</td>
@@ -202,7 +247,53 @@
                 </table>
             </div>
         </div>
+    </div>
 
+    <!-- Create signal Modal -->
+    <div class="modal fade" id="new-signal" tabindex="-1" role="dialog" aria-labelledby="new-signal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <div class="rate-area">
+                                <label class="hidden">Aktie</label>
+                                <input type="text" class="form-control" placeholder="Aktie">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="koeb" value="option3">
+                                        Køb
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="saelg" value="option3">
+                                        Sælg
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="hold" value="option3">
+                                        Hold
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="rate-area">
+                                <label class="hidden">Reference (http://)</label>
+                                <input type="text" class="form-control" placeholder="Reference">
+                            </div>
+                            <div class="rate-area">
+                                <label class="hidden">Beskrivelse</label>
+                                <textarea placeholder="Beskrivelse af din vurdering..."></textarea>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="show-more text-center">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-dismiss="modal">Opret signal <span class="glyphicon glyphicon-pencil"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
@@ -210,6 +301,9 @@
 <!-- JavaScript ================================================== -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="source/assets/javascripts/bootstrap.js"></script>
+<!-- chart.js -->
+<script src="source/assets/alns/chart/chart.js"></script>
+<!-- custom.js -->
 <script src="source/assets/javascripts/custom.js"></script>
 
 </body>

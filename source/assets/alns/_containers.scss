@@ -74,5 +74,11 @@ body {font-family: $font;font-weight:300;background:$primary;color:$secondary;ma
 }
 
 // ====== // ===== // Tables // ====== // ===== //
-.market-resume > tbody > tr > td {border-top:1px solid $third;}
-.market-resume {font-size:0.8em;width:250px;margin:0 auto 0 auto;text-align:left;border:1px solid $third;}
+.market-resume > tbody > tr > td {border-top:1px solid $third;padding:10px 0;
+&:last-of-type{text-align:right;}}
+.market-resume {font-size:0.8em;width:250px;margin:0 auto 0 auto;text-align:left;border-bottom:1px solid $third;}
+.stock-signals {margin-top:20px;
+  tbody tr td {width:33.3%;}}
+
+// ====== // ===== // Graphs // ====== // ===== //
+.stock-graph {width:65%;margin: 52px 0 0 54px;float:left;background:$darkOverlay;display:block;height:277px;border-left:1px solid $secondary;border-top:1px solid $secondary;}

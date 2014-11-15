@@ -34,7 +34,7 @@
     .row:last-of-type {padding-bottom:60px;}
   }
 
-  .profile-tabs table thead tr td a, .own-signals table thead tr td a {margin:7px 0 5px 0;display:block;font-weight: 300;font-size:1.15em;
+  .profile-tabs table thead tr td a, .own-signals table thead tr td a {@include tableheads;
     span {display:none;}}
 
   .filter-options {margin:0;}
@@ -60,13 +60,26 @@
     .row:first-of-type {padding-top: 50px;}
     .row:last-of-type {padding-bottom: 60px;}
   }
-    .stock-overview {width:30%;
+  .second {
+    .table thead tr td a {@include tableheads;
+      span {display:none;}}
+  }
+  .stock-overview {width:30%;float:left;
     thead tr td {padding:12px;background:transparent;color:$secondary;font-size:1.4em;}
     tbody {background:$primary;color:$secondary;
+      tr:hover {cursor:default;background:$secondary;}
       tr td {padding:12px;border-bottom:1px solid $secondary;font-weight:300;
-      &:last-of-type {padding-right:0;border-right:1px solid $secondary}}
-    tr:last-of-type td {border-bottom:1px solid $primary;}
+      &:last-of-type {padding-right:0;border-right:1px solid $secondary;}}
+      tr:last-of-type td {border-bottom:1px solid $primary;}
+      tr:last-of-type:hover td {border-bottom:1px solid $secondary;}
     tr:first-of-type td {border-top:1px solid $secondary;}}
    }
-  #tab1, #tab2, #tab3 {min-height:328px;background:$primary;padding-top:10px;}
+
+  .stock-news {
+    background:$secondary;
+    tbody tr td:last-of-type {text-align:left;padding-top:14px;}
+  }
+
+  #tab1 {min-height:339px;background:$primary;padding-top:10px;}
+  #tab2 {min-height:0;height:339px;margin:0 0 20px 0;overflow:auto;}
 }

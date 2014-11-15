@@ -33,18 +33,29 @@ input[type="text"], textarea {
   box-shadow: none !important;
   font-size: 1.3em; }
 
-.buy-signal {
+.buy {
   color: #199900; }
 
-.hold-signal {
+.hold {
   color: #26393D; }
 
-.sell-signal {
+.sell {
   color: #D40D12; }
 
 .disclaimer {
   font-style: italic;
   font-size: 0.9em; }
+
+.overall-signal {
+  font-size: 0.7em;
+  font-weight: 300;
+  padding: 9px;
+  background: #199900;
+  color: #FFFFFF;
+  border-bottom: 1px solid #199900; }
+
+.signal-text {
+  margin-top: -14px; }
 
 hr {
   color: #26393D;
@@ -286,14 +297,32 @@ body {
   padding-bottom: 30px; }
 
 .market-resume > tbody > tr > td {
-  border-top: 1px solid #FFFFFF; }
+  border-top: 1px solid #FFFFFF;
+  padding: 10px 0; }
+  .market-resume > tbody > tr > td:last-of-type {
+    text-align: right; }
 
 .market-resume {
   font-size: 0.8em;
   width: 250px;
   margin: 0 auto 0 auto;
   text-align: left;
-  border: 1px solid #FFFFFF; }
+  border-bottom: 1px solid #FFFFFF; }
+
+.stock-signals {
+  margin-top: 20px; }
+  .stock-signals tbody tr td {
+    width: 33.3%; }
+
+.stock-graph {
+  width: 65%;
+  margin: 52px 0 0 54px;
+  float: left;
+  background: rgba(0, 0, 0, 0.2);
+  display: block;
+  height: 277px;
+  border-left: 1px solid #FFFAE4;
+  border-top: 1px solid #FFFAE4; }
 
 .navbar {
   margin: 0; }
@@ -366,9 +395,10 @@ body {
   border-bottom: 1px solid #DDDDDD; }
   .nav-tabs > li > a {
     border-radius: 0;
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-right: 10px;
-    background: #DDDDDD; }
+    background: #DDDDDD;
+    font-weight: 500; }
     .nav-tabs > li > a:hover {
       color: #FF2900; }
 
@@ -476,8 +506,16 @@ body {
   padding-top: 50px; }
 #stock .first .row:last-of-type {
   padding-bottom: 60px; }
+#stock .second .table thead tr td a {
+  margin: 7px 0 5px 0;
+  display: block;
+  font-weight: 300;
+  font-size: 1.15em; }
+  #stock .second .table thead tr td a span {
+    display: none; }
 #stock .stock-overview {
-  width: 30%; }
+  width: 30%;
+  float: left; }
   #stock .stock-overview thead tr td {
     padding: 12px;
     background: transparent;
@@ -486,6 +524,9 @@ body {
   #stock .stock-overview tbody {
     background: #26393D;
     color: #FFFAE4; }
+    #stock .stock-overview tbody tr:hover {
+      cursor: default;
+      background: #FFFAE4; }
     #stock .stock-overview tbody tr td {
       padding: 12px;
       border-bottom: 1px solid #FFFAE4;
@@ -495,12 +536,24 @@ body {
         border-right: 1px solid #FFFAE4; }
     #stock .stock-overview tbody tr:last-of-type td {
       border-bottom: 1px solid #26393D; }
+    #stock .stock-overview tbody tr:last-of-type:hover td {
+      border-bottom: 1px solid #FFFAE4; }
     #stock .stock-overview tbody tr:first-of-type td {
       border-top: 1px solid #FFFAE4; }
-#stock #tab1, #stock #tab2, #stock #tab3 {
-  min-height: 328px;
+#stock .stock-news {
+  background: #FFFAE4; }
+  #stock .stock-news tbody tr td:last-of-type {
+    text-align: left;
+    padding-top: 14px; }
+#stock #tab1 {
+  min-height: 339px;
   background: #26393D;
   padding-top: 10px; }
+#stock #tab2 {
+  min-height: 0;
+  height: 339px;
+  margin: 0 0 20px 0;
+  overflow: auto; }
 
 .modal-dialog {
   margin-top: 180px;
