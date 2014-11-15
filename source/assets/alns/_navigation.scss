@@ -1,0 +1,31 @@
+// ====== // ===== // Navigation elements // ====== // ===== //
+.navbar {margin:0;}
+.navbar-default {background:$primary;color:$secondary;min-height:70px;border-color:#fff;
+  .container{padding-top:7px;font-size:20px;}
+  .navbar-header a {font-size:0.8em;}
+  .navbar-right .glyphicon {font-size:34px;top:7px;right:22px;
+    &:hover {color:$third;}}
+  .navbar-nav li a {padding:0;}
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav li a {color:$third;@include colortransition;font-size:0.9em;padding-right:0;
+  &:hover {color:$fourth;}
+  &:focus {color:$primary;box-shadow:none !important;}
+}
+.navbar-default .navbar-nav li a img {border-radius:50%;width:50px;}
+.navbar-default .navbar-brand {color:$third;}
+
+.dropdown-toggle {padding:8px 12px;}
+.btn-group.open .dropdown-toggle {box-shadow:none;}
+.btn-default:focus, .open > .btn-default.dropdown-toggle {background:$primary;border-color:$primary;color:$secondary;}
+.dropdown-menu {border-radius:0;background:$primary;color:$secondary;min-width:145px;top: 34px;border:1px solid $primary;border-top:none;
+  li a {padding:3px 7px;font-weight:300;color:$secondary;
+    &:hover {color:$fourth;background:none;}}}
+
+// ====== // ===== // Tabable content // ====== // ===== //
+.nav-tabs {border-bottom:1px solid $lightGrey;
+  > li > a {border-radius:0;font-size:1.2em;margin-right:10px;background:$lightGrey;
+    &:hover {color:$fourth;}}}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {color:$secondary;background:$primary;border:1px solid $primary;}
+#tab1, #tab2, #tab3 {min-height:562px;}

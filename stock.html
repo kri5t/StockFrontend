@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Stockd</title>
+
+    <!-- Styles -->
+    <link href="source/assets/stylesheets/application.css" rel="stylesheet">
+    <link href="source/assets/alns/custom.css" rel="stylesheet">
+    <link href="source/assets/alns/hacks.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body id="stock">
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="post.html">Alpha v. 1.0.0</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="profile.html"><img src="source/assets/img/profil.jpg" /></a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- Second area -->
+    <div class="second area">
+        <div class="row">
+            <div class="col-sm-12 ">
+                <h1>iShares Nasdaq (IBB)</h1>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-12 profile-tabs stock-tabs">
+
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#tab1">Aktie</a></li>
+                    <li><a data-toggle="tab" href="#tab2">Nyheder</a></li>
+                </ul>
+
+                <!-- First tabbed content -->
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane fade in active">
+
+                            <table class="table stock-overview text-left">
+                                <thead>
+                                <tr>
+                                    <td>Aktieinformation i realtid</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Værdi</td>
+                                    <td>292.11</td>
+                                </tr>
+                                <tr>
+                                    <td>Ændring i dag</td>
+                                    <td class="buy-signal">+1.4%</td>
+                                </tr>
+                                <tr>
+                                    <td>Dagens højpunkt</td>
+                                    <td>294.11</td>
+                                </tr>
+                                <tr>
+                                    <td>Dagens Lavpunkt</td>
+                                    <td>290.11</td>
+                                </tr>
+                                <tr>
+                                    <td>Year high</td>
+                                    <td class="buy-signal">302.98</td>
+                                </tr>
+                                <tr>
+                                    <td>Year low</td>
+                                    <td class="sell-signal">207.15</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="table stock-graph text-left">
+
+                            </div>
+
+                    </div>
+
+                    <!-- Second tabbed content -->
+                    <div id="tab2" class="tab-pane fade">
+
+                        <div class="show-more">
+                            <button class="btn btn-default dropdown-toggle" type="button">Vis flere <span class="glyphicon glyphicon-repeat"></span></button>
+                        </div>
+
+                    </div>
+
+                </div> <!-- ./tab -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <h1>Samlet signalstyrke: <span class="buy-signal">Køb</span></h1>
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <td><a href="#">Signal <span class="glyphicon glyphicon-transfer"></span></a></td>
+                        <td><a href="#">Tidspunkt <span class="glyphicon glyphicon glyphicon-time"></span></a></td>
+                        <td><a href="#">Bruger <span class="glyphicon glyphicon glyphicon-user"></span></a></td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="buy-signal" onclick="window.document.location='#';">
+                        <td>Køb</td>
+                        <td>21:20 - 12. nov</td>
+                        <td><a href="profile.html"><img src="source/assets/img/profil.jpg" /></a></td>
+                    </tr>
+                    <tr class="buy-signal" onclick="window.document.location='#';">
+                        <td>Sælg</td>
+                        <td>21:00 - 11. nov</td>
+                        <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
+                    </tr>
+                    <tr class="hold-signal" onclick="window.document.location='#';">
+                        <td>Hold</td>
+                        <td>20:42 - 10. nov</td>
+                        <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
+                    </tr>
+                    <tr class="buy-signal" onclick="window.document.location='#';">
+                        <td>Køb</td>
+                        <td>20:30 - 31. okt</td>
+                        <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="show-more">
+                    <button class="btn btn-default dropdown-toggle" type="button">Vis flere <span class="glyphicon glyphicon-repeat"></span></button>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- First area -->
+    <div class="first area">
+        <div class="row">
+            <div class="col-sm-12 ">
+                <h3>Søg på aktier og få et skarpere indblik i markedet</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 stock-search">
+                <form action="" method="post">
+                    <div class="search-input">
+                        <label for="search-stock" class="hidden"></label>
+                        <input type="text" id="search-stock">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="disclaimer">*Markedsresume</p>
+                <table class="table market-resume">
+                    <tbody>
+                    <tr class="buy-signal">
+                        <td>OMXC PI</td>
+                        <td>602,20</td>
+                        <td>1%</td>
+                    </tr>
+                    <tr class="buy-signal">
+                        <td>OMXC Mid Cap</td>
+                        <td>315,10</td>
+                        <td>0.9%</td>
+                    </tr>
+                    <tr class="sell-signal">
+                        <td>OMXC Mid Cap</td>
+                        <td>599,15</td>
+                        <td>-1.5%</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- JavaScript ================================================== -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="source/assets/javascripts/bootstrap.js"></script>
+<script src="source/assets/javascripts/custom.js"></script>
+
+</body>
+</html>

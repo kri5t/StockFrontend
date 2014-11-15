@@ -1,0 +1,78 @@
+// ====== // ===== // Main containers // ====== // ===== //
+body {font-family: $font;font-weight:300;background:$primary;color:$secondary;margin-top:70px;overflow-x:hidden;}
+.container {padding:0 40px;}
+
+.second, .fourth, .fifth, .sixth {
+  color:$primary;
+  background:$secondary;
+  &:before {background:$secondary;}
+  &:after {background:$secondary;}
+}
+
+.first, .second, .third, .fourth,  .fifth, .sixth {
+  position:relative;
+  text-align:center;
+  .row:first-of-type {padding-top:50px;}
+  .row:last-of-type {padding-bottom:70px;}
+  &:before { @include fullleft }
+  &:after { @include fullright }
+}
+
+// ====== // ===== // First // ====== // ===== //
+.first {
+  color:$third;
+  .glyphicon {font-size:30px;top: 9px;left: -43px;color:$primary;}
+  input {height:50px;width:60%;padding: 4px 13px;margin:10px 0 0 36px;@include bgtransition;border:1px solid $secondary;background:$secondary;
+    &:focus{background:$primary;color:#fff;border:1px solid $third;}}
+  .stock-search {}
+  .row:first-of-type {padding-top:122px;}
+  .row:last-of-type {padding-bottom:170px;}
+}
+
+// ====== // ===== // Second // ====== // ===== //
+.second {
+  h1 {margin-bottom:30px;}
+  .table {}
+  .disclaimer {text-align:left;margin-top:45px;}
+  a {color:$primary;@include colortransition;
+    &:hover {color:$third;}}
+  .table thead tr td {padding: 7px 0 12px 0;font-size:1.1em;background:$primary;color:$secondary;font-weight:400;
+    .glyphicon {font-size:24px;margin-left:6px;top: 5px;}
+    .glyphicon-transfer {@include rotate90;margin-left:0;}
+    a {color:$third;font-weight:300;}}
+  .table tbody tr {font-weight:400;
+    td {padding:14px 0 10px 0;border-top:none;border-bottom:1px solid $primary;
+      img {border-radius:50%;width:40px;}
+      &:nth-last-child(1) {padding:6px 0 6px 0;}
+      .glyphicon {font-size:28px;margin-left:12px;}}}
+  .table tbody tr:hover {background:$third;cursor:pointer;@include bgtransition;color: $darkGrey;}
+}
+
+// ====== // ===== // Third // ====== // ===== //
+.third {
+  color:$third;
+  p {padding:0 10%;}
+  .glyphicon {font-size:120px;margin: 2px 0 10px 0;min-width: 100px;}
+  .row:first-of-type {padding-top:100px;}
+  .row:last-of-type {padding-bottom:130px;}
+}
+
+// ====== // ===== // Fourth // ====== // ===== //
+.fourth {
+  img {border-radius:50%;width:100px;margin:40px 0 22px 0;}
+  .col-sm-4 p:nth-child(3) {margin:10px 80px;padding-top:10px;border-top:1px solid $fourth;}
+  .col-sm-4 p:nth-child(4) {font-size:1em;font-style:italic;}
+}
+
+// ====== // ===== // Fifth // ====== // ===== //
+.fifth {
+  .glyphicon {font-size:30px;margin:0 10px 20px 10px;color:$fourth;}
+  a {color:$primary;font-size:0.8em;
+    &:hover {color:$fourth;}}
+  .row:first-of-type {padding-top:0;}
+  .row:last-of-type {padding-bottom:30px;}
+}
+
+// ====== // ===== // Tables // ====== // ===== //
+.market-resume > tbody > tr > td {border-top:1px solid $third;}
+.market-resume {font-size:0.8em;width:250px;margin:0 auto 0 auto;text-align:left;border:1px solid $third;}

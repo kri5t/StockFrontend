@@ -1,0 +1,27 @@
+// ====== // ===== // Modals // ====== // ===== //
+.modal-dialog {margin-top:180px;width:400px;}
+.modal-header {border-bottom:none;
+  a {color:$primary;font-weight:400;
+    &:hover {color: $darkGrey;}}}
+.modal-title {padding-bottom:10px;
+  .glyphicon {font-size:11px;top:0;}}
+.modal-content {border-radius:0;border:none;background:$secondary;color:$primary;box-shadow:none;text-align:center;
+  img {width:30px;margin-bottom:10px;}}
+.modal-body {padding:25px;}
+
+#new-signal {
+  .navbar-form .form-control {display:block;}
+}
+
+// ====== // ===== // Opret ny signal // ====== // ===== //
+#new-signal {
+  .modal-content {background:$primary;color:$third;
+    .rate-area {margin:12px 0;
+      input, textarea {border:1px solid $primary;background:$secondary;padding: 10px;min-height: 47px;color:$primary;}}}
+  .radio {margin:5px 0 0 21px;}
+  .radio label, .checkbox label {display:inline-block;text-align:left;padding:4px 0;width: 66px;}
+  textarea {width:100%;min-height:70px;}
+  .modal-dialog {width:30%;}
+  .modal-body {text-align:left;
+    label {padding-left:2px;margin-top:10px;font-size: 1.3em;font-weight: 300;}}
+}
