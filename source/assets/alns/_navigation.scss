@@ -1,6 +1,6 @@
 // ====== // ===== // Navigation elements // ====== // ===== //
 .navbar {margin:0;}
-.navbar-default {background:$primary;color:$secondary;min-height:70px;border-color:$fourth;z-index:$zdex2;
+.navbar-default {background:$primary;color:$secondary;min-height:70px;border-bottom:2px solid $fourth;z-index:$zdex2;
   .container{padding-top:7px;font-size:20px;}
   .navbar-header a {font-size:0.8em;}
   .navbar-right .glyphicon {font-size:34px;top:7px;right:22px;

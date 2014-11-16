@@ -34,7 +34,7 @@ input[type="text"], textarea {
   font-size: 1.3em; }
 
 .buy {
-  color: #199900; }
+  color: #008e11; }
 
 .hold {
   color: #26393D; }
@@ -50,9 +50,9 @@ input[type="text"], textarea {
   font-size: 0.7em;
   font-weight: 300;
   padding: 9px;
-  background: #199900;
+  background: #008e11;
   color: #FFFFFF;
-  border-bottom: 1px solid #199900; }
+  border-bottom: 1px solid #008e11; }
 
 .signal-text {
   margin-top: -14px; }
@@ -245,7 +245,7 @@ body {
 .third {
   color: #FFFFFF; }
   .third p {
-    padding: 0 10%; }
+    padding: 0 14%; }
   .third .glyphicon {
     font-size: 120px;
     margin: 2px 0 10px 0;
@@ -303,12 +303,15 @@ body {
     width: 33.3%; }
 
 thead tr {
-  border-bottom: 1px solid #FF2900; }
+  border-bottom: 2px solid #FF2900; }
   thead tr td a {
     margin: 7px 0 5px 0;
     display: block;
     font-weight: 300;
     font-size: 1.05em; }
+
+.second tbody tr:last-of-type {
+  border-bottom: 2px solid #26393D; }
 
 .popular-stocks td {
   width: 20%; }
@@ -330,7 +333,7 @@ thead tr {
   background: #26393D;
   color: #FFFAE4;
   min-height: 70px;
-  border-color: #FF2900;
+  border-bottom: 2px solid #FF2900;
   z-index: 30; }
   .navbar-default .container {
     padding-top: 7px;
@@ -566,7 +569,11 @@ thead tr {
   padding-top: 50px; }
 #stocks .first .row:last-of-type {
   padding-bottom: 60px; }
+#stocks .second .row:first-of-type {
+  padding-top: 70px; }
 
+#signals .second .row:first-of-type {
+  padding-top: 70px; }
 #signals .second .radio {
   display: inline-block;
   margin-right: 10px; }
@@ -646,5 +653,30 @@ thead tr {
     margin-top: 10px;
     font-size: 1.3em;
     font-weight: 300; }
+
+#options .modal-content {
+  background: #26393D;
+  color: #FFFFFF; }
+  #options .modal-content a {
+    color: #FFFAE4; }
+  #options .modal-content .modal-header p {
+    font-style: italic;
+    margin: 0;
+    color: #FFFAE4; }
+  #options .modal-content img {
+    width: 80px; }
+  #options .modal-content .btn-default {
+    padding: 10px 20px;
+    right: 0; }
+  #options .modal-content .modal-body {
+    padding: 0 25px 25px 25px; }
+  #options .modal-content .row {
+    padding: 0 0 10px 0; }
+    #options .modal-content .row:last-of-type {
+      border-top: 1px solid #FFFAE4;
+      padding-top: 20px; }
+
+body.modal-open {
+  margin-right: -15px !important; }
 
 /*# sourceMappingURL=custom.css.map */

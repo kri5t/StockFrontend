@@ -25,3 +25,16 @@
   .modal-body {text-align:left;
     label {padding-left:2px;margin-top:10px;font-size: 1.3em;font-weight: 300;}}
 }
+
+// ====== // ===== // Ændre profiloplysninger // ====== // ===== //
+
+#options {
+  .modal-content {background:$primary;color:$third;
+    a {color:$secondary;}
+    .modal-header p {font-style:italic;margin:0;color:$secondary;}
+    img {width:80px;}
+    .btn-default {padding:10px 20px;right:0;}
+    .modal-body {padding:0 25px 25px 25px;}
+    .row {padding:0 0 10px 0;
+    &:last-of-type {border-top:1px solid $secondary;padding-top:20px;}}}
+}

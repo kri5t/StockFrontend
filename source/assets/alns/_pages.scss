@@ -89,12 +89,15 @@
     .row:last-of-type {padding-bottom:60px;}
   }
 
+  .second .row:first-of-type {padding-top: 70px;}
+
 }
 
 // ====== // ===== // signals.html // ====== // ===== //
 
 #signals {
-  .second .radio {display:inline-block;margin-right:10px;}
+  .second {.row:first-of-type {padding-top: 70px;}
+    .radio {display:inline-block;margin-right:10px;}}
   .btn-group {float:right;}
   .col-sm-6 {padding:0 40px;}
 
