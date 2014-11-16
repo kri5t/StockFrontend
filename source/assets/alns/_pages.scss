@@ -21,13 +21,7 @@
 // ====== // ===== // profile.html // ====== // ===== //
 
 #profile {
-  .navbar-default .navbar-right {
-    .glyphicon {right:0;font-size:1.3em;margin-right:3px;top: 5px;
-      &:hover {color:$fourth;}}
-    a {margin-right:14px;
-      &:hover {cursor:pointer;}
-      &:hover span {@include rotate90;@include rotatetransition;}}
-  }
+  .navbar-default .navbar-nav li a:hover {cursor:pointer;}
   .first {
     .disclaimer {margin:20px 0 0 0;}
     .row:first-of-type {padding-top:50px;}
@@ -85,3 +79,31 @@
   #tab1 {min-height:298px;}
   #tab2 {min-height:0;height:277px;overflow:auto;margin-bottom:21px;border:1px solid $primary;}
 }
+
+// ====== // ===== // stocks.html // ====== // ===== //
+
+#stocks {
+  .first {
+    .disclaimer {margin:20px 0 0 0;}
+    .row:first-of-type {padding-top:50px;}
+    .row:last-of-type {padding-bottom:60px;}
+  }
+
+}
+
+// ====== // ===== // signals.html // ====== // ===== //
+
+#signals {
+  .second .radio {display:inline-block;margin-right:10px;}
+  .btn-group {float:right;}
+  .col-sm-6 {padding:0 40px;}
+
+  .first {
+    .disclaimer {margin:20px 0 0 0;}
+    .row:first-of-type {padding-top:50px;}
+    .row:last-of-type {padding-bottom:60px;}
+  }
+
+}
+
+// ====== // ===== // preferences.html // ====== // ===== //

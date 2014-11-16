@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Stockd</title>
+
+    <!-- Styles -->
+    <link href="source/assets/stylesheets/application.css" rel="stylesheet">
+    <link href="source/assets/alns/custom.css" rel="stylesheet">
+    <link href="source/assets/alns/hacks.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body id="stocks">
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="post.html">Alpha v. 1.1.0</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="profile.html"><img src="source/assets/img/profil.jpg" /></a></li>
+                <li class="logout"><a href="index.html">log ud</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="global-menu">
+        <ul class="menu-nav">
+            <li><a href="stocks.html">Aktieoversigt</a></li>
+            <li><a href="signals.html">Signaloversigt</a></li>
+            <li><a href="preferences.html">Indstillinger</a></li>
+        </ul>
+    </div>
+
+    <!-- Second area -->
+    <div class="second area">
+        <div class="row">
+            <div class="col-sm-12 ">
+                <h1>Mest populære aktier</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <table class="table popular-stocks">
+                    <thead>
+                    <tr>
+                        <td><a href="#">Aktie</a></td>
+                        <td><a href="#">Ændring</a></td>
+                        <td><a href="#">Signal</a></td>
+                        <td><a href="#"># signaler</a></td>
+                        <td><a href="#"># timer siden</a></td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="buy" onclick="window.document.location='stock.html';">
+                        <td>IBM</td>
+                        <td>+ 3%</td>
+                        <td>Køb</td>
+                        <td>12</td>
+                        <td>00:20</td>
+                    </tr>
+                    <tr class="sell" onclick="window.document.location='stock.html';">
+                        <td>Apple</td>
+                        <td>- 2%</td>
+                        <td>Sælg</td>
+                        <td>3</td>
+                        <td>00:34</td>
+                    </tr>
+                    <tr class="hold" onclick="window.document.location='stock.html';">
+                        <td>Mærsk</td>
+                        <td>+ 0.5%</td>
+                        <td>Hold</td>
+                        <td>13</td>
+                        <td>00:54</td>
+                    </tr>
+                    <tr class="buy" onclick="window.document.location='stock.html';">
+                        <td>Microsoft</td>
+                        <td>+ 1.3%</td>
+                        <td>Køb</td>
+                        <td>53</td>
+                        <td>01:04</td>
+                    </tr>
+                    <tr class="buy" onclick="window.document.location='stock.html';">
+                        <td>Facebook</td>
+                        <td>+ 2.2%</td>
+                        <td>Køb</td>
+                        <td>3</td>
+                        <td>01:22</td>
+                    </tr>
+                    <tr class="sell" onclick="window.document.location='stock.html';">
+                        <td>Tusker</td>
+                        <td>- 1.7%</td>
+                        <td>Sælg</td>
+                        <td>4</td>
+                        <td>01:27</td>
+                    </tr>
+                    <tr class="hold" onclick="window.document.location='stock.html';">
+                        <td>Carlsberg</td>
+                        <td>- 0.4%</td>
+                        <td>Hold</td>
+                        <td>14</td>
+                        <td>01:50</td>
+                    </tr>
+                    <tr class="hold" onclick="window.document.location='stock.html';">
+                        <td>Sony</td>
+                        <td>+ 0.1%</td>
+                        <td>Hold</td>
+                        <td>7</td>
+                        <td>02:41</td>
+                    </tr>
+                    <tr class="sell" onclick="window.document.location='stock.html';">
+                        <td>Steelseries</td>
+                        <td>- 1.3%</td>
+                        <td>Sælg</td>
+                        <td>2</td>
+                        <td>03:01</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="show-more">
+                    <button class="btn btn-default dropdown-toggle" type="button">Vis flere <span class="glyphicon glyphicon-repeat"></span></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- First area -->
+    <div class="first area">
+        <div class="row">
+            <div class="col-sm-12 ">
+                <h3>Søg på aktier og få et skarpere indblik i markedet</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 stock-search">
+                <form action="" method="post">
+                    <div class="search-input">
+                        <label for="search-stock" class="hidden"></label>
+                        <input type="text" id="search-stock">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="disclaimer">*Markedsresume</p>
+                <table class="table market-resume">
+                    <tbody>
+                    <tr>
+                        <td>OMXC PI</td>
+                        <td>602,20</td>
+                        <td class="buy">1%</td>
+                    </tr>
+                    <tr>
+                        <td>OMXC Mid Cap</td>
+                        <td>315,10</td>
+                        <td class="buy">0.9%</td>
+                    </tr>
+                    <tr>
+                        <td>OMXC Mid Cap</td>
+                        <td>599,15</td>
+                        <td class="sell">-1.5%</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- JavaScript ================================================== -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="source/assets/javascripts/bootstrap.js"></script>
+<script src="source/assets/javascripts/custom.js"></script>
+
+</body>
+</html>

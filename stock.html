@@ -25,11 +25,12 @@
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="post.html">Alpha v. 1.0.0</a>
+            <a class="navbar-brand" href="post.html">Alpha v. 1.1.0</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="profile.html"><img src="source/assets/img/profil.jpg" /></a></li>
+                <li class="logout"><a href="index.html">log ud</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -39,9 +40,9 @@
 
     <div class="global-menu">
         <ul class="menu-nav">
-            <li><a href="#">Aktieoversigt</a></li>
-            <li><a href="#">Signaloversigt</a></li>
-            <li><a href="#">Indstillinger</a></li>
+            <li><a href="stocks.html">Aktieoversigt</a></li>
+            <li><a href="signals.html">Signaloversigt</a></li>
+            <li><a href="preferences.html">Indstillinger</a></li>
         </ul>
     </div>
 
@@ -60,7 +61,7 @@
 
                 <ul class="nav nav-tabs">
                     <li class="active"><a data-toggle="tab" href="#tab1">Aktieinformation i realtid</a></li>
-                    <li><a data-toggle="tab" href="#tab2">Nyheder</a></li>
+                    <li><a data-toggle="tab" href="#tab2">Information</a></li>
                 </ul>
 
                 <!-- First tabbed content -->
@@ -215,7 +216,7 @@
     <div class="first area">
         <div class="row">
             <div class="col-sm-12 ">
-                <h3>Søg på aktier og få et skarpere indblik i markedet</h3>
+                <h3>Søg på aktier</h3>
             </div>
         </div>
 
@@ -236,20 +237,20 @@
                 <p class="disclaimer">*Markedsresume</p>
                 <table class="table market-resume">
                     <tbody>
-                    <tr class="buy">
+                    <tr>
                         <td>OMXC PI</td>
                         <td>602,20</td>
-                        <td>1%</td>
+                        <td class="buy">1%</td>
                     </tr>
-                    <tr class="buy">
+                    <tr>
                         <td>OMXC Mid Cap</td>
                         <td>315,10</td>
-                        <td>0.9%</td>
+                        <td class="buy">0.9%</td>
                     </tr>
-                    <tr class="sell">
+                    <tr>
                         <td>OMXC Mid Cap</td>
                         <td>599,15</td>
-                        <td>-1.5%</td>
+                        <td class="sell">-1.5%</td>
                     </tr>
                     </tbody>
                 </table>

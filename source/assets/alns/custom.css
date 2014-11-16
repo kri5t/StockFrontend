@@ -57,6 +57,10 @@ input[type="text"], textarea {
 .signal-text {
   margin-top: -14px; }
 
+.logout {
+  font-size: 0.7em;
+  margin: 16px 0 0 8px; }
+
 hr {
   color: #26393D;
   border-top: 1px solid #26393D;
@@ -111,34 +115,15 @@ hr {
   .close:hover {
     color: #FF2900; }
 
-.underline a::after {
-  position: absolute;
-  top: 120%;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #FF2900;
-  content: '';
-  opacity: 0;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
-  transition: opacity 0.3s, transform 0.3s;
-  -webkit-transform: translateY(5px);
-  -moz-transform: translateY(5px);
-  transform: translateY(5px); }
-
-.underline a:hover::after, .underline a:focus::after {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-  transform: translateY(0px); }
-
 .btn .caret {
   margin-left: 3px; }
 
 .profile-large {
   border-radius: 50%;
   width: 150px; }
+
+html {
+  overflow-y: scroll; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -194,7 +179,7 @@ body {
     color: #26393D; }
   .first input {
     height: 50px;
-    width: 60%;
+    width: 58%;
     padding: 4px 13px;
     margin: 10px 0 0 36px;
     transition: background-color 1.2s ease;
@@ -268,31 +253,35 @@ body {
   .third .row:last-of-type {
     padding-bottom: 110px; }
 
-.fourth img {
-  border-radius: 50%;
-  width: 100px;
-  margin: 40px 0 22px 0; }
-.fourth .col-sm-4 p:nth-child(3) {
-  margin: 10px 80px;
-  padding-top: 10px;
-  border-top: 1px solid #FF2900; }
-.fourth .col-sm-4 p:nth-child(4) {
-  font-size: 1em;
-  font-style: italic; }
+.fourth {
+  font-weight: 400; }
+  .fourth img {
+    border-radius: 50%;
+    width: 100px;
+    margin: 40px 0 22px 0; }
+  .fourth .col-sm-4 p:nth-child(3) {
+    margin: 10px 80px;
+    padding-top: 10px;
+    border-top: 1px solid #FF2900; }
+  .fourth .col-sm-4 p:nth-child(4) {
+    font-size: 1em;
+    font-style: italic; }
 
-.fifth .glyphicon {
-  font-size: 30px;
-  margin: 0 10px 20px 10px;
-  color: #FF2900; }
-.fifth a {
-  color: #26393D;
-  font-size: 0.8em; }
-  .fifth a:hover {
+.fifth {
+  font-weight: 400; }
+  .fifth .glyphicon {
+    font-size: 30px;
+    margin: 0 10px 20px 10px;
     color: #FF2900; }
-.fifth .row:first-of-type {
-  padding-top: 0; }
-.fifth .row:last-of-type {
-  padding-bottom: 30px; }
+  .fifth a {
+    color: #26393D;
+    font-size: 0.8em; }
+    .fifth a:hover {
+      color: #FF2900; }
+  .fifth .row:first-of-type {
+    padding-top: 0; }
+  .fifth .row:last-of-type {
+    padding-bottom: 0; }
 
 .market-resume > tbody > tr > td {
   border-top: 1px solid #FFFFFF;
@@ -305,7 +294,8 @@ body {
   width: 250px;
   margin: 0 auto 0 auto;
   text-align: left;
-  border-bottom: 1px solid #FFFFFF; }
+  border-bottom: 1px solid #FFFFFF;
+  color: #FFFAE4; }
 
 .stock-signals {
   margin-top: 20px; }
@@ -318,7 +308,10 @@ thead tr {
     margin: 7px 0 5px 0;
     display: block;
     font-weight: 300;
-    font-size: 1.15em; }
+    font-size: 1.05em; }
+
+.popular-stocks td {
+  width: 20%; }
 
 .stock-graph {
   width: 70%;
@@ -338,7 +331,7 @@ thead tr {
   color: #FFFAE4;
   min-height: 70px;
   border-color: #FF2900;
-  z-index: 3; }
+  z-index: 30; }
   .navbar-default .container {
     padding-top: 7px;
     font-size: 20px; }
@@ -389,7 +382,7 @@ thead tr {
   top: 70px;
   transition: top 1.2s ease-in-out;
   width: 100%;
-  z-index: 2; }
+  z-index: 20; }
 
 .nav-up {
   top: -30px; }
@@ -427,7 +420,8 @@ thead tr {
     border-radius: 0;
     font-size: 1.2em;
     margin-right: 10px;
-    background: #DDDDDD; }
+    background: #DDDDDD;
+    padding: 8px 17px; }
     .nav-tabs > li > a:hover {
       color: #FF2900; }
 
@@ -464,30 +458,8 @@ thead tr {
     padding-bottom: 3px;
     font-weight: 500; }
 
-#profile .navbar-default .navbar-right .glyphicon {
-  right: 0;
-  font-size: 1.3em;
-  margin-right: 3px;
-  top: 5px; }
-  #profile .navbar-default .navbar-right .glyphicon:hover {
-    color: #FF2900; }
-#profile .navbar-default .navbar-right a {
-  margin-right: 14px; }
-  #profile .navbar-default .navbar-right a:hover {
-    cursor: pointer; }
-  #profile .navbar-default .navbar-right a:hover span {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -webkit-transition-duration: 1.2s;
-    -moz-transition-duration: 1.2s;
-    -o-transition-duration: 1.2s;
-    transition-duration: 1.2s;
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-    overflow: hidden; }
+#profile .navbar-default .navbar-nav li a:hover {
+  cursor: pointer; }
 #profile .first .disclaimer {
   margin: 20px 0 0 0; }
 #profile .first .row:first-of-type {
@@ -498,7 +470,7 @@ thead tr {
   margin: 7px 0 5px 0;
   display: block;
   font-weight: 300;
-  font-size: 1.15em; }
+  font-size: 1.05em; }
   #profile .profile-tabs table thead tr td a span, #profile .own-signals table thead tr td a span {
     display: none; }
 #profile .filter-options {
@@ -542,7 +514,7 @@ thead tr {
   margin: 7px 0 5px 0;
   display: block;
   font-weight: 300;
-  font-size: 1.15em; }
+  font-size: 1.05em; }
   #stock .second .table thead tr td a span {
     display: none; }
 #stock .stock-overview {
@@ -587,6 +559,27 @@ thead tr {
   overflow: auto;
   margin-bottom: 21px;
   border: 1px solid #26393D; }
+
+#stocks .first .disclaimer {
+  margin: 20px 0 0 0; }
+#stocks .first .row:first-of-type {
+  padding-top: 50px; }
+#stocks .first .row:last-of-type {
+  padding-bottom: 60px; }
+
+#signals .second .radio {
+  display: inline-block;
+  margin-right: 10px; }
+#signals .btn-group {
+  float: right; }
+#signals .col-sm-6 {
+  padding: 0 40px; }
+#signals .first .disclaimer {
+  margin: 20px 0 0 0; }
+#signals .first .row:first-of-type {
+  padding-top: 50px; }
+#signals .first .row:last-of-type {
+  padding-bottom: 60px; }
 
 .modal-dialog {
   margin-top: 180px;

@@ -1,4 +1,6 @@
 // ====== // ===== // Main containers // ====== // ===== //
+html {overflow-y: scroll;}
+
 body {font-family: $font;font-weight:300;background:$primary;color:$secondary;margin-top:70px;overflow-x:hidden;}
 .container {padding:0 40px;}
 
@@ -22,7 +24,7 @@ body {font-family: $font;font-weight:300;background:$primary;color:$secondary;ma
 .first {
   color:$third;
   .glyphicon {font-size:30px;top: 9px;left: -43px;color:$primary;}
-  input {height:50px;width:60%;padding: 4px 13px;margin:10px 0 0 36px;@include bgtransition;border:1px solid $secondary;background:$secondary;
+  input {height:50px;width:58%;padding: 4px 13px;margin:10px 0 0 36px;@include bgtransition;border:1px solid $secondary;background:$secondary;
     &:focus{background:$primary;color:#fff;border:1px solid $third;}}
   .stock-search {}
   .row:first-of-type {padding-top:122px;}
@@ -58,6 +60,7 @@ body {font-family: $font;font-weight:300;background:$primary;color:$secondary;ma
 
 // ====== // ===== // Fourth // ====== // ===== //
 .fourth {
+  font-weight:400;
   img {border-radius:50%;width:100px;margin:40px 0 22px 0;}
   .col-sm-4 p:nth-child(3) {margin:10px 80px;padding-top:10px;border-top:1px solid $fourth;}
   .col-sm-4 p:nth-child(4) {font-size:1em;font-style:italic;}
@@ -65,21 +68,23 @@ body {font-family: $font;font-weight:300;background:$primary;color:$secondary;ma
 
 // ====== // ===== // Fifth // ====== // ===== //
 .fifth {
+  font-weight:400;
   .glyphicon {font-size:30px;margin:0 10px 20px 10px;color:$fourth;}
   a {color:$primary;font-size:0.8em;
     &:hover {color:$fourth;}}
   .row:first-of-type {padding-top:0;}
-  .row:last-of-type {padding-bottom:30px;}
+  .row:last-of-type {padding-bottom:0;}
 }
 
 // ====== // ===== // Tables // ====== // ===== //
 .market-resume > tbody > tr > td {border-top:1px solid $third;padding:10px 0;
 &:last-of-type{text-align:right;}}
-.market-resume {font-size:0.8em;width:250px;margin:0 auto 0 auto;text-align:left;border-bottom:1px solid $third;}
+.market-resume {font-size:0.8em;width:250px;margin:0 auto 0 auto;text-align:left;border-bottom:1px solid $third;color:$secondary;}
 .stock-signals {margin-top:20px;
   tbody tr td {width:33.3%;}}
 thead tr {border-bottom:1px solid $fourth;
 td a {@include tableheads;}}
+.popular-stocks td {width:20%;}
 
 // ====== // ===== // Graphs // ====== // ===== //
 .stock-graph {width:70%;margin: 0;float:left;background:$primary;color:$secondary;display:block;height:277px;border-left:1px solid $secondary;}
