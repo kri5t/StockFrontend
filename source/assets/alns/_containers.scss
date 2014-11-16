@@ -53,8 +53,7 @@ body {font-family: $font;font-weight:300;background:$primary;color:$secondary;ma
   color:$third;
   p {padding:0 10%;}
   .glyphicon {font-size:120px;margin: 2px 0 10px 0;min-width: 100px;}
-  .row:first-of-type {padding-top:100px;}
-  .row:last-of-type {padding-bottom:130px;}
+  .row:last-of-type {padding-bottom:110px;}
 }
 
 // ====== // ===== // Fourth // ====== // ===== //
@@ -79,6 +78,8 @@ body {font-family: $font;font-weight:300;background:$primary;color:$secondary;ma
 .market-resume {font-size:0.8em;width:250px;margin:0 auto 0 auto;text-align:left;border-bottom:1px solid $third;}
 .stock-signals {margin-top:20px;
   tbody tr td {width:33.3%;}}
+thead tr {border-bottom:1px solid $fourth;
+td a {@include tableheads;}}
 
 // ====== // ===== // Graphs // ====== // ===== //
-.stock-graph {width:65%;margin: 52px 0 0 54px;float:left;background:$darkOverlay;display:block;height:277px;border-left:1px solid $secondary;border-top:1px solid $secondary;}
+.stock-graph {width:70%;margin: 0;float:left;background:$primary;color:$secondary;display:block;height:277px;border-left:1px solid $secondary;}

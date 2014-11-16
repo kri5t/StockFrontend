@@ -265,10 +265,8 @@ body {
     font-size: 120px;
     margin: 2px 0 10px 0;
     min-width: 100px; }
-  .third .row:first-of-type {
-    padding-top: 100px; }
   .third .row:last-of-type {
-    padding-bottom: 130px; }
+    padding-bottom: 110px; }
 
 .fourth img {
   border-radius: 50%;
@@ -314,15 +312,23 @@ body {
   .stock-signals tbody tr td {
     width: 33.3%; }
 
+thead tr {
+  border-bottom: 1px solid #FF2900; }
+  thead tr td a {
+    margin: 7px 0 5px 0;
+    display: block;
+    font-weight: 300;
+    font-size: 1.15em; }
+
 .stock-graph {
-  width: 65%;
-  margin: 52px 0 0 54px;
+  width: 70%;
+  margin: 0;
   float: left;
-  background: rgba(0, 0, 0, 0.2);
+  background: #26393D;
+  color: #FFFAE4;
   display: block;
   height: 277px;
-  border-left: 1px solid #FFFAE4;
-  border-top: 1px solid #FFFAE4; }
+  border-left: 1px solid #FFFAE4; }
 
 .navbar {
   margin: 0; }
@@ -331,7 +337,8 @@ body {
   background: #26393D;
   color: #FFFAE4;
   min-height: 70px;
-  border-color: #fff; }
+  border-color: #FF2900;
+  z-index: 3; }
   .navbar-default .container {
     padding-top: 7px;
     font-size: 20px; }
@@ -364,6 +371,29 @@ body {
 .navbar-default .navbar-brand {
   color: #FFFFFF; }
 
+.global-menu ul {
+  margin: 9px 0 0 -40px; }
+  .global-menu ul li a {
+    background: #FFFAE4;
+    padding: 10px 13px 12px 13px;
+    margin: 0 7px 0 0;
+    border: 1px solid #26393D;
+    border-top: none; }
+    .global-menu ul li a:hover {
+      transition: color 1.5s ease;
+      color: #FF2900; }
+
+.global-menu {
+  height: 30px;
+  position: fixed;
+  top: 70px;
+  transition: top 1.2s ease-in-out;
+  width: 100%;
+  z-index: 2; }
+
+.nav-up {
+  top: -30px; }
+
 .dropdown-toggle {
   padding: 8px 12px; }
 
@@ -395,10 +425,9 @@ body {
   border-bottom: 1px solid #DDDDDD; }
   .nav-tabs > li > a {
     border-radius: 0;
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-right: 10px;
-    background: #DDDDDD;
-    font-weight: 500; }
+    background: #DDDDDD; }
     .nav-tabs > li > a:hover {
       color: #FF2900; }
 
@@ -411,7 +440,7 @@ body {
   min-height: 562px; }
 
 #post .first .row:first-of-type {
-  padding-top: 32px; }
+  padding-top: 62px; }
 #post .first .row:last-of-type {
   padding-bottom: 70px; }
 #post .first .disclaimer {
@@ -474,6 +503,8 @@ body {
     display: none; }
 #profile .filter-options {
   margin: 0; }
+#profile .second .row:first-of-type {
+  padding-top: 100px; }
 #profile .second .table {
   margin-top: 0; }
   #profile .second .table thead tr td {
@@ -491,7 +522,6 @@ body {
   color: #FFFAE4; }
 #profile .second .col-sm-3 h3 {
   border-bottom: 1px solid #FFFFFF;
-  padding-bottom: 20px;
   margin: 20px 0; }
 #profile .own-signals {
   margin-top: 20px; }
@@ -506,6 +536,8 @@ body {
   padding-top: 50px; }
 #stock .first .row:last-of-type {
   padding-bottom: 60px; }
+#stock .nav-tabs {
+  border-bottom: 1px solid #FFFAE4; }
 #stock .second .table thead tr td a {
   margin: 7px 0 5px 0;
   display: block;
@@ -520,7 +552,9 @@ body {
     padding: 12px;
     background: transparent;
     color: #FFFAE4;
-    font-size: 1.4em; }
+    font-size: 1.4em;
+    font-weight: 300;
+    display: none; }
   #stock .stock-overview tbody {
     background: #26393D;
     color: #FFFAE4; }
@@ -539,21 +573,20 @@ body {
     #stock .stock-overview tbody tr:last-of-type:hover td {
       border-bottom: 1px solid #FFFAE4; }
     #stock .stock-overview tbody tr:first-of-type td {
-      border-top: 1px solid #FFFAE4; }
-#stock .stock-news {
-  background: #FFFAE4; }
-  #stock .stock-news tbody tr td:last-of-type {
-    text-align: left;
-    padding-top: 14px; }
+      border-top: 1px solid #26393D; }
+#stock .stock-news tbody tr td:last-of-type {
+  text-align: left;
+  padding-top: 14px; }
+#stock .stock-news thead tr {
+  border-bottom: 1px solid #FF2900; }
 #stock #tab1 {
-  min-height: 339px;
-  background: #26393D;
-  padding-top: 10px; }
+  min-height: 298px; }
 #stock #tab2 {
   min-height: 0;
-  height: 339px;
-  margin: 0 0 20px 0;
-  overflow: auto; }
+  height: 277px;
+  overflow: auto;
+  margin-bottom: 21px;
+  border: 1px solid #26393D; }
 
 .modal-dialog {
   margin-top: 180px;

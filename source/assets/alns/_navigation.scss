@@ -1,6 +1,6 @@
 // ====== // ===== // Navigation elements // ====== // ===== //
 .navbar {margin:0;}
-.navbar-default {background:$primary;color:$secondary;min-height:70px;border-color:#fff;
+.navbar-default {background:$primary;color:$secondary;min-height:70px;border-color:$fourth;z-index:3;
   .container{padding-top:7px;font-size:20px;}
   .navbar-header a {font-size:0.8em;}
   .navbar-right .glyphicon {font-size:34px;top:7px;right:22px;
@@ -15,6 +15,14 @@
 .navbar-default .navbar-nav li a img {border-radius:50%;width:50px;}
 .navbar-default .navbar-brand {color:$third;}
 
+// ====== // ===== // Global menu // ====== // ===== //
+.global-menu ul {margin:9px 0 0 -40px;
+  li a {background:$secondary;padding:10px 13px 12px 13px;margin:0 7px 0 0;border:1px solid $primary;border-top:none;
+  &:hover {@include colortransition;color:$fourth;}}}
+.global-menu {height:30px;position: fixed;top: 70px;transition: top 1.2s ease-in-out;width: 100%;z-index: 2;}
+.nav-up {top: -30px;}
+
+// ====== // ===== // Dropdowns // ====== // ===== //
 .dropdown-toggle {padding:8px 12px;}
 .btn-group.open .dropdown-toggle {box-shadow:none;}
 .btn-default:focus, .open > .btn-default.dropdown-toggle {background:$primary;border-color:$primary;color:$secondary;}
@@ -24,7 +32,7 @@
 
 // ====== // ===== // Tabable content // ====== // ===== //
 .nav-tabs {border-bottom:1px solid $lightGrey;
-  > li > a {border-radius:0;font-size:1.3em;margin-right:10px;background:$lightGrey;font-weight:500;
+  > li > a {border-radius:0;font-size:1.2em;margin-right:10px;background:$lightGrey;
     &:hover {color:$fourth;}}}
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {color:$secondary;background:$primary;border:1px solid $primary;}
