@@ -2,7 +2,7 @@
 .modal-dialog {margin-top:180px;width:400px;}
 .modal-header {border-bottom:none;
   a {color:$primary;font-weight:400;
-    &:hover {color: $darkGrey;}}}
+    &:hover {color: $third;}}}
 .modal-title {padding-bottom:10px;
   .glyphicon {font-size:11px;top:0;}}
 .modal-content {border-radius:0;border:none;background:$secondary;color:$primary;box-shadow:none;text-align:center;
@@ -15,7 +15,7 @@
 
 // ====== // ===== // Opret ny signal // ====== // ===== //
 #new-signal {
-  .modal-content {background:$primary;color:$third;
+  .modal-content {background:$primary;color:$secondary;
     .rate-area {margin:12px 0;
       input, textarea {border:1px solid $primary;background:$secondary;padding: 10px;min-height: 47px;color:$primary;}}}
   .radio {margin:5px 0 0 21px;}
@@ -29,7 +29,7 @@
 // ====== // ===== // Ændre profiloplysninger // ====== // ===== //
 
 #options {
-  .modal-content {background:$primary;color:$third;
+  .modal-content {background:$primary;color:$secondary;
     a {color:$secondary;}
     .modal-header p {font-style:italic;margin:0;color:$secondary;}
     img {width:80px;}

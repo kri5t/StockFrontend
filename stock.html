@@ -12,8 +12,8 @@
 
     <!-- Styles -->
     <link href="source/assets/stylesheets/application.css" rel="stylesheet">
+    <link href="source/assets/alns/awesome/font-awesome.css" rel="stylesheet">
     <link href="source/assets/alns/custom.css" rel="stylesheet">
-    <link href="source/assets/alns/hacks.css" rel="stylesheet">
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
@@ -22,36 +22,63 @@
 <body id="stock">
 
 <!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand" href="post.html">Alpha v. 1.1.0</a>
         </div>
-        <div class="navbar-collapse collapse">
+        <div id="navbar" class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav">
+                <li><a href="stocks.html">Aktieoversigt<span>Vurder markedet</span></a></li>
+                <li><a href="subscriptions.html">Subscriptions<span>Abonner på aktier</span></a></li>
+                <li><a href="preferences.html">Indstillinger<span>Ændre profilindstillinger</span></a></li>
+            </ul>
+
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="profile.html"><img src="source/assets/img/profil.jpg" /></a></li>
+                <li class="profile-nav"><a href="profile.html"><img src="source/assets/img/profil.jpg" /></a></li>
                 <li class="logout"><a href="index.html">log ud</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
-</div>
+</nav>
 
 <div class="container">
 
-    <div class="global-menu">
-        <ul class="menu-nav">
-            <li><a href="stocks.html">Aktieoversigt</a></li>
-            <li><a href="signals.html">Signaloversigt</a></li>
-            <li><a href="preferences.html">Indstillinger</a></li>
-        </ul>
+    <!-- First area -->
+    <div class="first area">
+        <div class="row">
+            <div class="col-sm-12 ">
+                <h3>Søg på aktier og få et skarpere indblik i markedet</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 stock-search">
+                <form action="" method="post">
+                    <div class="search-input">
+                        <label for="search-stock" class="hidden"></label>
+                        <input type="text" id="search-stock">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
     </div>
 
     <!-- Second area -->
     <div class="second area">
         <div class="row">
             <div class="col-sm-12 ">
-                <h1>iShares Nasdaq (IBB)</h1>
-                <h3 class="signal-text">Signalstyrke: <span class="overall-signal">Køb</span></h3>
+                <h1>Aktieinformation</h1>
+                <h3 class="stock-title">iShares Nasdaq (IBB)</h3>
             </div>
         </div>
 
@@ -60,8 +87,9 @@
             <div class="col-sm-12 profile-tabs stock-tabs">
 
                 <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#tab1">Aktieinformation i realtid</a></li>
-                    <li><a data-toggle="tab" href="#tab2">Information</a></li>
+                    <li class="active stock-tab"><a data-toggle="tab" href="#tab1">Aktieinformation i realtid</a></li>
+                    <li><a data-toggle="tab" href="#tab2">Signaler på denne aktie</a></li>
+                    <li class="pull-right">Nuværende anbefaling: N/A</li>
                 </ul>
 
                 <!-- First tabbed content -->
@@ -97,18 +125,14 @@
                                 </tr>
                                 <tr>
                                     <td>Årlig minimum</td>
-                                    <td class="sell">207.15</td>
+                                    <td class="buy">207.15</td>
                                 </tr>
                                 </tbody>
                             </table>
 
                         <div class="stock-graph">
 
-                            <h1>Graf</h1>
-                            <h2>Graf</h2>
-                            <h3>Graf</h3>
-
-                            <h1>Giraf!?</h1>
+                            <a data-placement="top" data-toggle="tooltip" title="Log venligst ind for at benytte denne funktionalitet">Følg aktie</a>
 
                         </div>
 
@@ -117,192 +141,85 @@
                     <!-- Second tabbed content -->
                     <div id="tab2" class="tab-pane fade">
 
-                            <table class="table stock-news">
-                                <thead>
-                                <tr>
-                                    <td><a href="#">Dato</a></td>
-                                    <td><a href="#">Kilde</a></td>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr onclick="window.document.location='#';">
-                                    <td>21.11.14</td>
-                                    <td>Lidt lorem ipsum halløj [...]</td>
-                                </tr>
-                                <tr onclick="window.document.location='#';">
-                                    <td>19.11.14</td>
-                                    <td>Lidt lorem ipsum halløj [...]</td>
-                                </tr>
-                                <tr onclick="window.document.location='#';">
-                                    <td>16.11.14</td>
-                                    <td>Lidt lorem ipsum halløj [...]</td>
-                                </tr>
-                                <tr onclick="window.document.location='#';">
-                                    <td>12.11.14</td>
-                                    <td>Lidt lorem ipsum halløj Lidt lorem ipsum halløj [...]</td>
-                                </tr>
-                                <tr onclick="window.document.location='#';">
-                                    <td>11.11.14</td>
-                                    <td>Lidt lorem ipsum halløj [...]</td>
-                                </tr>
-                                <tr onclick="window.document.location='#';">
-                                    <td>01.11.14</td>
-                                    <td>Lidt lorem ipsum halløj Lidt lorem ipsum halløj Lidt lorem ipsum halløj [...]</td>
-                                </tr>
-                                <tr onclick="window.document.location='#';">
-                                    <td>15.10.14</td>
-                                    <td>Lidt lorem ipsum halløj Lidt lorem ipsum halløj Lidt lorem ipsum halløj [...]</td>
-                                </tr>
-                                <tr onclick="window.document.location='#';">
-                                    <td>14.10.14</td>
-                                    <td>Lidt lorem ipsum halløj Lidt lorem ipsum halløj Lidt lorem ipsum halløj [...]</td>
-                                </tr>
-                                </tbody>
-                            </table>
+                        <table class="table signals-table">
+                            <thead>
+                            <tr>
+                                <td><a href="#">Anbefaling af aktie</a></td>
+                                <td><a href="#">Signal</a></td>
+                                <td><a href="#">Tidspunkt</a></td>
+                                <td><a href="#">Bruger</a></td>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr class="buy">
+                                <td>Est heirloom cliche Kickstarter, mixtape brunch selfies. Consectetur drinking vinegar kale chips, kogi brunch pickled sriracha nulla forage selfies fingerstache id art party PBR quis. Bespoke organic mlkshk, sapiente Blue Bottle Williamsburg Bushwick next level normcore messenger bag. Gentrify authentic semiotics lomo delectus, Blue Bottle bicycle rights fashion axe biodiesel roof party direct trade skateboard occaecat. +1 cliche shabby chic salvia. Whatever sunt meditation, bitters quinoa Truffaut farm-to-table culpa assumenda Tumblr. Chia pop-up bitters, cred fingerstache master cleanse distillery polaroid McSweeney's food truck mlkshk veniam aliqua nostrud nisi.</td>
+                                <td>Køb</td>
+                                <td>21:20 - 1. nov</td>
+                                <td><a href="profile.html"><img src="source/assets/img/profil.jpg" /></a></td>
+                            </tr>
+                            <tr class="sell">
+                                <td>Mixtape meggings organic, velit keffiyeh gastropub 90's chambray ad qui. Ut biodiesel stumptown, hashtag twee chia swag cupidatat beard shabby chic occaecat deep v DIY do. Voluptate pour-over hella seitan flannel direct trade tofu, Tumblr Bushwick id. Laborum selvage seitan reprehenderit Neutra Echo Park. Salvia ex fanny pack, pork belly artisan asymmetrical PBR&B. Kogi Pitchfork vero, food truck dolor hella nisi 90's ethical labore plaid church-key Neutra assumenda. Incididunt Blue Bottle enim, proident asymmetrical cliche cardigan.</td>
+                                <td>Sælg</td>
+                                <td>21:00 - 1. nov</td>
+                                <td><a href="#"><img src="source/assets/img/profil1.jpg" /></a></td>
+                            </tr>
+                            <tr class="hold">
+                                <td> Officia Odd Future street art 8-bit, est consequat Pitchfork vegan kale chips et nulla disrupt artisan. Sint viral deserunt bicycle rights.</td>
+                                <td>Hold</td>
+                                <td>20:42 - 1. nov</td>
+                                <td><a href="#"><img src="source/assets/img/profil2.jpg" /></a></td>
+                            </tr>
+                            <tr class="buy">
+                                <td> Officia Odd Future street art 8-bit, est consequat Pitchfork vegan kale chips et nulla disrupt artisan. Sint viral deserunt bicycle rights.</td>
+                                <td>Køb</td>
+                                <td>20:30 - 31. okt</td>
+                                <td><a href="#"><img src="source/assets/img/profil3.jpg" /></a></td>
+                            </tr>
+                            <tr class="buy">
+                                <td>Bushwick small batch ugh adipisicing keytar, non selfies messenger bag chambray synth asymmetrical incididunt banjo mlkshk. </td>
+                                <td>Køb</td>
+                                <td>18:23 - 31. okt</td>
+                                <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
+                            </tr>
+                            <tr class="sell">
+                                <td>Chillwave PBR&B esse retro. Ugh in food truck biodiesel esse freegan.</td>
+                                <td>Sælg</td>
+                                <td>18:12 - 31. okt</td>
+                                <td><a href="#"><img src="source/assets/img/profil1.jpg" /></a></td>
+                            </tr>
+                            <tr class="hold">
+                                <td>Ad accusamus placeat pickled, forage Marfa proident ennui shabby chic 3 wolf moon +1 sed cray Carles in.</td>
+                                <td>Hold</td>
+                                <td>14:19 - 30. okt</td>
+                                <td><a href="#"><img src="source/assets/img/profil2.jpg" /></a></td>
+                            </tr>
+                            <tr class="hold">
+                                <td>Ennui readymade cronut pour-over pickled lomo. Nostrud squid cardigan duis, aesthetic Pitchfork actually Marfa try-hard id meggings street art pug.</td>
+                                <td>Hold</td>
+                                <td>13:59 - 30. okt</td>
+                                <td><a href="#"><img src="source/assets/img/profil3.jpg" /></a></td>
+                            </tr>
+                            <tr class="sell">
+                                <td>Enim pickled beard typewriter ullamco you probably haven't heard of them shabby chic stumptown occaecat magna.</td>
+                                <td>Sælg</td>
+                                <td>12:34 - 30. okt</td>
+                                <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
 
                     </div>
 
                 </div> <!-- ./tab -->
+
+            </div>
+
+           <div class="show-more">
+                <button class="btn btn-default new-signal" type="button" data-toggle="modal" data-target="#new-signal">Opret signal <span class="glyphicon glyphicon-pencil"></span></button>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-12">
-
-                <div class="show-more">
-                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="modal" data-target="#new-signal">Opret signal <span class="glyphicon glyphicon-pencil"></span></button>
-                </div>
-
-                <table class="table stock-signals">
-                    <thead>
-                    <tr>
-                        <td><a href="#">Signal</a></td>
-                        <td><a href="#">Tidspunkt</a></td>
-                        <td><a href="#">Bruger</a></td>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr class="buy" onclick="window.document.location='#';">
-                        <td>Køb</td>
-                        <td>21:20 - 12. nov</td>
-                        <td><a href="profile.html"><img src="source/assets/img/profil.jpg" /></a></td>
-                    </tr>
-                    <tr class="buy" onclick="window.document.location='#';">
-                        <td>Køb</td>
-                        <td>21:00 - 11. nov</td>
-                        <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
-                    </tr>
-                    <tr class="hold" onclick="window.document.location='#';">
-                        <td>Hold</td>
-                        <td>20:42 - 10. nov</td>
-                        <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
-                    </tr>
-                    <tr class="sell" onclick="window.document.location='#';">
-                        <td>Sælg</td>
-                        <td>20:30 - 31. okt</td>
-                        <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
-                    </tr>
-                    </tbody>
-                </table>
-                <div class="show-more">
-                    <button class="btn btn-default dropdown-toggle" type="button">Vis flere <span class="glyphicon glyphicon-repeat"></span></button>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- First area -->
-    <div class="first area">
-        <div class="row">
-            <div class="col-sm-12 ">
-                <h3>Søg på aktier</h3>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12 stock-search">
-                <form action="" method="post">
-                    <div class="search-input">
-                        <label for="search-stock" class="hidden"></label>
-                        <input type="text" id="search-stock">
-                        <span class="glyphicon glyphicon-search"></span>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-                <p class="disclaimer">*Markedsresume</p>
-                <table class="table market-resume">
-                    <tbody>
-                    <tr>
-                        <td>OMXC PI</td>
-                        <td>602,20</td>
-                        <td class="buy">1%</td>
-                    </tr>
-                    <tr>
-                        <td>OMXC Mid Cap</td>
-                        <td>315,10</td>
-                        <td class="buy">0.9%</td>
-                    </tr>
-                    <tr>
-                        <td>OMXC Mid Cap</td>
-                        <td>599,15</td>
-                        <td class="sell">-1.5%</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Create signal Modal -->
-    <div class="modal fade" id="new-signal" tabindex="-1" role="dialog" aria-labelledby="new-signal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <div class="rate-area">
-                                <label class="hidden">Aktie</label>
-                                <input type="text" class="form-control" placeholder="Aktie">
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsRadios" id="koeb" value="option3">
-                                        Køb
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="optionsRadios" id="saelg" value="option3">
-                                        Sælg
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="optionsRadios" id="hold" value="option3">
-                                        Hold
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="rate-area">
-                                <label class="hidden">Reference (http://)</label>
-                                <input type="text" class="form-control" placeholder="Reference">
-                            </div>
-                            <div class="rate-area">
-                                <label class="hidden">Beskrivelse</label>
-                                <textarea placeholder="Beskrivelse af din vurdering..."></textarea>
-                            </div>
-                        </div>
-                    </form>
-
-                    <div class="show-more text-center">
-                        <button class="btn btn-default dropdown-toggle" type="button" data-dismiss="modal">Opret signal <span class="glyphicon glyphicon-pencil"></span></button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
 </div>

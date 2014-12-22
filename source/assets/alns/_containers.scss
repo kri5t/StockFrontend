@@ -1,10 +1,13 @@
+@import "variables";
+@import "mixins";
+
 // ====== // ===== // Main containers // ====== // ===== //
 html {overflow-y: scroll;}
 
 body {font-family: $font;font-weight:300;background:$primary;color:$secondary;margin-top:70px;overflow-x:hidden;}
 .container {padding:0 40px;}
 
-.second, .fourth, .fifth, .sixth {
+.second, .fourth, .sixth {
   color:$primary;
   background:$secondary;
   &:before {background:$secondary;}
@@ -22,37 +25,40 @@ body {font-family: $font;font-weight:300;background:$primary;color:$secondary;ma
 
 // ====== // ===== // First // ====== // ===== //
 .first {
-  color:$third;
+  color:$secondary;
   .glyphicon {font-size:30px;top: 9px;left: -43px;color:$primary;}
-  input {height:50px;width:58%;padding: 4px 13px;margin:10px 0 0 36px;@include bgtransition;border:1px solid $secondary;background:$secondary;
-    &:focus{background:$primary;color:#fff;border:1px solid $third;}}
+  input {height:50px;width:58%;padding: 4px 13px;margin:10px 0 0 36px;@include bgtransition;border:1px solid $secondary;background:$secondary;border-radius: 0 5px 0 0;
+    &:focus{background:$primary;color:#fff;border:1px solid $secondary;}}
   .stock-search {}
-  .row:first-of-type {padding-top:122px;}
-  .row:last-of-type {padding-bottom:170px;}
+  .row:first-of-type {padding-top:50px;}
+  .row:last-of-type {padding-bottom:90px;}
 }
 
 // ====== // ===== // Second // ====== // ===== //
 .second {
   h1 {margin-bottom:30px;}
-  .table {}
+  .table {margin-bottom:40px;}
   .disclaimer {text-align:left;margin-top:45px;}
+  tbody tr:last-of-type {border-bottom:4px solid $third;}
   a {color:$primary;@include colortransition;
-    &:hover {color:$third;}}
-  .table thead tr td {padding: 7px 0 12px 0;font-size:1.1em;background:$primary;color:$secondary;font-weight:400;
+    &:hover {color:$secondary;}}
+  .table thead tr td {padding: 7px 0 12px 0;font-size:1.1em;background:$third;color:$secondary;font-weight:400;
     .glyphicon {font-size:24px;margin-left:6px;top: 5px;}
     .glyphicon-transfer {@include rotate90;margin-left:0;}
-    a {color:$third;font-weight:300;}}
+    a {color:$secondary;font-weight:300;font-size: 1.25em;}}
   .table tbody tr {font-weight:400;
-    td {padding:14px 0 10px 0;border-top:none;border-bottom:1px solid $primary;
-      img {border-radius:50%;width:40px;}
-      &:nth-last-child(1) {padding:6px 0 6px 0;}
+    td {padding:10px 0;border-top:none;border-bottom:1px solid $third;vertical-align:middle;
+      img {border-radius:50%;width:56px;}
       .glyphicon {font-size:28px;margin-left:12px;}}}
-  .table tbody tr:hover {background:$third;cursor:pointer;@include bgtransition;color: $darkGrey;}
+  .table tbody tr {@include bgtransition;
+    td {@include colortransition;}
+    &:hover {background:$othird;cursor:pointer;color:$primary;}}
+  .friend-subscriptions {margin-top:40px;}
 }
 
 // ====== // ===== // Third // ====== // ===== //
 .third {
-  color:$third;
+  color:$secondary;
   p {padding:0 14%;}
   .glyphicon {font-size:120px;margin: 2px 0 10px 0;min-width: 100px;}
   .row:last-of-type {padding-bottom:110px;}
@@ -62,30 +68,44 @@ body {font-family: $font;font-weight:300;background:$primary;color:$secondary;ma
 .fourth {
   font-weight:400;
   img {border-radius:50%;width:100px;margin:40px 0 22px 0;}
-  .col-sm-4 p:nth-child(3) {margin:10px 80px;padding-top:10px;border-top:1px solid $fourth;}
+  .col-sm-4 p:nth-child(3) {margin:10px 80px;padding-top:10px;border-top:1px solid $third;}
   .col-sm-4 p:nth-child(4) {font-size:1em;font-style:italic;}
 }
 
 // ====== // ===== // Fifth // ====== // ===== //
 .fifth {
-  font-weight:400;
-  .glyphicon {font-size:30px;margin:0 10px 20px 10px;color:$fourth;}
-  a {color:$primary;font-size:0.8em;
-    &:hover {color:$fourth;}}
-  .row:first-of-type {padding-top:0;}
-  .row:last-of-type {padding-bottom:0;}
+  color:$secondary;
+  background:$primary;
+  &:before {background:$primary;}
+  &:after {background:$primary;}
+  .glyphicon {font-size:40px;margin:0 10px 20px 10px;color:$third;}
+  a {color:$secondary;font-size:1em;
+    &:hover {color:$third;}}
+  .row:first-of-type {padding-top:30px;}
+  .row:last-of-type {padding-bottom:40px;}
 }
 
 // ====== // ===== // Tables // ====== // ===== //
-.market-resume > tbody > tr > td {border-top:1px solid $third;padding:10px 0;
-&:last-of-type{text-align:right;}}
-.market-resume {font-size:0.8em;width:250px;margin:0 auto 0 auto;text-align:left;border-bottom:1px solid $third;color:$secondary;}
-.stock-signals {margin-top:20px;
-  tbody tr td {width:33.3%;}}
-thead tr {border-bottom:2px solid $fourth;
-td a {@include tableheads;}}
-.second tbody tr:last-of-type {border-bottom:2px solid $primary;}
+.market-resume > tbody > tr > td {border-top:1px solid $secondary;padding:10px 0;
+&:last-of-type{text-align:right;color:$third;}}
+.market-resume {font-size:0.8em;width:250px;margin:0 auto 0 auto;text-align:left;border-bottom:1px solid $secondary;color:$secondary;}
+.stock-signals {margin-top:20px; tbody tr td {width:33.3%;}}
+thead tr td a {@include tableheads;}
 .popular-stocks td {width:20%;}
+.stock-overview tbody tr:last-of-type {border-bottom:none;}
+
+.second .signals-table.table tbody {
+tr:hover {background:none;color:$oprimary;}
+td {
+&:hover {cursor:default;background:none;color:$oprimary;background:transparent;}
+&:first-child {max-width:300px;text-align:left;padding:10px 10px 10px 0;}
+&:nth-child(1n+2) {vertical-align:middle;padding:0;}}}
+
+.table thead tr td:last-child {border-radius:0 5px 0 0;}
 
 // ====== // ===== // Graphs // ====== // ===== //
+.stock-tabs {margin-top:10px;}
 .stock-graph {width:70%;margin: 0;float:left;background:$primary;color:$secondary;display:block;height:277px;border-left:1px solid $secondary;}
+
+// ====== // ===== // Tooltips // ====== // ===== //
+.tooltip {font-size:1em;text-align:center;position:fixed;background:$primary;color:$secondary;padding:7px 11px 9px 11px;border-radius:0 5px 0 0;}

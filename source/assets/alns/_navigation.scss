@@ -1,39 +1,73 @@
 // ====== // ===== // Navigation elements // ====== // ===== //
 .navbar {margin:0;}
-.navbar-default {background:$primary;color:$secondary;min-height:70px;border-bottom:2px solid $fourth;z-index:$zdex2;
+.navbar-default {background:$primary;color:$secondary;min-height:70px;border-bottom:2px solid $third;z-index:$zdex2;
   .container{padding-top:7px;font-size:20px;}
-  .navbar-header a {font-size:0.8em;}
+  .navbar-header a {font-size:1.2em;}
   .navbar-right .glyphicon {font-size:34px;top:7px;right:22px;
-    &:hover {color:$third;}}
-  .navbar-nav li a {padding:0;}
+    &:hover {color:$secondary;}}
+  .navbar-nav > li {margin:7px 0 0 30px;}
+  .navbar-nav > li.profile-nav {margin:0;}
+  .navbar-nav > li.active-menu a {color:$third;
+  &:hover {cursor:default;}}
+  .navbar-nav > li.profile-nav.active-menu a img:hover {cursor:default;}
+  .navbar-nav > li.logout, .navbar-nav > li.login  {margin:15px 0 0 10px;}
+  .navbar-nav li a {padding:0;
+  span {font-size:0.7em;display:block;margin:2px 2px 2px 0;}}
 }
 
-.navbar-default .navbar-brand, .navbar-default .navbar-nav li a {color:$third;@include colortransition;font-size:0.9em;padding-right:0;
-  &:hover {color:$fourth;}
-  &:focus {color:$primary;box-shadow:none !important;}
+.navbar-default .navbar-brand, .navbar-default .navbar-nav li a {color:$secondary;@include colortransition;font-size:0.9em;padding-right:0;
+  &:hover {color:$third;}
+  &:focus {color:$third;box-shadow:none !important;}
 }
 .navbar-default .navbar-nav li a img {border-radius:50%;width:50px;}
-.navbar-default .navbar-brand {color:$third;}
-
-// ====== // ===== // Global menu // ====== // ===== //
-.global-menu ul {margin:9px 0 0 -40px;
-  li a {background:$secondary;padding:10px 13px 12px 13px;margin:0 7px 0 0;border:1px solid $primary;border-top:none;
-  &:hover {@include colortransition;color:$fourth;}}}
-.global-menu {height:30px;position: fixed;top: 70px;transition: top 1.2s ease-in-out;width: 100%;z-index:$zdex1;}
-.nav-up {top: -30px;}
+.navbar-default .navbar-brand {color:$secondary;}
 
 // ====== // ===== // Dropdowns // ====== // ===== //
 .dropdown-toggle {padding:8px 12px;}
 .btn-group.open .dropdown-toggle {box-shadow:none;}
 .btn-default:focus, .open > .btn-default.dropdown-toggle {background:$primary;border-color:$primary;color:$secondary;}
-.dropdown-menu {border-radius:0;background:$primary;color:$secondary;min-width:145px;top: 34px;border:1px solid $primary;border-top:none;
+.dropdown-menu {border-radius:0;background:$primary;color:$secondary;min-width:145px;top: 47px;border:1px solid $primary;border-top:none;margin:0;padding:3px 0;
   li a {padding:3px 7px;font-weight:300;color:$secondary;
-    &:hover {color:$fourth;background:none;}}}
+    &:hover {color:$third;background:none;}}}
+
+// ====== // ===== // Filter // ====== // ===== //
+.filter-options {margin:0 0 25px 0;
+  .btn, .dropdown-menu li a {font-size:1.4em;@include bgtransition;
+    i {margin-left:5px;}}
+  .dropdown-menu li a {padding:8px 19px;min-width:193px;font-size:1.25em;border-top:1px solid $secondary;}
+  .dropdown-menu li a:hover {background:$third;color:$secondary;}}
 
 // ====== // ===== // Tabable content // ====== // ===== //
-.nav-tabs {border-bottom:1px solid $lightGrey;
-  > li > a {border-radius:0;font-size:1.2em;margin-right:10px;background:$lightGrey;padding:8px 17px;
-    &:hover {color:$fourth;}}}
-
+.nav-tabs {border-bottom:none;
+  > li > a {border-radius:0 6px 0 0;font-size:1.2em;margin-right:10px;background:$othird;padding:8px 17px;@include colortransition;
+    &:hover {color:$primary;background:$third;border:1px solid $third;}}
+  > li.pull-right {margin-right:0;background:$oprimary;color:$secondary;padding: 9px 17px;font-size: 1.2em;border-radius: 0 5px 0 0;
+  &:hover {cursor:default;}}}
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {color:$secondary;background:$primary;border:1px solid $primary;}
+.profile-tabs {
+  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {color:$secondary;background:$third;border:1px solid $third;}
+}
+
+.profile-tabs .nav-tabs > .active.stock-tab > a {background:$primary;border:1px solid $primary;
+&:hover {background:$primary;border:1px solid $primary;}
+  &:focus {background:$primary;border:1px solid $primary;}}
+
 #tab1, #tab2, #tab3 {min-height:562px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

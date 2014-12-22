@@ -1,11 +1,11 @@
 // ====== // ===== //  Mixins // ====== // ===== //
 //Transitions
-@mixin rotatetransition {-webkit-transition-duration: 1.2s;-moz-transition-duration: 1.2s;-o-transition-duration: 1.2s;transition-duration: 1.2s;-webkit-transition-property: -webkit-transform;-moz-transition-property: -moz-transform;-o-transition-property: -o-transform;transition-property: transform;overflow:hidden;  }
+@mixin rotatetransition {-webkit-transition-duration: 0.8s;-moz-transition-duration: 0.8s;-o-transition-duration: 0.8s;transition-duration: 0.8s;-webkit-transition-property: -webkit-transform;-moz-transition-property: -moz-transform;-o-transition-property: -o-transform;transition-property: transform;overflow:hidden;  }
 @mixin rotate20 {-webkit-transform:rotate(20deg);-moz-transform:rotate(20deg);-o-transform:rotate(20deg);}
 @mixin rotate90 {-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);}
 @mixin rotate180 {-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-o-transform:rotate(180deg);}
-@mixin colortransition {transition: color 1.5s ease;}
-@mixin bgtransition {transition: background-color 1.2s ease;}
+@mixin colortransition {transition: color 0.8s ease-in-out;-webkit-transition: color 0.8s ease-in-out;-moz-transition: color 0.8s ease-in-out;}
+@mixin bgtransition {transition: background-color 0.8s ease-in-out;-webkit-transition: background-color 0.8s ease-in-out;-moz-transition: background-color 0.8s ease-in-out;}
 
 //Full width colours
 @mixin fullleft {display: block;content: "";position: absolute;width: 200%;top: 0;bottom: 0;margin: 0;right: 100%;}

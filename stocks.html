@@ -12,8 +12,8 @@
 
     <!-- Styles -->
     <link href="source/assets/stylesheets/application.css" rel="stylesheet">
+    <link href="source/assets/alns/awesome/font-awesome.css" rel="stylesheet">
     <link href="source/assets/alns/custom.css" rel="stylesheet">
-    <link href="source/assets/alns/hacks.css" rel="stylesheet">
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
@@ -22,28 +22,54 @@
 <body id="stocks">
 
 <!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand" href="post.html">Alpha v. 1.1.0</a>
         </div>
-        <div class="navbar-collapse collapse">
+        <div id="navbar" class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav">
+                <li class="active-menu"><a href="stocks.html">Aktieoversigt<span>Vurder markedet</span></a></li>
+                <li><a href="subscriptions.html">Subscriptions<span>Abonner på aktier</span></a></li>
+                <li><a href="preferences.html">Indstillinger<span>Ændre profilindstillinger</span></a></li>
+            </ul>
+
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="profile.html"><img src="source/assets/img/profil.jpg" /></a></li>
+                <li class="profile-nav"><a href="profile.html"><img src="source/assets/img/profil.jpg" /></a></li>
                 <li class="logout"><a href="index.html">log ud</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
-</div>
+</nav>
 
 <div class="container">
 
-    <div class="global-menu">
-        <ul class="menu-nav">
-            <li><a href="stocks.html">Aktieoversigt</a></li>
-            <li><a href="signals.html">Signaloversigt</a></li>
-            <li><a href="preferences.html">Indstillinger</a></li>
-        </ul>
+    <!-- First area -->
+    <div class="first area">
+        <div class="row">
+            <div class="col-sm-12 ">
+                <h3>Søg på aktier og få et skarpere indblik i markedet</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 stock-search">
+                <form action="" method="post">
+                    <div class="search-input">
+                        <label for="search-stock" class="hidden"></label>
+                        <input type="text" id="search-stock">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <!-- Second area -->
@@ -135,58 +161,11 @@
                 </table>
 
                 <div class="show-more">
-                    <button class="btn btn-default dropdown-toggle" type="button">Vis flere <span class="glyphicon glyphicon-repeat"></span></button>
+                    <button class="btn btn-default dropdown-toggle" type="button">Vis flere <i class="fa fa-refresh fa-spin"></i></button>
                 </div>
 
             </div>
         </div>
-    </div>
-
-    <!-- First area -->
-    <div class="first area">
-        <div class="row">
-            <div class="col-sm-12 ">
-                <h3>Søg på aktier og få et skarpere indblik i markedet</h3>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12 stock-search">
-                <form action="" method="post">
-                    <div class="search-input">
-                        <label for="search-stock" class="hidden"></label>
-                        <input type="text" id="search-stock">
-                        <span class="glyphicon glyphicon-search"></span>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-                <p class="disclaimer">*Markedsresume</p>
-                <table class="table market-resume">
-                    <tbody>
-                    <tr>
-                        <td>OMXC PI</td>
-                        <td>602,20</td>
-                        <td class="buy">1%</td>
-                    </tr>
-                    <tr>
-                        <td>OMXC Mid Cap</td>
-                        <td>315,10</td>
-                        <td class="buy">0.9%</td>
-                    </tr>
-                    <tr>
-                        <td>OMXC Mid Cap</td>
-                        <td>599,15</td>
-                        <td class="sell">-1.5%</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
     </div>
 
 </div>

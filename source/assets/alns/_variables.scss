@@ -1,8 +1,11 @@
 // ====== // ===== // Colours // ====== // ===== //
-$primary:#26393D;// #f1f4f9; // #263248;
-$secondary: #FFFAE4 ;//#2d3135; // #7E8AA2;
-$third:#FFFFFF; //#FF9800
-$fourth:#FF2900;
+$primary:rgb(38, 42, 51); // #f1f4f9; // #263248;
+$secondary: rgb(255, 255, 255); //#2d3135; // #7E8AA2;
+$third:rgb(0, 139, 255); //#FF9800
+
+$oprimary:rgba(38, 42, 51, 0.7);
+$osecondary:rgba(255, 255, 255, 0.7);
+$othird:rgba(0, 139, 255, 0.3);
 
 $darkGrey: #212320;
 $lightGrey: #DDDDDD;
@@ -11,7 +14,7 @@ $mediumOverlay: rgba(241, 244, 249, 0.6);
 $darkOverlay: rgba(0, 0, 0, 0.2);
 
 $buy: #008e11; //199900
-$hold: #DE8A00;
+$hold: #dddddd;
 $sell: #D40D12;
 
 // ====== // ===== // Fonts // ====== // ===== //

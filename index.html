@@ -12,8 +12,8 @@
 
     <!-- Styles -->
     <link href="source/assets/stylesheets/application.css" rel="stylesheet">
+    <link href="source/assets/alns/awesome/font-awesome.css" rel="stylesheet">
     <link href="source/assets/alns/custom.css" rel="stylesheet">
-    <link href="source/assets/alns/hacks.css" rel="stylesheet">
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
@@ -22,28 +22,32 @@
 <body id="index">
 
 <!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand" href="index.html">Alpha v. 1.1.0</a>
         </div>
-        <div class="navbar-collapse collapse">
+        <div id="navbar" class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav">
+                <li><a href="about.html">Om os <span>Hvem vi er</span></a></li>
+            </ul>
+
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="login" data-toggle="modal" data-target="#login" href="#">Log ind</a></li>
+                <li class="login"><a data-toggle="modal" data-target="#login" href="#">Log ind</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
-</div>
+</nav>
+
 
 <div class="container">
-
-    <div class="global-menu">
-        <ul class="menu-nav">
-            <li><a href="stocks.html">Aktieoversigt</a></li>
-            <li><a href="signals.html">Signaloversigt</a></li>
-        </ul>
-    </div>
-
 
     <!-- First area -->
     <div class="first area">
@@ -72,12 +76,26 @@
     <div class="second area">
         <div class="row">
             <div class="col-sm-12 ">
-                <h1>Seneste signaler fra vores netværk</h1>
+                <h1>Seneste anbefalinger fra vores netværk</h1>
             </div>
         </div>
 
         <div class="row">
             <div class="col-sm-12">
+
+                <div class="filter-options">
+                    <div class="btn-group">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                            Filtrer signaler <i class="fa fa-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Køb</a></li>
+                            <li><a href="#">Sælg</a></li>
+                            <li><a href="#">Hold</a></li>
+                            <li><a href="#" data-placement="top" data-toggle="tooltip" title="Log venligst ind for at benytte denne funktionalitet">Venners</a></li>
+                        </ul>
+                    </div>
+                </div>
 
                 <table class="table">
                     <thead>
@@ -147,70 +165,9 @@
                 </table>
 
                     <div class="show-more">
-                        <button class="btn btn-default dropdown-toggle" type="button">Vis flere <span class="glyphicon glyphicon-repeat"></span></button>
+                        <button class="btn btn-default" type="button">Vis flere <i class="fa fa-refresh fa-spin"></i></button>
                     </div>
 
-            </div>
-        </div>
-    </div>
-
-    <!-- Third area -->
-    <div class="third area">
-
-        <div class="row">
-            <div class="col-sm-12">
-                <h1>Vision</h1>
-                <p>Helvetica bespoke scenester narwhal raw denim drinking vinegar. PBR&B brunch organic, jean shorts Truffaut Etsy keffiyeh swag meh drinking vinegar Wes Anderson bicycle rights crucifix. Jean shorts fingerstache chillwave, 3 wolf moon locavore Pitchfork tousled 90's deep v banjo typewriter retro.</p>
-                <p>PBR&B brunch organic, jean shorts Truffaut Etsy keffiyeh swag meh drinking vinegar Wes Anderson bicycle rights crucifix. Jean shorts fingerstache chillwave, 3 wolf moon locavore Pitchfork tousled 90's deep v banjo typewriter retro.</p>
-                <p>Helvetica bespoke scenester narwhal raw denim drinking vinegar. PBR&B brunch organic, jean shorts Truffaut Etsy keffiyeh swag meh drinking vinegar Wes Anderson bicycle rights crucifix. Jean shorts fingerstache chillwave, 3 wolf moon locavore Pitchfork tousled 90's deep v banjo typewriter retro.</p>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Fourth area -->
-    <div class="fourth area">
-
-        <div class="row">
-            <div class="col-sm-4">
-                <img src="source/assets/img/profil1.jpg" />
-                <p>Kristian Banan Barrett</p>
-                <p>Titel</p>
-                <p>"Some awesome quote"</p>
-            </div>
-            <div class="col-sm-4">
-                <img src="source/assets/img/profil3.jpg" />
-                <p>Brian Bak Laursen</p>
-                <p>Titel</p>
-                <p>"Some awesome quote"</p>
-            </div>
-            <div class="col-sm-4">
-                <img src="source/assets/img/profil.jpg" />
-                <p>Allan Søgaard Larsen</p>
-                <p>Titel</p>
-                <p>"Some awesome quote"</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Fifth area -->
-    <div class="fifth area">
-        <div class="row">
-            <div class="col-sm-12 ">
-                <ul class="contact-area">
-                    <li>
-                        <span class="glyphicon glyphicon-map-marker"></span>
-                        <p><a href="https://www.google.dk/maps/place/N%C3%B8rreport+20,+Arkitektskolen+Aarhus,+8000+Aarhus+C/@56.1612494,10.2124633,17z/data=!3m1!4b1!4m2!3m1!1s0x464c3f9633aec421:0xf4e33a084526cb0e">Nørreport 20, Århus C</a></p>
-                    </li>
-                    <li>
-                        <span class="glyphicon glyphicon-phone"></span>
-                        <p><a href="#">+0045 60 16 10 86</a></p>
-                    </li>
-                    <li>
-                        <span class="glyphicon glyphicon-send"></span>
-                        <p><a href="mailto:alns@alns.eu">domæne@domæne.dk</a></p>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>

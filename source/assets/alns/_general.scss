@@ -13,39 +13,45 @@ h1,h2,h3,h4 {font-weight:300;}
 h1 {font-size:2.4em;}
 
 p, td {font-size:1.1em;}
-a {color:$primary;}
-a:hover {text-decoration:none;color:$third;@include colortransition;}
+a {color:$primary;@include colortransition;}
+a:hover {text-decoration:none;color:$secondary;}
 ul li {list-style: none;display:inline-block;}
 input[type="text"], textarea {outline: none;box-shadow:none !important;font-size:1.3em;  }
 
-.buy {color: $buy;}
+.buy {color:$third;}
 .hold {color:$primary;}
-.sell {color: $sell;}
+.sell {color:$primary;}
 .disclaimer {font-style:italic;font-size:0.9em;}
-.overall-signal {font-size:0.7em;font-weight:300;padding: 9px;background: $buy;color:$third;border-bottom:1px solid $buy;}
+.overall-signal {font-size:0.7em;font-weight:300;padding: 9px;background: $buy;color:$secondary;border-bottom:1px solid $buy;}
 .signal-text {margin-top:-14px;}
 .logout {font-size:0.7em;margin:16px 0 0 8px;}
+.stock-title {margin:-20px 0 20px 0;}
 
 // ====== // ===== // Forms n' stuff // ====== // ===== //
 hr {color:$primary;border-top:1px solid $primary;margin-top:50px;}
 .form-control {border-radius:0;}
 
 // ====== // ===== // Contact // ====== // ===== //
-.contact-area {margin:0 0 0 -3.15em;
-  li {height:150px;width:150px;margin:0 10px;}}
+.contact-dev i {margin:18px 12px;color:$third;@include colortransition;
+&:hover {color:$primary;}}
 
 // ====== // ===== // Buttons // ====== // ===== //
 .btn {border-radius:0;font-weight:300;}
 .btn-primary {background-color:$primary;color:$secondary;font-size:1.3em;border:none;
-  &:hover {background-color:$secondary;color:$third;border:none;}}
+  &:hover {background-color:$secondary;color:$secondary;border:none;}} /* Findes den her?? */
 
-.btn-default {border:1px solid $primary;background:$secondary;color:$primary;padding: 6px 22px;
-  &:hover {@include colortransition;@include bgtransition;background:$primary;color:$secondary;}}
+.container .btn-default {border:1px solid $third;border-bottom:4px solid $third;color:$primary;padding: 8px 20px;@include colortransition;@include bgtransition;
+  &:hover, &:focus, &:hover .fa-spin, &:focus .fa-spin {color:$third;background:$othird;border:1px solid $third;border-bottom:4px solid $third;}
+  &:hover .fa-spin, &:focus .fa-spin {border:none;background:none;}
+  .fa-spin {margin:2px 0 0 5px;color:$primary;}}
 
-.login {margin-top:14px;font-size:0.9em;}
-.show-more .btn {font-size:1.3em;}
-.close {font-size:28px;color:$third;text-shadow:none;
-  &:hover {color:$fourth;}}
+.show-more .btn {font-size:1.4em;}
+.close {font-size:28px;color:$secondary;text-shadow:none;
+  &:hover {color:$third;}}
+
+.new-signal {
+  &:hover .glyphicon {color:$third;}
+  .glyphicon {color:$primary;@include colortransition;}}
 
 // ====== // ===== // Link effects // ====== // ===== //
 //.underline a::after {position: absolute;top: 120%;left: 0;width: 100%;height: 1px;background: $darkOverlay;content: '';opacity: 0;-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;-moz-transition: opacity 0.3s, -moz-transform 0.3s;transition: opacity 0.3s, transform 0.3s;-webkit-transform: translateY(5px);-moz-transform: translateY(5px);transform: translateY(5px);}
