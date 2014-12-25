@@ -98,7 +98,8 @@ thead tr td a {@include tableheads;}
   &:hover {border-bottom:1px solid $primary;}}
 
 .second .signals-table.table tbody {
-  a.read-more {font-weight:600;color:inherit;
+  .col-sm-2 {font-weight: 600;}
+  a.read-more {font-style:normal;
   &:hover {color:$primary;}}
   tr:hover {/* background:$othird;color:$primary;cursor:pointer; */}
   td {

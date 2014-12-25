@@ -359,9 +359,10 @@ thead tr td a {
   .stock-overview tbody tr:last-of-type:hover {
     border-bottom: 1px solid #262a33; }
 
+.second .signals-table.table tbody .col-sm-2 {
+  font-weight: 600; }
 .second .signals-table.table tbody a.read-more {
-  font-weight: 600;
-  color: inherit; }
+  font-style: normal; }
   .second .signals-table.table tbody a.read-more:hover {
     color: #262a33; }
 .second .signals-table.table tbody tr:hover {
@@ -655,7 +656,7 @@ thead tr td a {
       background: inherit;
       color: inherit; }
     #stock .stock-overview tbody tr td {
-      padding: 12px;
+      padding: 12px 19px;
       border-bottom: 1px solid white;
       font-weight: 300; }
       #stock .stock-overview tbody tr td:last-of-type {
@@ -671,12 +672,18 @@ thead tr td a {
   padding-top: 14px; }
 #stock .stock-news thead tr {
   border-bottom: 1px solid #008bff; }
-#stock .signals-table tr td p {
+#stock .signals-table tbody tr td p {
   font-size: 1em; }
-#stock .signals-table tr td:first-of-type img {
+#stock .signals-table tbody tr td a {
+  color: #008bff;
+  font-style: italic; }
+  #stock .signals-table tbody tr td a:hover {
+    color: #262a33; }
+#stock .signals-table tbody tr td:first-of-type img {
   width: inherit;
   max-width: 100%;
-  border-radius: 0; }
+  border-radius: 0;
+  border: 1px solid #008bff; }
 #stock #tab1 {
   min-height: 298px; }
 
