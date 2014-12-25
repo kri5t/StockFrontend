@@ -7,16 +7,7 @@
     <bookmark url="file://$PROJECT_DIR$/source/assets/alns/_variables.scss" line="15" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24d88da8-c05a-46b6-99ce-780d25682dd6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/alns/_containers.scss" afterPath="$PROJECT_DIR$/source/assets/alns/_containers.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/alns/_pages.scss" afterPath="$PROJECT_DIR$/source/assets/alns/_pages.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/alns/custom.css.map" afterPath="$PROJECT_DIR$/source/assets/alns/custom.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/alns/custom.css" afterPath="$PROJECT_DIR$/source/assets/alns/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/post.html" afterPath="$PROJECT_DIR$/post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stock.html" afterPath="$PROJECT_DIR$/stock.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="24d88da8-c05a-46b6-99ce-780d25682dd6" name="Default" comment="" />
     <ignored path="StockFrontend.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
