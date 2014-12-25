@@ -35,15 +35,6 @@ input[type="text"], textarea {
   box-shadow: none !important;
   font-size: 1.3em; }
 
-.buy {
-  color: #008bff; }
-
-.hold {
-  color: #262a33; }
-
-.sell {
-  color: #262a33; }
-
 .disclaimer {
   font-style: italic;
   font-size: 0.9em; }
@@ -368,14 +359,17 @@ thead tr td a {
   .stock-overview tbody tr:last-of-type:hover {
     border-bottom: 1px solid #262a33; }
 
+.second .signals-table.table tbody a.read-more {
+  font-weight: 600;
+  color: inherit; }
+  .second .signals-table.table tbody a.read-more:hover {
+    color: #262a33; }
 .second .signals-table.table tbody tr:hover {
-  background: rgba(0, 139, 255, 0.3);
-  color: #262a33;
-  cursor: pointer; }
+  /* background:$othird;color:$primary;cursor:pointer; */ }
 .second .signals-table.table tbody td:first-child {
   max-width: 300px;
   text-align: left;
-  padding: 10px 10px 10px 0; }
+  padding: 18px 10px 18px 0; }
 .second .signals-table.table tbody td:nth-child(1n+2) {
   vertical-align: middle;
   padding: 0; }
@@ -666,7 +660,8 @@ thead tr td a {
       font-weight: 300; }
       #stock .stock-overview tbody tr td:last-of-type {
         padding-right: 0;
-        border-right: 1px solid white; }
+        border-right: 1px solid white;
+        color: #008bff; }
     #stock .stock-overview tbody tr:last-of-type td {
       border-bottom: 1px solid #262a33; }
     #stock .stock-overview tbody tr:first-of-type td {
@@ -676,6 +671,12 @@ thead tr td a {
   padding-top: 14px; }
 #stock .stock-news thead tr {
   border-bottom: 1px solid #008bff; }
+#stock .signals-table tr td p {
+  font-size: 1em; }
+#stock .signals-table tr td:first-of-type img {
+  width: inherit;
+  max-width: 100%;
+  border-radius: 0; }
 #stock #tab1 {
   min-height: 298px; }
 

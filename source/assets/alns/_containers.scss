@@ -98,10 +98,12 @@ thead tr td a {@include tableheads;}
   &:hover {border-bottom:1px solid $primary;}}
 
 .second .signals-table.table tbody {
-  tr:hover {background:$othird;color:$primary;cursor:pointer;}
+  a.read-more {font-weight:600;color:inherit;
+  &:hover {color:$primary;}}
+  tr:hover {/* background:$othird;color:$primary;cursor:pointer; */}
   td {
   &:hover {}
-  &:first-child {max-width:300px;text-align:left;padding:10px 10px 10px 0;}
+  &:first-child {max-width:300px;text-align:left;padding:18px 10px 18px 0;}
   &:nth-child(1n+2) {vertical-align:middle;padding:0;}}}
 
 .table thead tr td:last-child {border-radius:0 5px 0 0;}

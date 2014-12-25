@@ -72,7 +72,7 @@
     tbody {background:$primary;color:$secondary;
       tr:hover {cursor:default;background:inherit;color:inherit;}
       tr td {padding:12px;border-bottom:1px solid $secondary;font-weight:300;
-      &:last-of-type {padding-right:0;border-right:1px solid $secondary;}}
+        &:last-of-type {padding-right:0;border-right:1px solid $secondary;color:$third;}}
       tr:last-of-type td {border-bottom:1px solid $primary;}
       tr:last-of-type:hover td {}
     tr:first-of-type td {border-top:1px solid $primary;}}
@@ -83,7 +83,12 @@
     thead tr {border-bottom:1px solid $third;}
   }
 
-  .signals-table {}
+  .signals-table {
+    tr td {
+      p {font-size:1em;}
+      &:first-of-type img {width:inherit;max-width:100%;border-radius:0;}
+    }
+  }
 
   #tab1 {min-height:298px;}
 
