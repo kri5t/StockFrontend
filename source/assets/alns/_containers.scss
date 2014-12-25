@@ -39,22 +39,25 @@ body {font-family: $font;font-weight:300;background:$primary;color:$secondary;ma
   h1 {margin-bottom:30px;}
   .table {margin-bottom:40px;}
   .disclaimer {text-align:left;margin-top:45px;}
-  tbody tr:last-of-type {border-bottom:4px solid $third;}
+  tbody tr:last-of-type {border-bottom:4px solid $primary;}
   a {color:$primary;@include colortransition;
     &:hover {color:$secondary;}}
-  .table thead tr td {padding: 7px 0 12px 0;font-size:1.1em;background:$third;color:$secondary;font-weight:400;
+  .table thead tr td {padding: 7px 0 12px 0;font-size:1.1em;background:$primary;color:$secondary;font-weight:400;
     .glyphicon {font-size:24px;margin-left:6px;top: 5px;}
     .glyphicon-transfer {@include rotate90;margin-left:0;}
     a {color:$secondary;font-weight:300;font-size: 1.25em;}}
   .table tbody tr {font-weight:400;
-    td {padding:10px 0;border-top:none;border-bottom:1px solid $third;vertical-align:middle;
+    td {padding:20px 0;border-top:none;border-bottom:1px solid $third;vertical-align:middle;
       img {border-radius:50%;width:56px;}
       .glyphicon {font-size:28px;margin-left:12px;}}}
   .table.std-table tbody tr {@include bgtransition;
-    td {@include colortransition;@include bgtransition;
+    td {@include colortransition;@include bgtransition;padding:14px 0;
     /* &:nth-child(-n+2):hover {background:$othird;cursor:pointer;color:$third;} */}
     &:hover {background:$othird;cursor:pointer;color:$primary;}}
   .friend-subscriptions {margin-top:40px;}
+  .table.std-table.popular-stocks {
+    tbody tr td {padding:20px 0;}
+  }
 }
 
 // ====== // ===== // Third // ====== // ===== //
@@ -104,7 +107,7 @@ thead tr td a {@include tableheads;}
   tr:hover {/* background:$othird;color:$primary;cursor:pointer; */}
   td {
   &:hover {}
-  &:first-child {max-width:300px;text-align:left;padding:18px 10px 18px 0;}
+  &:first-child {max-width:300px;text-align:left;padding:20px 10px 20px 0;border-right:1px solid $third;}
   &:nth-child(1n+2) {vertical-align:middle;padding:0;}}}
 
 .table thead tr td:last-child {border-radius:0 5px 0 0;}

@@ -6,6 +6,21 @@
 }
 
 
+// ====== // ===== // about.html // ====== // ===== //
+#about { background: url(../img/about_bg.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  .first {background:$oprimary;
+  &:after, &:before {background:$oprimary;}}
+  .third {background:$primary;
+    &:after, &:before {background:$primary;}}
+
+  .concept-storyboard {margin-top:60px;}
+}
+
+
 // ====== // ===== // post.html // ====== // ===== //
 #post {
 
