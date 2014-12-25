@@ -269,15 +269,19 @@ body {
     .second .table tbody tr td .glyphicon {
       font-size: 28px;
       margin-left: 12px; }
-.second .table tbody tr {
+.second .table.std-table tbody tr {
   transition: background-color 0.8s ease-in-out;
   -webkit-transition: background-color 0.8s ease-in-out;
   -moz-transition: background-color 0.8s ease-in-out; }
-  .second .table tbody tr td {
+  .second .table.std-table tbody tr td {
     transition: color 0.8s ease-in-out;
     -webkit-transition: color 0.8s ease-in-out;
-    -moz-transition: color 0.8s ease-in-out; }
-  .second .table tbody tr:hover {
+    -moz-transition: color 0.8s ease-in-out;
+    transition: background-color 0.8s ease-in-out;
+    -webkit-transition: background-color 0.8s ease-in-out;
+    -moz-transition: background-color 0.8s ease-in-out;
+    /* &:nth-child(-n+2):hover {background:$othird;cursor:pointer;color:$third;} */ }
+  .second .table.std-table tbody tr:hover {
     background: rgba(0, 139, 255, 0.3);
     cursor: pointer;
     color: #262a33; }
@@ -361,15 +365,13 @@ thead tr td a {
 
 .stock-overview tbody tr:last-of-type {
   border-bottom: none; }
+  .stock-overview tbody tr:last-of-type:hover {
+    border-bottom: 1px solid #262a33; }
 
 .second .signals-table.table tbody tr:hover {
-  background: none;
-  color: rgba(38, 42, 51, 0.7); }
-.second .signals-table.table tbody td:hover {
-  cursor: default;
-  background: none;
-  color: rgba(38, 42, 51, 0.7);
-  background: transparent; }
+  background: rgba(0, 139, 255, 0.3);
+  color: #262a33;
+  cursor: pointer; }
 .second .signals-table.table tbody td:first-child {
   max-width: 300px;
   text-align: left;
@@ -656,7 +658,8 @@ thead tr td a {
     color: white; }
     #stock .stock-overview tbody tr:hover {
       cursor: default;
-      background: white; }
+      background: inherit;
+      color: inherit; }
     #stock .stock-overview tbody tr td {
       padding: 12px;
       border-bottom: 1px solid white;
@@ -666,8 +669,6 @@ thead tr td a {
         border-right: 1px solid white; }
     #stock .stock-overview tbody tr:last-of-type td {
       border-bottom: 1px solid #262a33; }
-    #stock .stock-overview tbody tr:last-of-type:hover td {
-      border-bottom: 1px solid white; }
     #stock .stock-overview tbody tr:first-of-type td {
       border-top: 1px solid #262a33; }
 #stock .stock-news tbody tr td:last-of-type {
@@ -677,8 +678,6 @@ thead tr td a {
   border-bottom: 1px solid #008bff; }
 #stock #tab1 {
   min-height: 298px; }
-#stock #tab2 .table thead tr td:last-child {
-  border-radius: 0; }
 
 #stocks .first .disclaimer {
   margin: 20px 0 0 0; }

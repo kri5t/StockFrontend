@@ -70,11 +70,11 @@
   .stock-overview {width:30%;float:left;
     thead tr td {padding:12px;background:transparent;color:$secondary;font-size:1.4em;font-weight: 300;display:none;}
     tbody {background:$primary;color:$secondary;
-      tr:hover {cursor:default;background:$secondary;}
+      tr:hover {cursor:default;background:inherit;color:inherit;}
       tr td {padding:12px;border-bottom:1px solid $secondary;font-weight:300;
       &:last-of-type {padding-right:0;border-right:1px solid $secondary;}}
       tr:last-of-type td {border-bottom:1px solid $primary;}
-      tr:last-of-type:hover td {border-bottom:1px solid $secondary;}
+      tr:last-of-type:hover td {}
     tr:first-of-type td {border-top:1px solid $primary;}}
    }
 
@@ -83,8 +83,10 @@
     thead tr {border-bottom:1px solid $third;}
   }
 
+  .signals-table {}
+
   #tab1 {min-height:298px;}
-  #tab2 .table thead tr td:last-child {border-radius:0;}
+
 }
 
 // ====== // ===== // stocks.html // ====== // ===== //

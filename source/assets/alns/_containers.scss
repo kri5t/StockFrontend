@@ -50,8 +50,9 @@ body {font-family: $font;font-weight:300;background:$primary;color:$secondary;ma
     td {padding:10px 0;border-top:none;border-bottom:1px solid $third;vertical-align:middle;
       img {border-radius:50%;width:56px;}
       .glyphicon {font-size:28px;margin-left:12px;}}}
-  .table tbody tr {@include bgtransition;
-    td {@include colortransition;}
+  .table.std-table tbody tr {@include bgtransition;
+    td {@include colortransition;@include bgtransition;
+    /* &:nth-child(-n+2):hover {background:$othird;cursor:pointer;color:$third;} */}
     &:hover {background:$othird;cursor:pointer;color:$primary;}}
   .friend-subscriptions {margin-top:40px;}
 }
@@ -87,19 +88,21 @@ body {font-family: $font;font-weight:300;background:$primary;color:$secondary;ma
 
 // ====== // ===== // Tables // ====== // ===== //
 .market-resume > tbody > tr > td {border-top:1px solid $secondary;padding:10px 0;
-&:last-of-type{text-align:right;color:$third;}}
+  &:last-of-type{text-align:right;color:$third;}}
 .market-resume {font-size:0.8em;width:250px;margin:0 auto 0 auto;text-align:left;border-bottom:1px solid $secondary;color:$secondary;}
-.stock-signals {margin-top:20px; tbody tr td {width:33.3%;}}
+.stock-signals {margin-top:20px;
+  tbody tr td {width:33.3%;}}
 thead tr td a {@include tableheads;}
 .popular-stocks td {width:20%;}
-.stock-overview tbody tr:last-of-type {border-bottom:none;}
+.stock-overview tbody tr:last-of-type {border-bottom:none;
+  &:hover {border-bottom:1px solid $primary;}}
 
 .second .signals-table.table tbody {
-tr:hover {background:none;color:$oprimary;}
-td {
-&:hover {cursor:default;background:none;color:$oprimary;background:transparent;}
-&:first-child {max-width:300px;text-align:left;padding:10px 10px 10px 0;}
-&:nth-child(1n+2) {vertical-align:middle;padding:0;}}}
+  tr:hover {background:$othird;color:$primary;cursor:pointer;}
+  td {
+  &:hover {}
+  &:first-child {max-width:300px;text-align:left;padding:10px 10px 10px 0;}
+  &:nth-child(1n+2) {vertical-align:middle;padding:0;}}}
 
 .table thead tr td:last-child {border-radius:0 5px 0 0;}
 
