@@ -38,7 +38,7 @@ hr {color:$primary;border-top:1px solid $primary;margin-top:50px;}
   &:hover {background-color:$secondary;color:$secondary;border:none;}} /* Findes den her?? */
 
 .container .btn-default {border:1px solid $primary;border-bottom:4px solid $primary;color:$primary;padding: 8px 20px;@include colortransition;@include bgtransition;
-  &:hover, &:focus, &:hover .fa-spin, &:focus .fa-spin {color:$third;background:$othird;border:1px solid $third;border-bottom:4px solid $third;}
+  &:hover, &:focus, &:hover .fa-spin, &:focus .fa-spin {color:$third;background:$secondary;border:1px solid $third;border-bottom:4px solid $third;}
   &:hover .fa-spin, &:focus .fa-spin {border:none;background:none;}
   .fa-spin {margin:2px 0 0 5px;color:$primary;}}
 

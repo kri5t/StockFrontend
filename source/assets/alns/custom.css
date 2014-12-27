@@ -102,7 +102,7 @@ hr {
   -moz-transition: background-color 0.8s ease-in-out; }
   .container .btn-default:hover, .container .btn-default:focus, .container .btn-default:hover .fa-spin, .container .btn-default:focus .fa-spin {
     color: #008bff;
-    background: rgba(0, 139, 255, 0.3);
+    background: white;
     border: 1px solid #008bff;
     border-bottom: 4px solid #008bff; }
   .container .btn-default:hover .fa-spin, .container .btn-default:focus .fa-spin {
@@ -284,8 +284,6 @@ body {
 
 .third {
   color: white; }
-  .third p {
-    padding: 0 14%; }
   .third .glyphicon {
     font-size: 120px;
     margin: 2px 0 10px 0;
@@ -377,7 +375,8 @@ thead tr td a {
   border-right: 1px solid #008bff; }
 .second .signals-table.table tbody td:nth-child(1n+2) {
   vertical-align: middle;
-  padding: 0; }
+  padding: 0;
+  background: rgba(0, 139, 255, 0.3); }
 
 .table thead tr td:last-child {
   border-radius: 0 5px 0 0; }
@@ -555,9 +554,6 @@ thead tr td a {
     background: #262a33;
     border: 1px solid #262a33; }
 
-#tab1, #tab2, #tab3 {
-  min-height: 562px; }
-
 #index .second .radio {
   display: inline-block;
   padding-right: 36px;
@@ -580,7 +576,9 @@ thead tr td a {
     #about .third:after, #about .third:before {
       background: #262a33; }
   #about .concept-storyboard {
-    margin-top: 60px; }
+    margin: 20px 0; }
+  #about .col-sm-12 p {
+    padding: 0 14%; }
 
 #post .first .row:first-of-type {
   padding-top: 50px; }
@@ -609,35 +607,8 @@ thead tr td a {
   padding-top: 50px; }
 #profile .first .row:last-of-type {
   padding-bottom: 80px; }
-#profile .profile-tabs table thead tr td a, #profile .own-signals table thead tr td a {
-  margin: 7px 0 5px 0;
-  display: block;
-  font-weight: 300;
-  font-size: 1.05em; }
-  #profile .profile-tabs table thead tr td a span, #profile .own-signals table thead tr td a span {
-    display: none; }
-#profile .filter-options {
-  margin: 0; }
 #profile .second .row:first-of-type {
   padding-top: 40px; }
-#profile .second .table {
-  margin-top: 0; }
-  #profile .second .table thead tr td {
-    padding: 5px 0 10px 0; }
-  #profile .second .table a {
-    font-weight: 300; }
-#profile .second .radio {
-  display: inline-block;
-  padding-right: 36px;
-  margin: 4px 0; }
-  #profile .second .radio label {
-    font-weight: 300; }
-#profile .second ul li {
-  display: block;
-  color: white; }
-#profile .second .col-sm-3 h3 {
-  margin: 18px 0 4px 0;
-  padding: 2px 0 4px 0; }
 #profile .own-signals {
   margin: 0; }
   #profile .own-signals tbody tr td:nth-last-child(1) {
@@ -661,7 +632,8 @@ thead tr td a {
     display: none; }
 #stock .stock-overview {
   width: 30%;
-  float: left; }
+  float: left;
+  margin-bottom: 1px; }
   #stock .stock-overview thead tr td {
     padding: 12px;
     background: transparent;
@@ -693,6 +665,8 @@ thead tr td a {
   padding-top: 14px; }
 #stock .stock-news thead tr {
   border-bottom: 1px solid #008bff; }
+#stock .signals-table thead tr td:last-child {
+  border-radius: 0; }
 #stock .signals-table tbody tr td p {
   font-size: 1em; }
 #stock .signals-table tbody tr td a {
@@ -705,8 +679,6 @@ thead tr td a {
   max-width: 100%;
   border-radius: 0;
   border: 1px solid #008bff; }
-#stock #tab1 {
-  min-height: 298px; }
 
 #stocks .first .disclaimer {
   margin: 20px 0 0 0; }

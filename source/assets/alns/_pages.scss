@@ -17,7 +17,8 @@
   .third {background:$primary;
     &:after, &:before {background:$primary;}}
 
-  .concept-storyboard {margin-top:60px;}
+  .concept-storyboard {margin:20px 0;}
+  .col-sm-12 p {padding:0 14%;}
 }
 
 
@@ -50,19 +51,8 @@
     .row:last-of-type {padding-bottom:80px;}
   }
 
-  .profile-tabs table thead tr td a, .own-signals table thead tr td a {@include tableheads;
-    span {display:none;}}
-
-  .filter-options {margin:0;}
   .second {
     .row:first-of-type {padding-top:40px;}
-    .table {margin-top:0;
-      thead tr td {padding: 5px 0 10px 0;}
-      a {font-weight: 300;}}
-    .radio {display: inline-block;padding-right: 36px;margin:4px 0;
-      label {font-weight:300;}}
-    ul li {display:block;color:$secondary;}
-    .col-sm-3 h3 {margin:18px 0 4px 0;padding:2px 0 4px 0;}
   }
   .own-signals {margin:0;
     tbody tr td:nth-last-child(1) {text-align:left;width:65%;}
@@ -82,7 +72,7 @@
     .table thead tr td a {@include tableheads;
       span {display:none;}}
   }
-  .stock-overview {width:30%;float:left;
+  .stock-overview {width:30%;float:left;margin-bottom:1px;
     thead tr td {padding:12px;background:transparent;color:$secondary;font-size:1.4em;font-weight: 300;display:none;}
     tbody {background:$primary;color:$secondary;
       tr:hover {cursor:default;background:inherit;color:inherit;}
@@ -99,6 +89,8 @@
   }
 
   .signals-table {
+    thead tr {
+    td:last-child {border-radius:0;}}
     tbody tr td {
       p {font-size:1em;}
       a {color:$third;font-style:italic;
@@ -106,9 +98,6 @@
       &:first-of-type img {width:inherit;max-width:100%;border-radius:0;border:1px solid $third;}
     }
   }
-
-  #tab1 {min-height:298px;}
-
 }
 
 // ====== // ===== // stocks.html // ====== // ===== //
