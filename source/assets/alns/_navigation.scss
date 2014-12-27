@@ -31,18 +31,25 @@
     &:hover {color:$third;background:none;}}}
 
 // ====== // ===== // Filter // ====== // ===== //
-.filter-options {margin:0 0 25px 0;
+.filter-options {margin:0 0 10px 0;
   .btn, .dropdown-menu li a {font-size:1.4em;@include bgtransition;
     i {margin-left:5px;}}
-  .dropdown-menu li a {padding:8px 19px;min-width:193px;font-size:1.25em;border-top:1px solid $secondary;}
+  .dropdown-menu li a {padding:8px 19px;min-width:160px;font-size:1.25em;border-top:1px solid $secondary;}
   .dropdown-menu li a:hover {background:$third;color:$secondary;}}
 
 // ====== // ===== // Tabable content // ====== // ===== //
 .nav-tabs {border-bottom:none;
   > li > a {border-radius:0 6px 0 0;font-size:1.2em;margin-right:10px;background:$othird;padding:8px 17px;@include colortransition;
     &:hover {color:$primary;background:$third;border:1px solid $third;}}
-  > li.pull-right {margin-right:0;background:$oprimary;color:$secondary;padding: 9px 17px;font-size: 1.2em;border-radius: 0 5px 0 0;
-  &:hover {cursor:default;}}}
+  > li.pull-right, li {margin-right:0;background:$oprimary;color:$secondary;padding: 9px 17px;font-size: 1.2em;border-radius: 0 5px 0 0;
+    &:nth-child(1) {background:$primary;}
+  &:nth-child(2) {background:$third;color:$secondary;@include bgtransition;margin:0 0 -1px 8px;
+  &:hover {background:$oprimary;cursor:pointer;}}}
+  > li.pull-right.buy {background:$buy;}
+  > li.pull-right.hold {background:$hold;color:$primary;}
+  > li.pull-right.sell {background:$sell;}
+  > li.unfollow-stock {background:$hold;color:$primary;
+  &:hover {background:$hold;color:$primary;}}}
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {color:$secondary;background:$primary;border:1px solid $primary;}
 .profile-tabs {
   .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {color:$secondary;background:$third;border:1px solid $third;}

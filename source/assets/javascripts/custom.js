@@ -11,4 +11,18 @@ $('document').ready(function () {
         $(this).parent().hide();
     });
 
+//Hide how-to measure and add margin to needs h2
+    $('.read-more.pull-right').on('click', function() {
+        $('.signal-teaser').show();
+    });
+
+//Trigger
+    $('.follow-stock').on('click', function(e) {
+        $(this).text(function(i, text){
+            return text === 'Følg aktie' ? 'Følg ikke aktie' : 'Følg aktie';
+        });
+
+        $(this).toggleClass('unfollow-stock');
+    });
+
 });

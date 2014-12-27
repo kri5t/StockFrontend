@@ -37,8 +37,7 @@
 
             <ul class="nav navbar-nav">
                 <li><a href="stocks.html">Aktieoversigt<span>Vurder markedet</span></a></li>
-                <li class="active-menu"><a href="subscriptions.html">Subscriptions<span>Abonner på aktier</span></a></li>
-                <li><a href="preferences.html">Indstillinger<span>Ændre profilindstillinger</span></a></li>
+                <li class="active-menu"><a href="subscriptions.html">Subscriptions<span>Følg dine aktier</span></a></li>
                 <li><a href="about.html">Koncept<span>Læs om sitet</span></a></li>
             </ul>
 
@@ -80,72 +79,57 @@
         <div class="row">
             <div class="col-sm-12">
 
-                <h1>Aktier du følger</h1>
+                <h1>Subscriptions</h1>
+
+                <h3 class="pull-left">Signaler fra aktier du følger</h3>
+
+                <div class="filter-options pull-right">
+                    <div class="btn-group">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                            Anbefaling <i class="fa fa-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Køb</a></li>
+                            <li><a href="#">Sælg</a></li>
+                            <li><a href="#">Hold</a></li>
+                        </ul>
+                    </div>
+                </div>
 
                 <table class="table std-table">
                     <thead>
                     <tr>
                         <td><a href="#">Aktie</a></td>
-                        <td><a href="#">Signal</a></td>
+                        <td><a href="#">Anbefaling</a></td>
                         <td><a href="#">Periode</a></td>
                         <td><a href="#">Bruger</a></td>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr onclick="window.document.location='stock.html';">
-                        <td>IBM</td>
-                        <td>Køb</td>
-                        <td>25/12-14 - 04/01-15</td>
-                        <td><a href="profile.html"><img src="source/assets/img/profil.jpg" /></a></td>
-                    </tr>
-                    <tr onclick="window.document.location='stock.html';">
-                        <td>Apple</td>
-                        <td>Sælg</td>
-                        <td>04/01-15 - 05/01-15</td>
-                        <td><a href="#"><img src="source/assets/img/profil1.jpg" /></a></td>
-                    </tr>
-                    <tr onclick="window.document.location='stock.html';">
-                        <td>Mærsk</td>
-                        <td>Hold</td>
-                        <td>25/12-14 - 04/01-15</td>
-                        <td><a href="#"><img src="source/assets/img/profil2.jpg" /></a></td>
-                    </tr>
-                    <tr onclick="window.document.location='stock.html';">
-                        <td>Microsoft</td>
-                        <td>Køb</td>
-                        <td>25/12-14 - 04/01-15</td>
-                        <td><a href="#"><img src="source/assets/img/profil3.jpg" /></a></td>
-                    </tr>
-                    <tr onclick="window.document.location='stock.html';">
-                        <td>Facebook</td>
-                        <td>Køb</td>
-                        <td>25/12-14 - 04/01-15</td>
-                        <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
-                    </tr>
-                    <tr onclick="window.document.location='stock.html';">
-                        <td>Tusker</td>
-                        <td>Sælg</td>
-                        <td>25/12-14 - 04/01-15</td>
-                        <td><a href="#"><img src="source/assets/img/profil1.jpg" /></a></td>
-                    </tr>
-                    <tr onclick="window.document.location='stock.html';">
-                        <td>Carlsberg</td>
-                        <td>Hold</td>
-                        <td>25/12-14 - 04/01-15</td>
-                        <td><a href="#"><img src="source/assets/img/profil2.jpg" /></a></td>
-                    </tr>
-                    <tr onclick="window.document.location='stock.html';">
-                        <td>Sony</td>
-                        <td>Hold</td>
-                        <td>25/12-14 - 04/01-15</td>
-                        <td><a href="#"><img src="source/assets/img/profil3.jpg" /></a></td>
-                    </tr>
-                    <tr onclick="window.document.location='stock.html';">
-                        <td>Steelseries</td>
-                        <td>Sælg</td>
-                        <td>25/12-14 - 04/01-15</td>
-                        <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
-                    </tr>
+                        <tr onclick="window.document.location='stock.html';">
+                            <td>IBM</td>
+                            <td class="buy">Køb</td>
+                            <td>25/12-14 - 04/01-15</td>
+                            <td><a href="profile.html"><img src="source/assets/img/profil.jpg" /></a></td>
+                        </tr>
+                        <tr onclick="window.document.location='stock.html';">
+                            <td>Apple</td>
+                            <td class="sell">Sælg</td>
+                            <td>04/01-15 - 05/01-15</td>
+                            <td><a href="profile.html"><img src="source/assets/img/profil1.jpg" /></a></td>
+                        </tr>
+                        <tr onclick="window.document.location='stock.html';">
+                            <td>Mærsk</td>
+                            <td class="hold">Hold</td>
+                            <td>25/12-14 - 04/01-15</td>
+                            <td><a href="profile.html"><img src="source/assets/img/profil2.jpg" /></a></td>
+                        </tr>
+                        <tr onclick="window.document.location='stock.html';">
+                            <td>Microsoft</td>
+                            <td class="buy">Køb</td>
+                            <td>25/12-14 - 04/01-15</td>
+                            <td><a href="profile.html"><img src="source/assets/img/profil3.jpg" /></a></td>
+                        </tr>
                     </tbody>
                 </table>
 
@@ -156,85 +140,69 @@
             </div>
         </div>
 
-        <!-- Signals from friends -->
-        <div class="row">
-            <div class="col-sm-12 friend-subscriptions">
+        <!-- Stock subscriptions -->
+        <div class="row person-subscriptions">
+            <div class="col-sm-12">
 
-                <h1>Aktier dine venner følger</h1>
+                <h3 class="pull-left">Signaler fra personer du følger</h3>
+
+                <div class="filter-options pull-right">
+                    <div class="btn-group">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                            Anbefaling <i class="fa fa-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Køb</a></li>
+                            <li><a href="#">Sælg</a></li>
+                            <li><a href="#">Hold</a></li>
+                        </ul>
+                    </div>
+                </div>
 
                 <table class="table std-table">
                     <thead>
                     <tr>
                         <td><a href="#">Aktie</a></td>
-                        <td><a href="#">Signal</a></td>
+                        <td><a href="#">Anbefaling</a></td>
                         <td><a href="#">Periode</a></td>
                         <td><a href="#">Bruger</a></td>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr onclick="window.document.location='stock.html';">
-                        <td>IBM</td>
-                        <td>Køb</td>
-                        <td>25/12-14 - 04/01-15</td>
-                        <td><a href="profile.html"><img src="source/assets/img/profil.jpg" /></a></td>
-                    </tr>
-                    <tr onclick="window.document.location='stock.html';">
-                        <td>Apple</td>
-                        <td>Sælg</td>
-                        <td>04/01-15 - 05/01-15</td>
-                        <td><a href="#"><img src="source/assets/img/profil1.jpg" /></a></td>
-                    </tr>
-                    <tr onclick="window.document.location='stock.html';">
-                        <td>Mærsk</td>
-                        <td>Hold</td>
-                        <td>25/12-14 - 04/01-15</td>
-                        <td><a href="#"><img src="source/assets/img/profil2.jpg" /></a></td>
-                    </tr>
-                    <tr onclick="window.document.location='stock.html';">
-                        <td>Microsoft</td>
-                        <td>Køb</td>
-                        <td>25/12-14 - 04/01-15</td>
-                        <td><a href="#"><img src="source/assets/img/profil3.jpg" /></a></td>
-                    </tr>
-                    <tr onclick="window.document.location='stock.html';">
-                        <td>Facebook</td>
-                        <td>Køb</td>
-                        <td>25/12-14 - 04/01-15</td>
-                        <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
-                    </tr>
-                    <tr onclick="window.document.location='stock.html';">
-                        <td>Tusker</td>
-                        <td>Sælg</td>
-                        <td>25/12-14 - 04/01-15</td>
-                        <td><a href="#"><img src="source/assets/img/profil1.jpg" /></a></td>
-                    </tr>
-                    <tr onclick="window.document.location='stock.html';">
-                        <td>Carlsberg</td>
-                        <td>Hold</td>
-                        <td>25/12-14 - 04/01-15</td>
-                        <td><a href="#"><img src="source/assets/img/profil2.jpg" /></a></td>
-                    </tr>
-                    <tr onclick="window.document.location='stock.html';">
-                        <td>Sony</td>
-                        <td>Hold</td>
-                        <td>25/12-14 - 04/01-15</td>
-                        <td><a href="#"><img src="source/assets/img/profil3.jpg" /></a></td>
-                    </tr>
-                    <tr onclick="window.document.location='stock.html';">
-                        <td>Steelseries</td>
-                        <td>Sælg</td>
-                        <td>25/12-14 - 04/01-15</td>
-                        <td><a href="#"><img src="source/assets/img/profil.jpg" /></a></td>
-                    </tr>
+                        <tr onclick="window.document.location='stock.html';">
+                            <td>Tusker</td>
+                            <td class="sell">Sælg</td>
+                            <td>25/12-14 - 04/01-15</td>
+                            <td><a href="profile.html"><img src="source/assets/img/profil1.jpg" /></a></td>
+                        </tr>
+                        <tr onclick="window.document.location='stock.html';">
+                            <td>Carlsberg</td>
+                            <td class="hold">Hold</td>
+                            <td>25/12-14 - 04/01-15</td>
+                            <td><a href="profile.html"><img src="source/assets/img/profil2.jpg" /></a></td>
+                        </tr>
+                        <tr onclick="window.document.location='stock.html';">
+                            <td>Sony</td>
+                            <td class="hold">Hold</td>
+                            <td>25/12-14 - 04/01-15</td>
+                            <td><a href="profile.html"><img src="source/assets/img/profil3.jpg" /></a></td>
+                        </tr>
+                        <tr onclick="window.document.location='stock.html';">
+                            <td>Steelseries</td>
+                            <td class="sell">Sælg</td>
+                            <td>25/12-14 - 04/01-15</td>
+                            <td><a href="profile.html"><img src="source/assets/img/profil.jpg" /></a></td>
+                        </tr>
                     </tbody>
                 </table>
 
                 <div class="show-more">
                     <button class="btn btn-default dropdown-toggle" type="button">Vis flere <i class="fa fa-refresh fa-spin"></i></button>
                 </div>
-            </div>
 
+            </div>
         </div>
+
     </div>
 
 </div><!-- ./container -->

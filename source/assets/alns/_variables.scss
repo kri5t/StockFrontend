@@ -5,17 +5,21 @@ $third:rgb(0, 139, 255); //#FF9800
 
 $oprimary:rgba(38, 42, 51, 0.85);
 $osecondary:rgba(255, 255, 255, 0.8);
+$tthird:rgba(0, 139, 255, 0.7);
 $othird:rgba(0, 139, 255, 0.3);
 
+$yellow:#e8e500; //rgba(252, 255, 0, 1)
 $darkGrey: #212320;
 $lightGrey: #DDDDDD;
 $signalHover: #E6E2AF;
 $mediumOverlay: rgba(241, 244, 249, 0.6);
 $darkOverlay: rgba(0, 0, 0, 0.2);
 
-$buy: #008e11; //199900
+$buy: #2d9f00; //199900
 $hold: #dddddd;
-$sell: #D40D12;
+$sell: #FF0000;
+$positive: #37c200;
+$negative: #FF0000;
 
 // ====== // ===== // Fonts // ====== // ===== //
 $font: 'Lato', sans-serif;

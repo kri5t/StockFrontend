@@ -42,7 +42,8 @@
 
 #profile {
   .user-rating {margin:0 0 20px 0;
-  i {color:$third;}}
+  i {color:$sell;
+  &:hover {cursor:pointer;}}}
   .profile-intro {margin-top:20px;}
   .navbar-default .navbar-nav li a:hover {cursor:pointer;}
   .first {
@@ -108,14 +109,15 @@
     .row:last-of-type {padding-bottom:80px;}
   }
 
+  .filter-options .dropdown-menu li a {min-width:176px;}
+
 }
 
 // ====== // ===== // subscriptions.html // ====== // ===== //
 
 #subscriptions {
   .second .radio {display:inline-block;margin-right:24px;}
-  .btn-group {float:right;}
-  .col-sm-6 {padding:0 40px;}
+  .person-subscriptions {margin-top:50px;}
 
   .first {
     .disclaimer {margin:20px 0 0 0;}

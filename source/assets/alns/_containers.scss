@@ -37,7 +37,7 @@ body {font-family: $font;font-weight:300;background:$primary;color:$secondary;ma
 // ====== // ===== // Second // ====== // ===== //
 .second {
   h1 {margin-bottom:30px;}
-  .table {margin-bottom:40px;}
+  .table {margin-bottom:16px;}
   .disclaimer {text-align:left;margin-top:45px;}
   tbody tr:last-of-type {border-bottom:4px solid $primary;}
   a {color:$primary;@include colortransition;
@@ -90,7 +90,7 @@ body {font-family: $font;font-weight:300;background:$primary;color:$secondary;ma
 
 // ====== // ===== // Tables // ====== // ===== //
 .market-resume > tbody > tr > td {border-top:1px solid $secondary;padding:10px 0;
-  &:last-of-type{text-align:right;color:$third;}}
+  &:last-of-type{text-align:right;}}
 .market-resume {font-size:0.8em;width:250px;margin:0 auto 0 auto;text-align:left;border-bottom:1px solid $secondary;color:$secondary;}
 .stock-signals {margin-top:20px;
   tbody tr td {width:33.3%;}}
@@ -99,15 +99,16 @@ thead tr td a {@include tableheads;}
 .stock-overview tbody tr:last-of-type {border-bottom:none;
   &:hover {border-bottom:1px solid $primary;}}
 
-.second .signals-table.table tbody {
+.second .signals-table.table {border-left:1px solid $primary;
+  tbody {
   .col-sm-2 {font-weight: 600;}
   a.read-more {font-style:normal;
   &:hover {color:$primary;}}
   tr:hover {/* background:$othird;color:$primary;cursor:pointer; */}
   td {
   &:hover {}
-  &:first-child {max-width:300px;text-align:left;padding:20px 10px 20px 0;border-right:1px solid $third;}
-  &:nth-child(1n+2) {vertical-align:middle;padding:0;background:$othird;}}}
+  &:first-child {max-width:300px;text-align:left;padding:17px 10px;border-right:1px solid $third;}
+  &:nth-child(1n+2) {vertical-align:middle;padding:0;background:$othird;}}}}
 
 .table thead tr td:last-child {border-radius:0 5px 0 0;}
 
