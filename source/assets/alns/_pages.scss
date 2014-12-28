@@ -41,8 +41,8 @@
 // ====== // ===== // profile.html // ====== // ===== //
 
 #profile {
-  .user-rating {margin:0 0 20px 0;
-  i {color:$sell;
+  .user-rating {
+  i {color:$third;
   &:hover {cursor:pointer;}}}
   .profile-intro {margin-top:20px;}
   .navbar-default .navbar-nav li a:hover {cursor:pointer;}
@@ -51,6 +51,9 @@
     .row:first-of-type {padding-top:50px;}
     .row:last-of-type {padding-bottom:80px;}
   }
+  .follow-profile {width:60%;margin:0 auto;}
+  .profile-description {background:$primary;border-radius:0 5px 0 0;
+  p {color:$secondary;text-align:left;padding:20px;}}
 
   .second {
     .row:first-of-type {padding-top:40px;}
@@ -87,17 +90,6 @@
   .stock-news {
     tbody tr td:last-of-type {text-align:left;padding-top:14px;}
     thead tr {border-bottom:1px solid $third;}
-  }
-
-  .signals-table {
-    thead tr {
-    td:last-child {border-radius:0;}}
-    tbody tr td {
-      p {font-size:1em;}
-      a {color:$third;font-style:italic;
-      &:hover {color:$primary;}}
-      &:first-of-type img {width:inherit;max-width:100%;border-radius:0;border:1px solid $third;}
-    }
   }
 }
 

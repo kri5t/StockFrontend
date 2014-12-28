@@ -50,13 +50,43 @@ body {font-family: $font;font-weight:300;background:$primary;color:$secondary;ma
     td {padding:20px 0;border-top:none;border-bottom:1px solid $third;vertical-align:middle;
       img {border-radius:50%;width:56px;}
       .glyphicon {font-size:28px;margin-left:12px;}}}
-  .table.std-table tbody tr {@include bgtransition;
+  .table.std-table tbody tr {@include bgtransition;background:$ithird;
     td {@include colortransition;@include bgtransition;padding:14px 0;
     /* &:nth-child(-n+2):hover {background:$othird;cursor:pointer;color:$third;} */}
     &:hover {background:$othird;cursor:pointer;color:$primary;}}
   .friend-subscriptions {margin-top:40px;}
   .table.std-table.popular-stocks {
     tbody tr td {padding:20px 0;}
+  }
+  .table.std-table.persons-followed, .table.std-table.stocks-followed {margin-bottom:40px;
+    thead tr td {padding:4px;}
+    tbody tr {
+      &:hover {cursor:default;background:transparent;}
+      &:last-of-type {border-color:$primary;}
+      td {padding:4px;background:$othird;
+        &:first-of-type {text-align:left;padding-left:10px;background:transparent;}
+        &:last-of-type {width:60px;background:$tthird;}
+        &:first-of-type:hover {cursor:pointer;background:$tthird;color:$secondary;}
+        &:last-of-type:hover {cursor:pointer;background:$oprimary;color:$secondary;}
+        .glyphicon {font-size:15px;margin:0;}
+      img {width:31px;margin:0 10px 0 0;}}}
+  }
+  .table.std-table.stocks-followed {
+    tbody tr td {padding:9px;}
+  }
+  .overview-subscriptions {margin-top:40px;}
+
+  .signals-table.table {
+    tbody {
+      a.read-more {font-style:normal;padding:10px;right:-20px;bottom:-40px;color:$secondary;background:$third;float:right;position:relative;border-radius:5px 0 0 0;@include bgtransition;font-weight:300;
+        &:hover {background:$oprimary;}}
+      tr:hover {/* background:$othird;color:$primary;cursor:pointer; */}
+      td {padding:40px 20px;border-bottom:10px solid $secondary;border-top:10px solid $secondary;
+        .col-sm-10 {padding-right:20px;
+        a.read-more {right: -41px;}}
+        &:hover {}
+        &:first-child {max-width:500px;text-align:left;background:$ithird;}
+        &:nth-child(1n+2) {vertical-align:middle;padding:0;background:$othird;width:11%;}}}
   }
 }
 
@@ -89,6 +119,8 @@ body {font-family: $font;font-weight:300;background:$primary;color:$secondary;ma
 }
 
 // ====== // ===== // Tables // ====== // ===== //
+.table thead tr td:last-child {border-radius:0 5px 0 0;}
+
 .market-resume > tbody > tr > td {border-top:1px solid $secondary;padding:10px 0;
   &:last-of-type{text-align:right;}}
 .market-resume {font-size:0.8em;width:250px;margin:0 auto 0 auto;text-align:left;border-bottom:1px solid $secondary;color:$secondary;}
@@ -99,18 +131,16 @@ thead tr td a {@include tableheads;}
 .stock-overview tbody tr:last-of-type {border-bottom:none;
   &:hover {border-bottom:1px solid $primary;}}
 
-.second .signals-table.table {border-left:1px solid $primary;
-  tbody {
-  .col-sm-2 {font-weight: 600;}
-  a.read-more {font-style:normal;
-  &:hover {color:$primary;}}
-  tr:hover {/* background:$othird;color:$primary;cursor:pointer; */}
-  td {
-  &:hover {}
-  &:first-child {max-width:300px;text-align:left;padding:17px 10px;border-right:1px solid $third;}
-  &:nth-child(1n+2) {vertical-align:middle;padding:0;background:$othird;}}}}
-
-.table thead tr td:last-child {border-radius:0 5px 0 0;}
+.signals-table {
+  thead tr td {
+    &:last-child {border-radius:0;}}
+  tbody tr td {
+    p {font-size:1em;}
+    a {color:$third;font-style:italic;
+      &:hover {color:$primary;}}
+    &:first-of-type img {width:inherit;max-width:100%;border-radius:0;border:1px solid $third;}
+  }
+}
 
 // ====== // ===== // Graphs // ====== // ===== //
 .stock-tabs {margin-top:10px;}
@@ -118,3 +148,4 @@ thead tr td a {@include tableheads;}
 
 // ====== // ===== // Tooltips // ====== // ===== //
 .tooltip {font-size:1em;text-align:center;position:fixed;background:$primary;color:$secondary;padding:7px 11px 9px 11px;border-radius:0 5px 0 0;}
+.stock-level {position:relative;top:-40px;background:$third;color:$secondary;padding:6px 10px;right:-20px;float:right;}

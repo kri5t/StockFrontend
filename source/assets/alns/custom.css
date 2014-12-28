@@ -5,7 +5,9 @@ button:active,
 a:focus,
 a:active {
   outline: 0 !important;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  text-underline: none;
+  text-decoration: none; }
 
 h1, h2, h3, h4 {
   font-weight: 300; }
@@ -124,6 +126,7 @@ hr {
 
 /* Findes den her?? */
 .container .btn-default {
+  background: rgba(0, 139, 255, 0.15);
   border-radius: 0 5px 0 0;
   border: 1px solid #262a33;
   border-bottom: 4px solid #262a33;
@@ -136,10 +139,8 @@ hr {
   -webkit-transition: background-color 0.8s ease-in-out;
   -moz-transition: background-color 0.8s ease-in-out; }
   .container .btn-default:hover, .container .btn-default:focus, .container .btn-default:hover .fa-spin, .container .btn-default:focus .fa-spin {
-    color: #008bff;
-    background: white;
-    border: 1px solid #008bff;
-    border-bottom: 4px solid #008bff; }
+    color: #262a33;
+    background: rgba(0, 139, 255, 0.3); }
   .container .btn-default:hover .fa-spin, .container .btn-default:focus .fa-spin {
     border: none;
     background: none; }
@@ -157,8 +158,7 @@ hr {
     background: #008bff;
     color: white;
     border-right: 0;
-    padding: 7px 12px;
-    font-size: 1.2em;
+    padding: 12px;
     border: none; }
     .container .add-signal .btn-default:hover {
       border: none;
@@ -307,7 +307,8 @@ body {
 .second .table.std-table tbody tr {
   transition: background-color 0.8s ease-in-out;
   -webkit-transition: background-color 0.8s ease-in-out;
-  -moz-transition: background-color 0.8s ease-in-out; }
+  -moz-transition: background-color 0.8s ease-in-out;
+  background: rgba(0, 139, 255, 0.15); }
   .second .table.std-table tbody tr td {
     transition: color 0.8s ease-in-out;
     -webkit-transition: color 0.8s ease-in-out;
@@ -325,6 +326,78 @@ body {
   margin-top: 40px; }
 .second .table.std-table.popular-stocks tbody tr td {
   padding: 20px 0; }
+.second .table.std-table.persons-followed, .second .table.std-table.stocks-followed {
+  margin-bottom: 40px; }
+  .second .table.std-table.persons-followed thead tr td, .second .table.std-table.stocks-followed thead tr td {
+    padding: 4px; }
+  .second .table.std-table.persons-followed tbody tr:hover, .second .table.std-table.stocks-followed tbody tr:hover {
+    cursor: default;
+    background: transparent; }
+  .second .table.std-table.persons-followed tbody tr:last-of-type, .second .table.std-table.stocks-followed tbody tr:last-of-type {
+    border-color: #262a33; }
+  .second .table.std-table.persons-followed tbody tr td, .second .table.std-table.stocks-followed tbody tr td {
+    padding: 4px;
+    background: rgba(0, 139, 255, 0.3); }
+    .second .table.std-table.persons-followed tbody tr td:first-of-type, .second .table.std-table.stocks-followed tbody tr td:first-of-type {
+      text-align: left;
+      padding-left: 10px;
+      background: transparent; }
+    .second .table.std-table.persons-followed tbody tr td:last-of-type, .second .table.std-table.stocks-followed tbody tr td:last-of-type {
+      width: 60px;
+      background: rgba(0, 139, 255, 0.7); }
+    .second .table.std-table.persons-followed tbody tr td:first-of-type:hover, .second .table.std-table.stocks-followed tbody tr td:first-of-type:hover {
+      cursor: pointer;
+      background: rgba(0, 139, 255, 0.7);
+      color: white; }
+    .second .table.std-table.persons-followed tbody tr td:last-of-type:hover, .second .table.std-table.stocks-followed tbody tr td:last-of-type:hover {
+      cursor: pointer;
+      background: rgba(38, 42, 51, 0.85);
+      color: white; }
+    .second .table.std-table.persons-followed tbody tr td .glyphicon, .second .table.std-table.stocks-followed tbody tr td .glyphicon {
+      font-size: 15px;
+      margin: 0; }
+    .second .table.std-table.persons-followed tbody tr td img, .second .table.std-table.stocks-followed tbody tr td img {
+      width: 31px;
+      margin: 0 10px 0 0; }
+.second .table.std-table.stocks-followed tbody tr td {
+  padding: 9px; }
+.second .overview-subscriptions {
+  margin-top: 40px; }
+.second .signals-table.table tbody a.read-more {
+  font-style: normal;
+  padding: 10px;
+  right: -20px;
+  bottom: -40px;
+  color: white;
+  background: #008bff;
+  float: right;
+  position: relative;
+  border-radius: 5px 0 0 0;
+  transition: background-color 0.8s ease-in-out;
+  -webkit-transition: background-color 0.8s ease-in-out;
+  -moz-transition: background-color 0.8s ease-in-out;
+  font-weight: 300; }
+  .second .signals-table.table tbody a.read-more:hover {
+    background: rgba(38, 42, 51, 0.85); }
+.second .signals-table.table tbody tr:hover {
+  /* background:$othird;color:$primary;cursor:pointer; */ }
+.second .signals-table.table tbody td {
+  padding: 40px 20px;
+  border-bottom: 10px solid white;
+  border-top: 10px solid white; }
+  .second .signals-table.table tbody td .col-sm-10 {
+    padding-right: 20px; }
+    .second .signals-table.table tbody td .col-sm-10 a.read-more {
+      right: -41px; }
+  .second .signals-table.table tbody td:first-child {
+    max-width: 500px;
+    text-align: left;
+    background: rgba(0, 139, 255, 0.15); }
+  .second .signals-table.table tbody td:nth-child(1n+2) {
+    vertical-align: middle;
+    padding: 0;
+    background: rgba(0, 139, 255, 0.3);
+    width: 11%; }
 
 .third {
   color: white; }
@@ -370,6 +443,9 @@ body {
   .fifth .row:last-of-type {
     padding-bottom: 40px; }
 
+.table thead tr td:last-child {
+  border-radius: 0 5px 0 0; }
+
 .market-resume > tbody > tr > td {
   border-top: 1px solid white;
   padding: 10px 0; }
@@ -403,28 +479,20 @@ thead tr td a {
   .stock-overview tbody tr:last-of-type:hover {
     border-bottom: 1px solid #262a33; }
 
-.second .signals-table.table {
-  border-left: 1px solid #262a33; }
-  .second .signals-table.table tbody .col-sm-2 {
-    font-weight: 600; }
-  .second .signals-table.table tbody a.read-more {
-    font-style: normal; }
-    .second .signals-table.table tbody a.read-more:hover {
-      color: #262a33; }
-  .second .signals-table.table tbody tr:hover {
-    /* background:$othird;color:$primary;cursor:pointer; */ }
-  .second .signals-table.table tbody td:first-child {
-    max-width: 300px;
-    text-align: left;
-    padding: 17px 10px;
-    border-right: 1px solid #008bff; }
-  .second .signals-table.table tbody td:nth-child(1n+2) {
-    vertical-align: middle;
-    padding: 0;
-    background: rgba(0, 139, 255, 0.3); }
-
-.table thead tr td:last-child {
-  border-radius: 0 5px 0 0; }
+.signals-table thead tr td:last-child {
+  border-radius: 0; }
+.signals-table tbody tr td p {
+  font-size: 1em; }
+.signals-table tbody tr td a {
+  color: #008bff;
+  font-style: italic; }
+  .signals-table tbody tr td a:hover {
+    color: #262a33; }
+.signals-table tbody tr td:first-of-type img {
+  width: inherit;
+  max-width: 100%;
+  border-radius: 0;
+  border: 1px solid #008bff; }
 
 .stock-tabs {
   margin-top: 10px; }
@@ -447,6 +515,15 @@ thead tr td a {
   color: white;
   padding: 7px 11px 9px 11px;
   border-radius: 0 5px 0 0; }
+
+.stock-level {
+  position: relative;
+  top: -40px;
+  background: #008bff;
+  color: white;
+  padding: 6px 10px;
+  right: -20px;
+  float: right; }
 
 .navbar {
   margin: 0; }
@@ -473,7 +550,7 @@ thead tr td a {
   .navbar-default .navbar-nav > li.profile-nav {
     margin: 0; }
   .navbar-default .navbar-nav > li.active-menu a {
-    color: #008bff; }
+    color: #00aeff; }
     .navbar-default .navbar-nav > li.active-menu a:hover {
       cursor: default; }
   .navbar-default .navbar-nav > li.profile-nav.active-menu a img:hover {
@@ -495,7 +572,7 @@ thead tr td a {
   font-size: 0.9em;
   padding-right: 0; }
   .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav li a:hover {
-    color: #008bff; }
+    color: #00aeff; }
   .navbar-default .navbar-brand:focus, .navbar-default .navbar-nav li a:focus {
     color: #008bff;
     box-shadow: none !important; }
@@ -522,7 +599,7 @@ thead tr td a {
   border-radius: 0;
   background: #262a33;
   color: white;
-  min-width: 145px;
+  min-width: 123px;
   top: 47px;
   border: 1px solid #262a33;
   border-top: none;
@@ -547,7 +624,7 @@ thead tr td a {
       margin-left: 5px; }
   .filter-options .dropdown-menu li a {
     padding: 8px 19px;
-    min-width: 160px;
+    min-width: 123px;
     font-size: 1.25em;
     border-top: 1px solid white; }
   .filter-options .dropdown-menu li a:hover {
@@ -577,7 +654,13 @@ thead tr td a {
     font-size: 1.2em;
     border-radius: 0 5px 0 0; }
     .nav-tabs > li.pull-right:nth-child(1), .nav-tabs li:nth-child(1) {
-      background: #262a33; }
+      background: #008bff;
+      transition: background-color 0.8s ease-in-out;
+      -webkit-transition: background-color 0.8s ease-in-out;
+      -moz-transition: background-color 0.8s ease-in-out; }
+      .nav-tabs > li.pull-right:nth-child(1):hover, .nav-tabs li:nth-child(1):hover {
+        cursor: pointer;
+        background: rgba(38, 42, 51, 0.85); }
     .nav-tabs > li.pull-right:nth-child(2), .nav-tabs li:nth-child(2) {
       background: #008bff;
       color: white;
@@ -661,12 +744,10 @@ thead tr td a {
   #post .second .radio label {
     font-weight: 300; }
 
-#profile .user-rating {
-  margin: 0 0 20px 0; }
-  #profile .user-rating i {
-    color: #FF0000; }
-    #profile .user-rating i:hover {
-      cursor: pointer; }
+#profile .user-rating i {
+  color: #008bff; }
+  #profile .user-rating i:hover {
+    cursor: pointer; }
 #profile .profile-intro {
   margin-top: 20px; }
 #profile .navbar-default .navbar-nav li a:hover {
@@ -677,6 +758,16 @@ thead tr td a {
   padding-top: 50px; }
 #profile .first .row:last-of-type {
   padding-bottom: 80px; }
+#profile .follow-profile {
+  width: 60%;
+  margin: 0 auto; }
+#profile .profile-description {
+  background: #262a33;
+  border-radius: 0 5px 0 0; }
+  #profile .profile-description p {
+    color: white;
+    text-align: left;
+    padding: 20px; }
 #profile .second .row:first-of-type {
   padding-top: 40px; }
 #profile .own-signals {
@@ -735,20 +826,6 @@ thead tr td a {
   padding-top: 14px; }
 #stock .stock-news thead tr {
   border-bottom: 1px solid #008bff; }
-#stock .signals-table thead tr td:last-child {
-  border-radius: 0; }
-#stock .signals-table tbody tr td p {
-  font-size: 1em; }
-#stock .signals-table tbody tr td a {
-  color: #008bff;
-  font-style: italic; }
-  #stock .signals-table tbody tr td a:hover {
-    color: #262a33; }
-#stock .signals-table tbody tr td:first-of-type img {
-  width: inherit;
-  max-width: 100%;
-  border-radius: 0;
-  border: 1px solid #008bff; }
 
 #stocks .first .disclaimer {
   margin: 20px 0 0 0; }
@@ -859,7 +936,6 @@ thead tr td a {
       border-top: 1px solid white;
       padding-top: 20px; }
 
-body.modal-open {
-  margin-right: -15px !important; }
+/*body.modal-open {margin-right:-15px !important;} //fixes modal positioning issue with BS*/
 
 /*# sourceMappingURL=custom.css.map */
