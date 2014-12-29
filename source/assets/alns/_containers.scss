@@ -147,5 +147,5 @@ thead tr td a {@include tableheads;}
 .stock-graph {width:70%;margin: 0;float:left;background:$primary;color:$secondary;display:block;height:277px;border-left:1px solid $secondary;}
 
 // ====== // ===== // Tooltips // ====== // ===== //
-.tooltip {font-size:1em;text-align:center;position:fixed;background:$primary;color:$secondary;padding:7px 11px 9px 11px;border-radius:0 5px 0 0;}
+.tooltip {font-size:1em;text-align:center;position:fixed;background:$third;color:$secondary;padding:7px 11px 9px 11px;border-radius:0 5px 0 0;}
 .stock-level {position:relative;top:-40px;background:$third;color:$secondary;padding:6px 10px;right:-20px;float:right;}

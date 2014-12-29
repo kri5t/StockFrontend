@@ -511,7 +511,7 @@ thead tr td a {
   font-size: 1em;
   text-align: center;
   position: fixed;
-  background: #262a33;
+  background: #008bff;
   color: white;
   padding: 7px 11px 9px 11px;
   border-radius: 0 5px 0 0; }
@@ -768,6 +768,15 @@ thead tr td a {
     color: white;
     text-align: left;
     padding: 20px; }
+  #profile .profile-description .fa-pencil-square-o {
+    color: white;
+    margin: -31px 5px 0 0;
+    transition: color 0.8s ease-in-out;
+    -webkit-transition: color 0.8s ease-in-out;
+    -moz-transition: color 0.8s ease-in-out; }
+    #profile .profile-description .fa-pencil-square-o:hover {
+      cursor: pointer;
+      color: #008bff; }
 #profile .second .row:first-of-type {
   padding-top: 40px; }
 #profile .own-signals {

@@ -53,7 +53,9 @@
   }
   .follow-profile {width:60%;margin:0 auto;}
   .profile-description {background:$primary;border-radius:0 5px 0 0;
-  p {color:$secondary;text-align:left;padding:20px;}}
+  p {color:$secondary;text-align:left;padding:20px;}
+  .fa-pencil-square-o {color:$secondary;margin:-31px 5px 0 0;@include colortransition;
+  &:hover {cursor:pointer;color:$third;}}}
 
   .second {
     .row:first-of-type {padding-top:40px;}
