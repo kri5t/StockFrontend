@@ -19,6 +19,7 @@ a:hover {text-decoration:none;color:$secondary;}
 ul li {list-style: none;display:inline-block;}
 input[type="text"], textarea {outline: none;box-shadow:none !important;font-size:1.3em;  }
 
+.strong-text {font-weight:400;}
 .disclaimer {font-style:italic;font-size:1em;}
 .overall-signal {font-size:0.7em;font-weight:300;padding: 9px;background: $buy;color:$secondary;border-bottom:1px solid $buy;}
 .signal-text {margin-top:-14px;}
@@ -53,10 +54,10 @@ hr {color:$primary;border-top:1px solid $primary;margin-top:50px;}
   &:hover {background-color:$secondary;color:$secondary;border:none;}} /* Findes den her?? */
 
 .container .btn-default {
-  background:$ithird;border-radius: 0 5px 0 0;border:1px solid $primary;border-bottom:4px solid $primary;color:$primary;padding: 8px 20px;@include colortransition;@include bgtransition;
-  &:hover, &:focus, &:hover .fa-spin, &:focus .fa-spin {color:$primary;background:$othird;}
+  border-radius: 0 5px 0 0;border:1px solid $primary;border-bottom:4px solid $primary;color:$secondary;background:$primary;padding: 8px 20px;@include colortransition;@include bgtransition;
+  &:hover, &:focus, &:hover .fa-spin, &:focus .fa-spin {color:$primary;background:$ithird;}
   &:hover .fa-spin, &:focus .fa-spin {border:none;background:none;}
-  .fa-spin {margin:2px 0 0 5px;color:$primary;}}
+  .fa-spin {margin:2px 0 0 5px;color:$secondary;}}
 
 .container .add-signal {position:fixed;top:40%;right:0;z-index:$zdex0;
   .btn-default {border-radius:5px 0 0 5px;background:$third;color:$secondary;border-right:0;padding:12px;border:none;

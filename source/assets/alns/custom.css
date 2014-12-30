@@ -40,6 +40,9 @@ input[type="text"], textarea {
   box-shadow: none !important;
   font-size: 1.3em; }
 
+.strong-text {
+  font-weight: 400; }
+
 .disclaimer {
   font-style: italic;
   font-size: 1em; }
@@ -126,11 +129,11 @@ hr {
 
 /* Findes den her?? */
 .container .btn-default {
-  background: rgba(0, 139, 255, 0.15);
   border-radius: 0 5px 0 0;
   border: 1px solid #262a33;
   border-bottom: 4px solid #262a33;
-  color: #262a33;
+  color: white;
+  background: #262a33;
   padding: 8px 20px;
   transition: color 0.8s ease-in-out;
   -webkit-transition: color 0.8s ease-in-out;
@@ -140,13 +143,13 @@ hr {
   -moz-transition: background-color 0.8s ease-in-out; }
   .container .btn-default:hover, .container .btn-default:focus, .container .btn-default:hover .fa-spin, .container .btn-default:focus .fa-spin {
     color: #262a33;
-    background: rgba(0, 139, 255, 0.3); }
+    background: rgba(0, 139, 255, 0.17); }
   .container .btn-default:hover .fa-spin, .container .btn-default:focus .fa-spin {
     border: none;
     background: none; }
   .container .btn-default .fa-spin {
     margin: 2px 0 0 5px;
-    color: #262a33; }
+    color: white; }
 
 .container .add-signal {
   position: fixed;
@@ -308,7 +311,7 @@ body {
   transition: background-color 0.8s ease-in-out;
   -webkit-transition: background-color 0.8s ease-in-out;
   -moz-transition: background-color 0.8s ease-in-out;
-  background: rgba(0, 139, 255, 0.15); }
+  background: rgba(0, 139, 255, 0.17); }
   .second .table.std-table tbody tr td {
     transition: color 0.8s ease-in-out;
     -webkit-transition: color 0.8s ease-in-out;
@@ -363,41 +366,71 @@ body {
   padding: 9px; }
 .second .overview-subscriptions {
   margin-top: 40px; }
-.second .signals-table.table tbody a.read-more {
-  font-style: normal;
-  padding: 10px;
-  right: -20px;
-  bottom: -40px;
-  color: white;
-  background: #008bff;
-  float: right;
-  position: relative;
-  border-radius: 5px 0 0 0;
-  transition: background-color 0.8s ease-in-out;
-  -webkit-transition: background-color 0.8s ease-in-out;
-  -moz-transition: background-color 0.8s ease-in-out;
-  font-weight: 300; }
-  .second .signals-table.table tbody a.read-more:hover {
-    background: rgba(38, 42, 51, 0.85); }
-.second .signals-table.table tbody tr:hover {
-  /* background:$othird;color:$primary;cursor:pointer; */ }
-.second .signals-table.table tbody td {
-  padding: 40px 20px;
-  border-bottom: 10px solid white;
-  border-top: 10px solid white; }
-  .second .signals-table.table tbody td .col-sm-10 {
-    padding-right: 20px; }
-    .second .signals-table.table tbody td .col-sm-10 a.read-more {
-      right: -41px; }
-  .second .signals-table.table tbody td:first-child {
-    max-width: 500px;
-    text-align: left;
-    background: rgba(0, 139, 255, 0.15); }
-  .second .signals-table.table tbody td:nth-child(1n+2) {
-    vertical-align: middle;
+.second .signal-card {
+  border-bottom: 15px solid rgba(0, 139, 255, 0.17); }
+  .second .signal-card .signal-top {
+    background: #262a33;
+    color: white;
     padding: 0;
-    background: rgba(0, 139, 255, 0.3);
-    width: 11%; }
+    margin-top: 20px; }
+    .second .signal-card .signal-top .col-sm-3 p {
+      padding: 16px 0 0 0; }
+    .second .signal-card .signal-top .col-sm-3 img {
+      width: 55px;
+      border-radius: 50%;
+      padding: 10px 0; }
+    .second .signal-card .signal-top .hold {
+      color: white; }
+  .second .signal-card .signal-middle, .second .signal-card .signal-bottom {
+    text-align: left;
+    padding: 20px 30px 0 30px;
+    background: rgba(0, 139, 255, 0.17);
+    color: #262a33; }
+    .second .signal-card .signal-middle img, .second .signal-card .signal-bottom img {
+      max-height: 100px;
+      margin: 0 10px 0 0;
+      border: 1px solid rgba(38, 42, 51, 0.85); }
+      .second .signal-card .signal-middle img:hover, .second .signal-card .signal-bottom img:hover {
+        border: 1px solid #008bff; }
+    .second .signal-card .signal-middle a, .second .signal-card .signal-bottom a {
+      color: #008bff;
+      transition: color 0.8s ease-in-out;
+      -webkit-transition: color 0.8s ease-in-out;
+      -moz-transition: color 0.8s ease-in-out; }
+      .second .signal-card .signal-middle a:hover, .second .signal-card .signal-bottom a:hover {
+        color: #262a33; }
+    .second .signal-card .signal-middle .read-more, .second .signal-card .signal-bottom .read-more {
+      padding: 5px 10px 7px 10px;
+      border-radius: 0 0 0 5px;
+      background: #008bff;
+      color: white;
+      position: relative;
+      right: -30px;
+      top: -20px;
+      font-weight: 300;
+      font-size: 1.1em;
+      transition: background-color 0.8s ease-in-out;
+      -webkit-transition: background-color 0.8s ease-in-out;
+      -moz-transition: background-color 0.8s ease-in-out; }
+      .second .signal-card .signal-middle .read-more:hover, .second .signal-card .signal-bottom .read-more:hover {
+        background: rgba(38, 42, 51, 0.85);
+        color: white; }
+    .second .signal-card .signal-middle span, .second .signal-card .signal-bottom span {
+      margin: 0 0 0 7px;
+      top: 2px; }
+  .second .signal-card .signal-bottom {
+    padding: 0 30px 10px 30px;
+    background: rgba(0, 139, 255, 0.17);
+    color: #262a33; }
+    .second .signal-card .signal-bottom .row:first-of-type {
+      padding: 10px 0 !important; }
+    .second .signal-card .signal-bottom .row:last-of-type {
+      padding-bottom: 0; }
+    .second .signal-card .signal-bottom span {
+      font-size: 11px;
+      margin: 0 4px 0 0;
+      top: 0;
+      color: #008bff; }
 
 .third {
   color: white; }
@@ -479,21 +512,6 @@ thead tr td a {
   .stock-overview tbody tr:last-of-type:hover {
     border-bottom: 1px solid #262a33; }
 
-.signals-table thead tr td:last-child {
-  border-radius: 0; }
-.signals-table tbody tr td p {
-  font-size: 1em; }
-.signals-table tbody tr td a {
-  color: #008bff;
-  font-style: italic; }
-  .signals-table tbody tr td a:hover {
-    color: #262a33; }
-.signals-table tbody tr td:first-of-type img {
-  width: inherit;
-  max-width: 100%;
-  border-radius: 0;
-  border: 1px solid #008bff; }
-
 .stock-tabs {
   margin-top: 10px; }
 
@@ -511,10 +529,10 @@ thead tr td a {
   font-size: 1em;
   text-align: center;
   position: fixed;
-  background: #008bff;
+  background: rgba(38, 42, 51, 0.85);
   color: white;
   padding: 7px 11px 9px 11px;
-  border-radius: 0 5px 0 0; }
+  border-radius: 0; }
 
 .stock-level {
   position: relative;
@@ -778,13 +796,23 @@ thead tr td a {
       cursor: pointer;
       color: #008bff; }
 #profile .second .row:first-of-type {
-  padding-top: 40px; }
-#profile .own-signals {
+  padding-top: 0; }
+#profile .second .row:last-of-type {
+  padding-top: 16px; }
+#profile .signal-card .signal-top .col-sm-3 p {
+  padding: 14px 0 15px 0;
   margin: 0; }
-  #profile .own-signals tbody tr td:nth-last-child(1) {
-    text-align: left;
-    width: 65%; }
+#profile .signal-card .signal-top .col-sm-3.own-stock-link p {
+  color: white;
+  transition: background-color 0.8s ease-in-out;
+  -webkit-transition: background-color 0.8s ease-in-out;
+  -moz-transition: background-color 0.8s ease-in-out; }
+  #profile .signal-card .signal-top .col-sm-3.own-stock-link p:hover {
+    cursor: pointer;
+    background: #008bff; }
 
+#stock h3.pull-left {
+  margin: 20px 0 -10px 0; }
 #stock .first .disclaimer {
   margin: 20px 0 0 0; }
 #stock .first .row:first-of-type {
@@ -793,6 +821,8 @@ thead tr td a {
   padding-bottom: 80px; }
 #stock .nav-tabs {
   border-bottom: 1px solid white; }
+#stock .second .row:first-of-type {
+  padding-top: 0; }
 #stock .second .table thead tr td a {
   margin: 7px 0 5px 0;
   display: block;

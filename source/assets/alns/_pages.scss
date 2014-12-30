@@ -58,16 +58,34 @@
   &:hover {cursor:pointer;color:$third;}}}
 
   .second {
-    .row:first-of-type {padding-top:40px;}
+    .row:first-of-type {padding-top:0;}
+    .row:last-of-type {padding-top:16px;}
   }
-  .own-signals {margin:0;
-    tbody tr td:nth-last-child(1) {text-align:left;width:65%;}
+
+  .signal-card {
+    .signal-top {
+
+      .col-sm-3 {
+        p {
+          padding: 14px 0 15px 0;margin:0;
+         }
+        }
+      .col-sm-3.own-stock-link {
+        p {color:$secondary;@include bgtransition;
+          &:hover {cursor:pointer;background:$third;}}
+      }
+    }
   }
 }
+
+
 
 // ====== // ===== // stock.html // ====== // ===== //
 
 #stock {
+
+  h3.pull-left {margin:20px 0 -10px 0;}
+
   .first {
     .disclaimer {margin: 20px 0 0 0;}
     .row:first-of-type {padding-top: 50px;}
@@ -75,6 +93,7 @@
   }
   .nav-tabs {border-bottom:1px solid $secondary;}
   .second {
+    .row:first-of-type {padding-top: 0;}
     .table thead tr td a {@include tableheads;
       span {display:none;}}
   }
