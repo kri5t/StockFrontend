@@ -7,73 +7,191 @@ button:focus,
 button:active,
 a:focus,
 a:active,
-{outline:0 !important;-webkit-appearance:none;text-underline:none;text-decoration:none;}
+{
+  outline: 0 !important;
+  -webkit-appearance: none;
+  text-underline: none;
+  text-decoration: none;
+}
 
-h1,h2,h3,h4 {font-weight:300;}
-h3.pull-left {margin: 15px 0 0 0;}
-h1 {font-size:2.4em;}
+h1,h2,h3,h4 {
+  font-weight: 300;
+}
+h3.pull-left {
+  margin: 15px 0 0 0;
+}
+h1 {
+  font-size: 2.4em;
+}
 
-p, td {font-size:1.1em;}
-a {color:$primary;@include colortransition;}
-a:hover {text-decoration:none;color:$secondary;}
-ul li {list-style: none;display:inline-block;}
-input[type="text"], textarea {outline: none;box-shadow:none !important;font-size:1.3em;  }
+p, td {
+  font-size: 1.1em;
+}
+a {
+  color: $primary;
+  @include colortransition;
+}
+a:hover {
+  text-decoration: none;
+  color: $secondary;
+}
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+input[type="text"], textarea {
+  outline: none;
+  box-shadow: none !important;
+  font-size: 1.3em;
+}
 
-.strong-text {font-weight:400;}
-.disclaimer {font-style:italic;font-size:1em;}
-.overall-signal {font-size:0.7em;font-weight:300;padding: 9px;background: $buy;color:$secondary;border-bottom:1px solid $buy;}
-.signal-text {margin-top:-14px;}
-.logout {font-size:0.7em;margin:16px 0 0 8px;}
-.stock-title {margin:-20px 0 20px 0;}
-.friend-checkbox {font-size:24px;
-  .disclaimer {color:$lightGrey;}
-  .checkbox label {font-weight:300;@include colortransition;
-  &:hover {color:$third;}}
-  input[type="checkbox"] {margin:11px 0 0 -20px;}}
+.strong-text {
+  font-weight: 400;
+}
+.disclaimer {
+  font-style: italic;
+  font-size: 1em;
+}
+.overall-signal {
+  font-size: 0.7em;
+  font-weight: 300;
+  padding: 9px;
+  background: $buy;
+  color: $secondary;
+  border-bottom: 1px solid $buy;
+}
+.signal-text {
+  margin-top: -14px;
+}
+.logout {
+  font-size: 0.7em;
+  margin: 16px 0 0 8px;
+}
+.stock-title {
+  margin: -20px 0 20px 0;
+}
+.friend-checkbox {
+  font-size: 24px;
+  .disclaimer {
+    color: $lightGrey;
+  }
+  .checkbox label {
+    font-weight: 300;
+    @include colortransition;
+    &:hover {
+      color: $third;
+    }
+  }
+  input[type="checkbox"] {
+    margin: 11px 0 0 -20px;
+  }
+}
 
-.buy {color:$buy;}
-.hold {color:$oprimary;}
-.sell {color:$sell;}
-.positive {color:$positive;}
-.negative {color:$negative;}
+.buy {
+  color: $buy;
+}
+.hold {
+  color: $oprimary;
+}
+.sell {
+  color: $sell;
+}
+.positive {
+  color: $positive;
+}
+.negative {
+  color: $negative;
+}
 
 // ====== // ===== // Forms n' stuff // ====== // ===== //
-hr {color:$primary;border-top:1px solid $primary;margin-top:50px;}
-.form-control {border-radius:0;}
+hr {
+  color: $primary;
+  border-top: 1px solid $primary;
+  margin-top: 50px;
+}
+.form-control {
+  border-radius: 0;
+}
+.fa-asterisk {
+  color:$sell;
+  margin:0 0 0 3px;
+  top:-10px;
+  font-size:12px;
+  position:relative;
+}
 
 // ====== // ===== // Contact // ====== // ===== //
 .contact-dev {
-  margin-top:24px;
-  i {margin:18px 12px;color:$third;@include colortransition;
-    &:hover {color:$primary;}}
+  margin-top: 24px;
+  i {
+    margin: 18px 12px;
+    color: $third;
+    @include colortransition;
+    &:hover {
+      color: $primary;
+    }
+  }
 }
 
 // ====== // ===== // Buttons // ====== // ===== //
-.btn {border-radius:0;font-weight:300;}
-.btn-primary {background-color:$primary;color:$secondary;font-size:1.3em;border:none;
-  &:hover {background-color:$secondary;color:$secondary;border:none;}} /* Findes den her?? */
+.btn {
+  border-radius: 0;
+  font-weight: 300;
+}
 
 .container .btn-default {
-  border-radius: 0 5px 0 0;border:1px solid $primary;border-bottom:4px solid $primary;color:$secondary;background:$primary;padding: 8px 20px;@include colortransition;@include bgtransition;
-  &:hover, &:focus, &:hover .fa-spin, &:focus .fa-spin {color:$primary;background:$ithird;}
-  &:hover .fa-spin, &:focus .fa-spin {border:none;background:none;}
-  .fa-spin {margin:2px 0 0 5px;color:$secondary;}}
+  border-radius: 0 5px 0 0;
+  border: 1px solid $primary;
+  border-bottom: 4px solid $primary;
+  color: $secondary;
+  background: $primary;
+  padding: 8px 20px;
+  @include colortransition;
+  @include bgtransition;
+  &:hover, &:focus, &:hover .fa-spin, &:focus .fa-spin {
+    color: $primary;
+    background: $ithird;
+  }
+  &:hover .fa-spin, &:focus .fa-spin {
+    border: none;
+    background: none;
+  }
+  .fa-spin {
+    margin: 2px 0 0 5px;
+    color: $secondary;
+  }
+}
 
-.container .add-signal {position:fixed;top:40%;right:0;z-index:$zdex0;
-  .btn-default {border-radius:5px 0 0 5px;background:$third;color:$secondary;border-right:0;padding:12px;border:none;
-    &:hover {border:none;background:$tthird;}}}
+.container .add-signal {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  z-index: $zdex0;
+  .btn-default {
+    border-radius: 5px 0 0 5px;
+    background: $third;
+    color: $secondary;
+    border-right: 0;
+    padding: 12px;
+    border: none;
+    &:hover {
+      border: none;
+      background: $tthird;
+    }
+  }
+}
 
-.show-more .btn {font-size:1.4em;}
-.close {font-size:28px;color:$secondary;text-shadow:none;
-  &:hover {color:$third;}}
-
-// ====== // ===== // Link effects // ====== // ===== //
-//.underline a::after {position: absolute;top: 120%;left: 0;width: 100%;height: 1px;background: $darkOverlay;content: '';opacity: 0;-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;-moz-transition: opacity 0.3s, -moz-transform 0.3s;transition: opacity 0.3s, transform 0.3s;-webkit-transform: translateY(5px);-moz-transform: translateY(5px);transform: translateY(5px);}
-//.underline a:hover::after, .underline a:focus::after {opacity: 1;-webkit-transform: translateY(0px);-moz-transform: translateY(0px);transform: translateY(0px);}
+.show-more .btn {
+  font-size: 1.4em;
+}
 
 // ====== // ===== // Images // ====== // ===== //
-.glyphicon {}
-.btn .caret {margin-left:3px;}
-.profile-large {border-radius:50%;width:150px;}
+.btn .caret {
+  margin-left: 3px;
+}
+.profile-large {
+  border-radius: 50%;
+  width: 150px;
+}
 
 

@@ -102,6 +102,13 @@ hr {
 .form-control {
   border-radius: 0; }
 
+.fa-asterisk {
+  color: #FF0000;
+  margin: 0 0 0 3px;
+  top: -10px;
+  font-size: 12px;
+  position: relative; }
+
 .contact-dev {
   margin-top: 24px; }
   .contact-dev i {
@@ -117,17 +124,6 @@ hr {
   border-radius: 0;
   font-weight: 300; }
 
-.btn-primary {
-  background-color: #262a33;
-  color: white;
-  font-size: 1.3em;
-  border: none; }
-  .btn-primary:hover {
-    background-color: white;
-    color: white;
-    border: none; }
-
-/* Findes den her?? */
 .container .btn-default {
   border-radius: 0 5px 0 0;
   border: 1px solid #262a33;
@@ -169,13 +165,6 @@ hr {
 
 .show-more .btn {
   font-size: 1.4em; }
-
-.close {
-  font-size: 28px;
-  color: white;
-  text-shadow: none; }
-  .close:hover {
-    color: #008bff; }
 
 .btn .caret {
   margin-left: 3px; }
@@ -619,10 +608,9 @@ thead tr td a {
   color: white;
   min-width: 123px;
   top: 47px;
-  border: 1px solid #262a33;
-  border-top: none;
+  border: none;
   margin: 0;
-  padding: 3px 0; }
+  padding: 0; }
   .dropdown-menu li a {
     padding: 3px 7px;
     font-weight: 300;
@@ -642,7 +630,7 @@ thead tr td a {
       margin-left: 5px; }
   .filter-options .dropdown-menu li a {
     padding: 8px 19px;
-    min-width: 123px;
+    min-width: 125px;
     font-size: 1.25em;
     border-top: 1px solid white; }
   .filter-options .dropdown-menu li a:hover {
@@ -722,6 +710,18 @@ thead tr td a {
   .profile-tabs .nav-tabs > .active.stock-tab > a:focus {
     background: #262a33;
     border: 1px solid #262a33; }
+
+.progress-bar {
+  background: rgba(0, 139, 255, 0.7);
+  padding: 3px;
+  border-radius: 10px 0 0 10px;
+  margin-top: 10px;
+  color: white;
+  text-align: center; }
+
+.progress {
+  background: rgba(0, 139, 255, 0.17);
+  border-radius: 10px; }
 
 #index .second .radio {
   display: inline-block;
@@ -873,7 +873,7 @@ thead tr td a {
 #stocks .first .row:last-of-type {
   padding-bottom: 80px; }
 #stocks .filter-options .dropdown-menu li a {
-  min-width: 176px; }
+  min-width: 179px; }
 
 #subscriptions .second .radio {
   display: inline-block;
@@ -887,17 +887,19 @@ thead tr td a {
 #subscriptions .first .row:last-of-type {
   padding-bottom: 80px; }
 
-.modal-dialog {
-  margin-top: 180px;
-  width: 420px; }
-
 .modal-header {
-  border-bottom: none; }
+  border-bottom: 1px solid rgba(38, 42, 51, 0.35); }
   .modal-header a {
     color: #262a33;
     font-weight: 400; }
     .modal-header a:hover {
       color: #008bff; }
+  .modal-header .close {
+    color: #262a33;
+    opacity: 0.6;
+    font-size: 28px; }
+    .modal-header .close:hover, .modal-header .close:focus {
+      opacity: 1; }
 
 .modal-title {
   padding-bottom: 10px; }
@@ -923,57 +925,68 @@ thead tr td a {
   display: block; }
 
 #new-signal .modal-content {
-  background: #262a33;
-  color: white; }
+  background: white;
+  color: #262a33;
+  border-radius: 0 5px 0 0; }
   #new-signal .modal-content .rate-area {
-    margin: 12px 0; }
+    margin: 8px 0 0 0; }
     #new-signal .modal-content .rate-area input, #new-signal .modal-content .rate-area textarea {
-      border: 1px solid #262a33;
+      border: 1px solid rgba(38, 42, 51, 0.35);
       background: white;
       padding: 10px;
       min-height: 47px;
       color: #262a33; }
-#new-signal .radio {
-  margin: 5px 0 0 21px; }
-#new-signal .radio label, #new-signal .checkbox label {
-  display: inline-block;
-  text-align: left;
-  padding: 4px 0;
-  width: 66px; }
-#new-signal textarea {
-  width: 100%;
-  min-height: 70px; }
-#new-signal .modal-dialog {
-  width: 30%; }
-#new-signal .modal-body {
-  text-align: left; }
-  #new-signal .modal-body label {
-    padding-left: 2px;
-    margin-top: 10px;
-    font-size: 1.3em;
-    font-weight: 300; }
-
-#options .modal-content {
-  background: #262a33;
-  color: white; }
-  #options .modal-content a {
-    color: white; }
-  #options .modal-content .modal-header p {
-    font-style: italic;
-    margin: 0;
-    color: white; }
-  #options .modal-content img {
-    width: 80px; }
-  #options .modal-content .btn-default {
-    padding: 10px 20px;
-    right: 0; }
-  #options .modal-content .modal-body {
-    padding: 0 25px 25px 25px; }
-  #options .modal-content .row {
-    padding: 0 0 10px 0; }
-    #options .modal-content .row:last-of-type {
-      border-top: 1px solid white;
-      padding-top: 20px; }
+  #new-signal .modal-content .btn-default {
+    font-size: 1.2em; }
+  #new-signal .modal-content .show-more {
+    margin-top: 20px; }
+  #new-signal .modal-content .form-group {
+    margin: 0; }
+  #new-signal .modal-content h4.pull-left {
+    margin: 30px 0 0 15px; }
+  #new-signal .modal-content .radio label, #new-signal .modal-content .checkbox label {
+    display: inline-block;
+    text-align: left;
+    padding: 4px 0;
+    width: 66px; }
+  #new-signal .modal-content textarea {
+    width: 100%;
+    min-height: 200px !important; }
+  #new-signal .modal-content input {
+    max-width: 93%; }
+  #new-signal .modal-content .modal-dialog {
+    width: 40%; }
+  #new-signal .modal-content .modal-body {
+    text-align: left; }
+    #new-signal .modal-content .modal-body label {
+      padding-left: 2px;
+      margin-top: 10px;
+      font-size: 1.3em;
+      font-weight: 300; }
+    #new-signal .modal-content .modal-body .col-sm-6 input {
+      max-width: 100%; }
+    #new-signal .modal-content .modal-body .col-sm-6 h4.pull-left {
+      margin: 20px 0 5px 0; }
+    #new-signal .modal-content .modal-body .glyphicon-plus {
+      top: -37px;
+      right: -2px;
+      font-size: 24px;
+      transition: color 0.8s ease-in-out;
+      -webkit-transition: color 0.8s ease-in-out;
+      -moz-transition: color 0.8s ease-in-out;
+      float: right;
+      margin-bottom: -20px; }
+      #new-signal .modal-content .modal-body .glyphicon-plus:hover {
+        cursor: pointer;
+        color: #008bff; }
+  #new-signal .modal-content .filter-options .dropdown-menu {
+    background: #262a33;
+    top: 45px;
+    width: 180px; }
+    #new-signal .modal-content .filter-options .dropdown-menu li a {
+      min-width: 180px;
+      font-size: 1.2em;
+      padding: 7px 19px; }
 
 /*body.modal-open {margin-right:-15px !important;} //fixes modal positioning issue with BS*/
 

@@ -1,65 +1,135 @@
 // ====== // ===== // index.html // ====== // ===== //
 #index {
   .second {
-    .radio {display: inline-block;padding-right: 36px;margin:4px 0;
-      label {font-weight:300;}}}
+    .radio {
+      display: inline-block;
+      padding-right: 36px;
+      margin: 4px 0;
+      label {
+        font-weight: 300;
+      }
+    }
+  }
 }
 
 
 // ====== // ===== // about.html // ====== // ===== //
-#about { background: url(../img/about_bg.jpeg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  .first {background:$oprimary;
-  &:after, &:before {background:$oprimary;}}
-  .third {background:$primary;
-    &:after, &:before {background:$primary;}}
+#about {
+  background: url(../img/about_bg.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .first {
+    background: $oprimary;
+    &:after, &:before {
+      background: $oprimary;
+    }
+  }
+  .third {
+    background: $primary;
+    &:after, &:before {
+      background: $primary;
+    }
+  }
 
-  .concept-storyboard {margin:20px 0;}
-  .col-sm-12 p {padding:0 14%;}
+  .concept-storyboard {
+    margin: 20px 0;
+  }
+  .col-sm-12 p {
+    padding: 0 14%;
+  }
 }
 
 
 // ====== // ===== // post.html // ====== // ===== //
 #post {
 
-  .navbar-right a:hover img {}
+  .navbar-right a:hover img {
+  }
 
   .first {
-    .row:first-of-type {padding-top:50px;}
-    .row:last-of-type {padding-bottom:60px;}
-    .disclaimer {margin:20px 0 0 0;}
+    .row:first-of-type {
+      padding-top: 50px;
+    }
+    .row:last-of-type {
+      padding-bottom: 60px;
+    }
+    .disclaimer {
+      margin: 20px 0 0 0;
+    }
   }
 
   .second {
-    .radio {display: inline-block;padding-right: 36px;margin:4px 0;
-      label {font-weight:300;}}}
+    .radio {
+      display: inline-block;
+      padding-right: 36px;
+      margin: 4px 0;
+      label {
+        font-weight: 300;
+      }
+    }
+  }
 }
 
 // ====== // ===== // profile.html // ====== // ===== //
 
 #profile {
   .user-rating {
-  i {color:$third;
-  &:hover {cursor:pointer;}}}
-  .profile-intro {margin-top:20px;}
-  .navbar-default .navbar-nav li a:hover {cursor:pointer;}
-  .first {
-    .disclaimer {margin:20px 0 0 0;}
-    .row:first-of-type {padding-top:50px;}
-    .row:last-of-type {padding-bottom:80px;}
+    i {
+      color: $third;
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
-  .follow-profile {width:60%;margin:0 auto;}
-  .profile-description {background:$primary;border-radius:0 5px 0 0;
-  p {color:$secondary;text-align:left;padding:20px;}
-  .fa-pencil-square-o {color:$secondary;margin:-31px 5px 0 0;@include colortransition;
-  &:hover {cursor:pointer;color:$third;}}}
+  .profile-intro {
+    margin-top: 20px;
+  }
+  .navbar-default .navbar-nav li a:hover {
+    cursor: pointer;
+  }
+  .first {
+    .disclaimer {
+      margin: 20px 0 0 0;
+    }
+    .row:first-of-type {
+      padding-top: 50px;
+    }
+    .row:last-of-type {
+      padding-bottom: 80px;
+    }
+  }
+  .follow-profile {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .profile-description {
+    background: $primary;
+    border-radius: 0 5px 0 0;
+    p {
+      color: $secondary;
+      text-align: left;
+      padding: 20px;
+    }
+    .fa-pencil-square-o {
+      color: $secondary;
+      margin: -31px 5px 0 0;
+      @include colortransition;
+      &:hover {
+        cursor: pointer;
+        color: $third;
+      }
+    }
+  }
 
   .second {
-    .row:first-of-type {padding-top:0;}
-    .row:last-of-type {padding-top:16px;}
+    .row:first-of-type {
+      padding-top: 0;
+    }
+    .row:last-of-type {
+      padding-top: 16px;
+    }
   }
 
   .signal-card {
@@ -67,12 +137,19 @@
 
       .col-sm-3 {
         p {
-          padding: 14px 0 15px 0;margin:0;
-         }
+          padding: 14px 0 15px 0;
+          margin: 0;
         }
+      }
       .col-sm-3.own-stock-link {
-        p {color:$secondary;@include bgtransition;
-          &:hover {cursor:pointer;background:$third;}}
+        p {
+          color: $secondary;
+          @include bgtransition;
+          &:hover {
+            cursor: pointer;
+            background: $third;
+          }
+        }
       }
     }
   }
@@ -84,60 +161,126 @@
 
 #stock {
 
-  h3.pull-left {margin:20px 0 -10px 0;}
+  h3.pull-left {
+    margin: 20px 0 -10px 0;
+  }
 
   .first {
-    .disclaimer {margin: 20px 0 0 0;}
-    .row:first-of-type {padding-top: 50px;}
-    .row:last-of-type {padding-bottom: 80px;}
+    .disclaimer {
+      margin: 20px 0 0 0;
+    }
+    .row:first-of-type {
+      padding-top: 50px;
+    }
+    .row:last-of-type {
+      padding-bottom: 80px;
+    }
   }
-  .nav-tabs {border-bottom:1px solid $secondary;}
+  .nav-tabs {
+    border-bottom: 1px solid $secondary;
+  }
   .second {
-    .row:first-of-type {padding-top: 0;}
-    .table thead tr td a {@include tableheads;
-      span {display:none;}}
+    .row:first-of-type {
+      padding-top: 0;
+    }
+    .table thead tr td a {
+      @include tableheads;
+      span {
+        display: none;
+      }
+    }
   }
-  .stock-overview {width:30%;float:left;margin-bottom:1px;
-    thead tr td {padding:12px;background:transparent;color:$secondary;font-size:1.4em;font-weight: 300;display:none;}
-    tbody {background:$primary;color:$secondary;
-      tr:hover {cursor:default;background:inherit;color:inherit;}
-      tr td {padding:12px 19px;border-bottom:1px solid $secondary;font-weight:300;
-        &:last-of-type {padding-right:0;border-right:1px solid $secondary;color:$third;}}
-      tr:last-of-type td {border-bottom:1px solid $primary;}
-      tr:last-of-type:hover td {}
-    tr:first-of-type td {border-top:1px solid $primary;}}
-   }
+  .stock-overview {
+    width: 30%;
+    float: left;
+    margin-bottom: 1px;
+    thead tr td {
+      padding: 12px;
+      background: transparent;
+      color: $secondary;
+      font-size: 1.4em;
+      font-weight: 300;
+      display: none;
+    }
+    tbody {
+      background: $primary;
+      color: $secondary;
+      tr:hover {
+        cursor: default;
+        background: inherit;
+        color: inherit;
+      }
+      tr td {
+        padding: 12px 19px;
+        border-bottom: 1px solid $secondary;
+        font-weight: 300;
+        &:last-of-type {
+          padding-right: 0;
+          border-right: 1px solid $secondary;
+          color: $third;
+        }
+      }
+      tr:last-of-type td {
+        border-bottom: 1px solid $primary;
+      }
+      tr:last-of-type:hover td {
+      }
+      tr:first-of-type td {
+        border-top: 1px solid $primary;
+      }
+    }
+  }
 
   .stock-news {
-    tbody tr td:last-of-type {text-align:left;padding-top:14px;}
-    thead tr {border-bottom:1px solid $third;}
+    tbody tr td:last-of-type {
+      text-align: left;
+      padding-top: 14px;
+    }
+    thead tr {
+      border-bottom: 1px solid $third;
+    }
   }
 }
 
 // ====== // ===== // stocks.html // ====== // ===== //
 #stocks {
   .first {
-    .disclaimer {margin:20px 0 0 0;}
-    .row:first-of-type {padding-top:50px;}
-    .row:last-of-type {padding-bottom:80px;}
+    .disclaimer {
+      margin: 20px 0 0 0;
+    }
+    .row:first-of-type {
+      padding-top: 50px;
+    }
+    .row:last-of-type {
+      padding-bottom: 80px;
+    }
   }
 
-  .filter-options .dropdown-menu li a {min-width:176px;}
-
+  .filter-options .dropdown-menu li a {
+    min-width: 179px;
+  }
 }
 
 // ====== // ===== // subscriptions.html // ====== // ===== //
 
 #subscriptions {
-  .second .radio {display:inline-block;margin-right:24px;}
-  .person-subscriptions {margin-top:50px;}
-
-  .first {
-    .disclaimer {margin:20px 0 0 0;}
-    .row:first-of-type {padding-top:50px;}
-    .row:last-of-type {padding-bottom:80px;}
+  .second .radio {
+    display: inline-block;
+    margin-right: 24px;
+  }
+  .person-subscriptions {
+    margin-top: 50px;
   }
 
+  .first {
+    .disclaimer {
+      margin: 20px 0 0 0;
+    }
+    .row:first-of-type {
+      padding-top: 50px;
+    }
+    .row:last-of-type {
+      padding-bottom: 80px;
+    }
+  }
 }
-
-// ====== // ===== // preferences.html // ====== // ===== //
