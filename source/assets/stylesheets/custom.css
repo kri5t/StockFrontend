@@ -749,23 +749,32 @@ thead tr td a {
     font-weight: 300; }
 
 #about {
-  background: url(../img/about_bg.jpeg) no-repeat center center fixed;
+  background: url(../images/about_bg.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
   #about .first {
-    background: rgba(38, 42, 51, 0.85); }
+    color: #262a33;
+    background: rgba(255, 255, 255, 0.85); }
     #about .first:after, #about .first:before {
-      background: rgba(38, 42, 51, 0.85); }
+      background: rgba(255, 255, 255, 0.85); }
   #about .third {
     background: #262a33; }
     #about .third:after, #about .third:before {
       background: #262a33; }
   #about .concept-storyboard {
     margin: 20px 0; }
-  #about .col-sm-12 p {
-    padding: 0 14%; }
+  #about .col-sm-12 h4 {
+    padding: 0 18%;
+    line-height: 1.3em; }
+    #about .col-sm-12 h4 .fa-asterisk {
+      top: -9px;
+      left: -4px;
+      font-size: 9px; }
+  #about .disclaimer {
+    margin: 50px 0 -66px 0;
+    padding: 0 20%; }
 
 #post .first .row:first-of-type {
   padding-top: 50px; }

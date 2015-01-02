@@ -75,12 +75,12 @@ $headings-color:          inherit !default;
 
 //== Iconography
 //
-//## Specify alns location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
+//## Specify stylesheets location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
 
 //** Load awesome from this directory.
 
 // [converter] Asset helpers such as Sprockets and Node.js Mincer do not resolve relative paths
-$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/") !default;
+$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../../fonts/bootstrap/") !default;
 
 //** File name for all font files.
 $icon-font-name:          "glyphicons-halflings-regular" !default;
@@ -305,7 +305,7 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
 
 //== Grid system
 //
-//## Define your alns responsive grid.
+//## Define your stylesheets responsive grid.
 
 //** Number of columns in the grid.
 $grid-columns:              12 !default;

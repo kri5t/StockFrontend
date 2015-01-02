@@ -39,7 +39,7 @@ var environment = new Mincer.Environment(process.cwd());
 
 // Include bootstrap scss load path
 var bootstrapPath = '../../';
-environment.appendPath(bootstrapPath + 'assets/stylesheets');
+environment.appendPath(bootstrapPath + 'assets/bootstrap');
 
 // Include awesome load path
 environment.appendPath(bootstrapPath + 'assets/awesome');
@@ -50,7 +50,7 @@ environment.appendPath('./');
 
 //
 // Define environment essential *_path helper that will be available in the
-// processed assets. See `assets/stylesheets/app.css.ejs` for example.
+// processed assets. See `assets/bootstrap/app.css.ejs` for example.
 //
 
 

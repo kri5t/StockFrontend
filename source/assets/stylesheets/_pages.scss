@@ -15,15 +15,16 @@
 
 // ====== // ===== // about.html // ====== // ===== //
 #about {
-  background: url(../img/about_bg.jpeg) no-repeat center center fixed;
+  background: url(../images/about_bg.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   .first {
-    background: $oprimary;
+    color:$primary;
+    background: $osecondary;
     &:after, &:before {
-      background: $oprimary;
+      background:$osecondary;
     }
   }
   .third {
@@ -36,11 +37,20 @@
   .concept-storyboard {
     margin: 20px 0;
   }
-  .col-sm-12 p {
-    padding: 0 14%;
+  .col-sm-12 h4 {
+    padding: 0 18%;
+    line-height:1.3em;
+    .fa-asterisk {
+      top:-9px;
+      left:-4px;
+      font-size:9px;
+    }
+  }
+  .disclaimer {
+    margin:50px 0 -66px 0;
+    padding:0 20%;
   }
 }
-
 
 // ====== // ===== // post.html // ====== // ===== //
 #post {
@@ -143,7 +153,7 @@
       }
       .col-sm-3.own-stock-link {
         p {
-          background:$osecondary;
+          background: $isecondary;
           color: $secondary;
           @include bgtransition;
           &:hover {
