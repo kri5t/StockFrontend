@@ -40,6 +40,11 @@ input[type="text"], textarea {
   box-shadow: none !important;
   font-size: 1.3em; }
 
+.cvr-number {
+  color: white;
+  font-size: 1.05em;
+  margin: 13px 0 0 0; }
+
 .strong-text {
   font-weight: 400; }
 
@@ -265,11 +270,13 @@ body {
   .second a:hover {
     color: white; }
 .second .table thead tr td {
-  padding: 7px 0 12px 0;
-  font-size: 1.1em;
+  padding: 20px 0 22px 0;
   background: #262a33;
   color: white;
-  font-weight: 400; }
+  font-weight: 300;
+  font-size: 1.25em; }
+  .second .table thead tr td:hover {
+    cursor: default; }
   .second .table thead tr td .glyphicon {
     font-size: 24px;
     margin-left: 6px;
@@ -279,10 +286,6 @@ body {
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     margin-left: 0; }
-  .second .table thead tr td a {
-    color: white;
-    font-weight: 300;
-    font-size: 1.25em; }
 .second .table tbody tr {
   font-weight: 400; }
   .second .table tbody tr td {
@@ -321,7 +324,7 @@ body {
 .second .table.std-table.persons-followed, .second .table.std-table.stocks-followed {
   margin-bottom: 40px; }
   .second .table.std-table.persons-followed thead tr td, .second .table.std-table.stocks-followed thead tr td {
-    padding: 4px; }
+    padding: 16px 4px; }
   .second .table.std-table.persons-followed tbody tr:hover, .second .table.std-table.stocks-followed tbody tr:hover {
     cursor: default;
     background: transparent; }
@@ -501,11 +504,13 @@ thead tr td a {
   .stock-overview tbody tr:last-of-type:hover {
     border-bottom: 1px solid #262a33; }
 
-.stock-tabs {
-  margin-top: 10px; }
+.specific-stock .col-sm-9 {
+  padding-left: 0; }
+.specific-stock .col-sm-3 {
+  padding-right: 0; }
 
 .stock-graph {
-  width: 70%;
+  width: 100%;
   margin: 0;
   float: left;
   background: #262a33;
@@ -570,6 +575,19 @@ thead tr td a {
       font-size: 0.7em;
       display: block;
       margin: 2px 2px 2px 0; }
+
+.navbar-bottom {
+  min-height: 46px;
+  border: none;
+  border-radius: 0; }
+  .navbar-bottom .pull-right {
+    margin-top: 8px; }
+  .navbar-bottom a {
+    color: white;
+    font-size: 1.6em;
+    margin: 0 0 0 22px; }
+    .navbar-bottom a:hover {
+      color: #008bff; }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav li a {
   color: white;
@@ -803,6 +821,7 @@ thead tr td a {
   padding: 14px 0 15px 0;
   margin: 0; }
 #profile .signal-card .signal-top .col-sm-3.own-stock-link p {
+  background: rgba(255, 255, 255, 0.1);
   color: white;
   transition: background-color 0.8s ease-in-out;
   -webkit-transition: background-color 0.8s ease-in-out;
@@ -831,7 +850,7 @@ thead tr td a {
   #stock .second .table thead tr td a span {
     display: none; }
 #stock .stock-overview {
-  width: 30%;
+  width: 100%;
   float: left;
   margin-bottom: 1px; }
   #stock .stock-overview thead tr td {
@@ -919,7 +938,7 @@ thead tr td a {
     margin-bottom: 10px; }
 
 .modal-body {
-  padding: 25px; }
+  padding: 20px; }
 
 #new-signal .navbar-form .form-control {
   display: block; }
@@ -936,6 +955,8 @@ thead tr td a {
       padding: 10px;
       min-height: 47px;
       color: #262a33; }
+  #new-signal .modal-content .signal-section {
+    margin: 0 -15px 20px -15px; }
   #new-signal .modal-content .btn-default {
     font-size: 1.2em; }
   #new-signal .modal-content .show-more {
@@ -943,12 +964,17 @@ thead tr td a {
   #new-signal .modal-content .form-group {
     margin: 0; }
   #new-signal .modal-content h4.pull-left {
-    margin: 30px 0 0 15px; }
+    margin: 10px 0 0 15px; }
+  #new-signal .modal-content .choose-action {
+    margin: -12px 0 0 20px; }
+  #new-signal .modal-content .radio {
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 40px; }
   #new-signal .modal-content .radio label, #new-signal .modal-content .checkbox label {
     display: inline-block;
     text-align: left;
-    padding: 4px 0;
-    width: 66px; }
+    padding: 4px 0; }
   #new-signal .modal-content textarea {
     width: 100%;
     min-height: 200px !important; }
@@ -975,8 +1001,20 @@ thead tr td a {
       -webkit-transition: color 0.8s ease-in-out;
       -moz-transition: color 0.8s ease-in-out;
       float: right;
-      margin-bottom: -20px; }
+      margin-bottom: -20px;
+      color: rgba(38, 42, 51, 0.65); }
       #new-signal .modal-content .modal-body .glyphicon-plus:hover {
+        cursor: pointer;
+        color: #008bff; }
+    #new-signal .modal-content .modal-body .glyphicon-calendar {
+      font-size: 24px;
+      float: right;
+      margin: -38px 9px 0 0;
+      color: rgba(38, 42, 51, 0.65);
+      transition: color 0.8s ease-in-out;
+      -webkit-transition: color 0.8s ease-in-out;
+      -moz-transition: color 0.8s ease-in-out; }
+      #new-signal .modal-content .modal-body .glyphicon-calendar:hover {
         cursor: pointer;
         color: #008bff; }
   #new-signal .modal-content .filter-options .dropdown-menu {

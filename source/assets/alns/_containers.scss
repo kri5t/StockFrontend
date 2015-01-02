@@ -104,11 +104,14 @@ body {
     }
   }
   .table thead tr td {
-    padding: 7px 0 12px 0;
-    font-size: 1.1em;
+    padding: 20px 0 22px 0;
     background: $primary;
     color: $secondary;
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 1.25em;
+    &:hover {
+      cursor:default;
+    }
     .glyphicon {
       font-size: 24px;
       margin-left: 6px;
@@ -117,11 +120,6 @@ body {
     .glyphicon-transfer {
       @include rotate90;
       margin-left: 0;
-    }
-    a {
-      color: $secondary;
-      font-weight: 300;
-      font-size: 1.25em;
     }
   }
   .table tbody tr {
@@ -167,7 +165,7 @@ body {
   .table.std-table.persons-followed, .table.std-table.stocks-followed {
     margin-bottom: 40px;
     thead tr td {
-      padding: 4px;
+      padding: 16px 4px;
     }
     tbody tr {
       &:hover {
@@ -410,10 +408,18 @@ thead tr td a {
 
 // ====== // ===== // Graphs // ====== // ===== //
 .stock-tabs {
-  margin-top: 10px;
 }
+.specific-stock {
+  .col-sm-9 {
+    padding-left:0;
+  }
+  .col-sm-3 {
+    padding-right:0;
+  }
+}
+
 .stock-graph {
-  width: 70%;
+  width: 100%;
   margin: 0;
   float: left;
   background: $primary;

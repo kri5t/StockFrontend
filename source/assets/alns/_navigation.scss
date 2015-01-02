@@ -50,6 +50,22 @@
     }
   }
 }
+.navbar-bottom {
+  min-height:46px;
+  border:none;
+  border-radius:0;
+  .pull-right {
+    margin-top:8px;
+  }
+  a {
+    color:$secondary;
+    font-size:1.6em;
+    margin:0 0 0 22px;
+    &:hover {
+      color:$third;
+    }
+  }
+}
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav li a {
   color: $secondary;

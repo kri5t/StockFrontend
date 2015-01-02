@@ -5,7 +5,6 @@
 //Activate bootstrap tooltip
 $('document').ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
-    $('.datepicker').datepicker();
 
     //Show signal
     $('.read-more').on('click', function(e) {

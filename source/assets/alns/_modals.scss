@@ -2,6 +2,7 @@
 .modal-dialog {
 
 }
+
 .modal-header {
   border-bottom: 1px solid $iprimary;
   a {
@@ -40,7 +41,7 @@
   }
 }
 .modal-body {
-  padding: 25px;
+  padding: 20px;
 }
 
 #new-signal {
@@ -65,6 +66,9 @@
         color: $primary;
       }
     }
+    .signal-section {
+      margin:0 -15px 20px -15px;
+    }
     .btn-default {
       font-size: 1.2em;
     }
@@ -75,13 +79,20 @@
       margin: 0;
     }
     h4.pull-left {
-      margin: 30px 0 0 15px;
+      margin: 10px 0 0 15px;
+    }
+    .choose-action {
+      margin:-12px 0 0 20px;
+    }
+    .radio {
+      margin-bottom:0;
+      display:inline-block;
+      margin-right:40px;
     }
     .radio label, .checkbox label {
       display: inline-block;
       text-align: left;
       padding: 4px 0;
-      width: 66px;
     }
     textarea {
       width: 100%;
@@ -116,9 +127,21 @@
         @include colortransition;
         float: right;
         margin-bottom: -20px;
+        color:$tprimary;
         &:hover {
           cursor: pointer;
           color: $third;
+        }
+      }
+      .glyphicon-calendar {
+        font-size:24px;
+        float:right;
+        margin:-38px 9px 0 0;
+        color:$tprimary;
+        @include colortransition;
+        &:hover {
+          cursor:pointer;
+          color:$third;
         }
       }
     }

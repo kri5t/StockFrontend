@@ -143,6 +143,7 @@
       }
       .col-sm-3.own-stock-link {
         p {
+          background:$osecondary;
           color: $secondary;
           @include bgtransition;
           &:hover {
@@ -154,8 +155,6 @@
     }
   }
 }
-
-
 
 // ====== // ===== // stock.html // ====== // ===== //
 
@@ -191,7 +190,7 @@
     }
   }
   .stock-overview {
-    width: 30%;
+    width: 100%;
     float: left;
     margin-bottom: 1px;
     thead tr td {
