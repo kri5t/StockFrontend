@@ -756,15 +756,23 @@ thead tr td a {
   background-size: cover; }
   #about .first {
     color: #262a33;
-    background: rgba(255, 255, 255, 0.85); }
+    background: rgba(255, 255, 255, 0.95); }
     #about .first:after, #about .first:before {
-      background: rgba(255, 255, 255, 0.85); }
-  #about .third {
-    background: #262a33; }
-    #about .third:after, #about .third:before {
-      background: #262a33; }
+      background: rgba(255, 255, 255, 0.95); }
+  #about .fourth {
+    color: white;
+    background: rgba(38, 42, 51, 0.85); }
+    #about .fourth i:hover {
+      color: white; }
+    #about .fourth:after, #about .fourth:before {
+      background: rgba(38, 42, 51, 0.85); }
+    #about .fourth .col-sm-4 p {
+      font-weight: 300; }
   #about .concept-storyboard {
-    margin: 20px 0; }
+    margin: 30px 0;
+    width: 95px;
+    background: rgba(38, 42, 51, 0.85);
+    border-radius: 50%; }
   #about .col-sm-12 h4 {
     padding: 0 18%;
     line-height: 1.3em; }
@@ -772,9 +780,13 @@ thead tr td a {
       top: -9px;
       left: -4px;
       font-size: 9px; }
-  #about .disclaimer {
+  #about .col-sm-12 .disclaimer {
     margin: 50px 0 -66px 0;
     padding: 0 20%; }
+    #about .col-sm-12 .disclaimer .fa-asterisk {
+      top: -7px;
+      left: 0;
+      font-size: 6px; }
 
 #post .first .row:first-of-type {
   padding-top: 50px; }
