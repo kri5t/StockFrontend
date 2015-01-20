@@ -46,9 +46,21 @@ input[type="text"], textarea {
 }
 
 .cvr-number {
-  color:$secondary;
+  color:$ithird;
   font-size:1.05em;
   margin:13px 0 0 0;
+}
+
+.most-signals {
+  /* border:2px solid $third; */
+  border-top:none;
+  background:$third;
+  padding:10px 8px 10px 8px;
+  margin:0 2px 0 14px;
+}
+
+.stock-rated {
+  background:$primary;
 }
 
 .strong-text {

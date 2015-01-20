@@ -41,9 +41,19 @@ input[type="text"], textarea {
   font-size: 1.3em; }
 
 .cvr-number {
-  color: white;
+  color: rgba(0, 139, 255, 0.17);
   font-size: 1.05em;
   margin: 13px 0 0 0; }
+
+.most-signals {
+  /* border:2px solid $third; */
+  border-top: none;
+  background: #008bff;
+  padding: 10px 8px 10px 8px;
+  margin: 0 2px 0 14px; }
+
+.stock-rated {
+  background: #262a33; }
 
 .strong-text {
   font-weight: 400; }
@@ -551,6 +561,13 @@ thead tr td a {
     font-size: 20px; }
   .navbar-default .navbar-header a {
     font-size: 1.2em; }
+  .navbar-default .navbar-right .nav-stock-search .search-input {
+    margin: -1px 8px 0 0; }
+    .navbar-default .navbar-right .nav-stock-search .search-input input[type="text"], .navbar-default .navbar-right .nav-stock-search .search-input textarea {
+      padding: 4px 5px 7px 8px;
+      color: #262a33;
+      font-size: 0.9em;
+      border: 1px solid #008bff; }
   .navbar-default .navbar-right .glyphicon {
     font-size: 34px;
     top: 7px;
@@ -608,6 +625,9 @@ thead tr td a {
 
 .navbar-default .navbar-brand {
   color: white; }
+  .navbar-default .navbar-brand img {
+    width: 150px;
+    margin: -10px 36px 0 10px; }
 
 .dropdown-toggle {
   padding: 8px 12px; }
@@ -672,7 +692,6 @@ thead tr td a {
       border: 1px solid #008bff; }
   .nav-tabs > li.pull-right, .nav-tabs li {
     margin-right: 0;
-    background: rgba(38, 42, 51, 0.85);
     color: white;
     padding: 9px 17px;
     font-size: 1.2em;
@@ -756,16 +775,16 @@ thead tr td a {
   background-size: cover; }
   #about .first {
     color: #262a33;
-    background: rgba(255, 255, 255, 0.95); }
+    background: rgba(255, 255, 255, 0.85); }
     #about .first:after, #about .first:before {
-      background: rgba(255, 255, 255, 0.95); }
+      background: rgba(255, 255, 255, 0.85); }
   #about .fourth {
-    color: white;
-    background: rgba(38, 42, 51, 0.85); }
+    color: #262a33;
+    background: white; }
     #about .fourth i:hover {
-      color: white; }
+      color: #262a33; }
     #about .fourth:after, #about .fourth:before {
-      background: rgba(38, 42, 51, 0.85); }
+      background: white; }
     #about .fourth .col-sm-4 p {
       font-weight: 300; }
   #about .concept-storyboard {

@@ -1,0 +1,26 @@
+/* Tilføjelse af logo styling '87:_navigation' */
+.navbar-default .navbar-brand {
+  color: $secondary;
+  img {
+    width:150px;
+    margin:-10px 36px 0 10px;
+  }
+}
+
+/* Ændring af Koncept side '30:_pages under #about' */
+.fourth {
+  color:$primary;
+  background: $secondary;
+  i:hover {
+    color:$primary;
+  }
+  &:after, &:before {
+    background: $secondary;
+  }
+  .col-sm-4 p {
+    font-weight:300;
+  }
+}
+
+/* opacitetsgrad på variable ændret på '10:_variables' */
+$osecondary:rgba(255, 255, 255, 0.85);

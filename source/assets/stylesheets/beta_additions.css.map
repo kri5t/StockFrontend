@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;AAEE,iCAAI;EACF,KAAK,EAAC,KAAK;EACX,MAAM,EAAC,iBAAiB",
+"sources": ["beta_additions.scss"],
+"names": [],
+"file": "beta_additions.css"
+}

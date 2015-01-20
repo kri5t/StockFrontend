@@ -42,6 +42,14 @@
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
+                <li class="nav-stock-search">
+                    <form action="" method="post">
+                        <div class="search-input">
+                            <label for="search-stock" class="hidden"></label>
+                            <input type="text" id="search-stock" placeholder="søg på aktier">
+                        </div>
+                    </form>
+                </li>
                 <li class="profile-nav"><a href="profile.html"><img src="source/assets/images/profil.jpg" /></a></li>
                 <li class="logout"><a href="index.html">log ud</a></li>
             </ul>
@@ -51,26 +59,6 @@
 
 <div class="container">
 
-    <!-- First area -->
-    <div class="first area">
-        <div class="row">
-            <div class="col-sm-12 ">
-                <h3>Søg på aktier og få et skarpere indblik i markedet</h3>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12 stock-search">
-                <form action="" method="post">
-                    <div class="search-input">
-                        <label for="search-stock" class="hidden"></label>
-                        <input type="text" id="search-stock">
-                        <span class="glyphicon glyphicon-search"></span>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 
     <!-- Second area -->
     <div class="second area">
@@ -88,7 +76,7 @@
                 <ul class="nav nav-tabs">
                     <li class="stock-tab" data-toggle="modal" data-target="#new-signal">Opret Signal</li>
                     <li class="stock-tab follow-stock">Følg aktie</li>
-                    <li class="pull-right">Nuværende anbefaling: N/A</li>
+                    <li class="pull-right stock-rated">Anbefalinger: <span class="most-signals">køb(3)</span> sælg(2) hold(1)</li>
                 </ul>
 
             </div>

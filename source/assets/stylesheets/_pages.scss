@@ -28,13 +28,13 @@
     }
   }
   .fourth {
-    color:$secondary;
-    background: $oprimary;
+    color:$primary;
+    background: $secondary;
     i:hover {
-      color:$secondary;
+      color:$primary;
     }
     &:after, &:before {
-      background: $oprimary;
+      background: $secondary;
     }
     .col-sm-4 p {
       font-weight:300;
