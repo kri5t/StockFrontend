@@ -787,6 +787,8 @@ thead tr td a {
       background: white; }
     #about .fourth .col-sm-4 p {
       font-weight: 300; }
+    #about .fourth img {
+      width: 130px; }
   #about .concept-storyboard {
     margin: 30px 0;
     width: 95px;
