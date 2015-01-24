@@ -394,6 +394,19 @@ body {
       border: 1px solid rgba(38, 42, 51, 0.85); }
       .second .signal-card .signal-middle img:hover, .second .signal-card .signal-bottom img:hover {
         border: 1px solid #008bff; }
+    .second .signal-card .signal-middle .rate-signal, .second .signal-card .signal-bottom .rate-signal {
+      font-size: 0.9em;
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+      .second .signal-card .signal-middle .rate-signal img, .second .signal-card .signal-bottom .rate-signal img {
+        border: none;
+        width: 40px;
+        margin: 0 0 0 5px; }
+      .second .signal-card .signal-middle .rate-signal span, .second .signal-card .signal-bottom .rate-signal span {
+        margin: 0;
+        color: #262a33;
+        font-size: 1.2em; }
     .second .signal-card .signal-middle a, .second .signal-card .signal-bottom a {
       color: #008bff;
       transition: color 0.8s ease-in-out;
